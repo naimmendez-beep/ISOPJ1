@@ -10,7 +10,7 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 
  
 ## Llicènciament
-<img width="637" height="111" alt="image" src="https://github.com/user-attachments/assets/7478a2c8-b13d-4f59-aaa6-56cc71d34c58" />
+
 
 
 ## Gestors d'arrencada per a instal·acions DUALS

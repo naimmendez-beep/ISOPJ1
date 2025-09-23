@@ -10,6 +10,7 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 
  
 ## Llicènciament
+<img width="379" height="133" alt="image" src="https://github.com/user-attachments/assets/72a85103-32a0-42da-8952-a7a7060df3d5" />
 
 
 

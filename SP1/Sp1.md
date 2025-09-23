@@ -9,6 +9,7 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 <img width="600" height="550" alt="Captura de pantalla de 2025-09-23 13-30-07" src="https://github.com/user-attachments/assets/bf7b1c3a-4d5f-4b5f-b0b5-044f2f5f3330" />
 <p>Fem la configuració del SO, farem les particions al disc</p>
 
+<p></p>  
 ## Llicènciament
 
 

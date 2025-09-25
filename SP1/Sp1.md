@@ -8,11 +8,10 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 <p>2. El segon pas és instalar el sistema operatiu i continuar amb la configuració que ens demani</p>
 <img width="600" height="550" alt="Captura de pantalla de 2025-09-23 13-30-07" src="https://github.com/user-attachments/assets/bf7b1c3a-4d5f-4b5f-b0b5-044f2f5f3330" />
 
+## Instal·lació del SO Windows
+<p>1. Igual que amb la d'Ubuntu, crearem la màquina virtual i procedirem a instal·lar Windows, </p>
  
-## Llicènciament
-Llicencia Creative Commons Atribució/Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)
 
-Aquest treball està llicenciat sota la [Llicencia Creative Commons Reconocimiento - No Comercial - Compartir Igual 4.0 Interncaional (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
 
 
 ## Text legal complet
@@ -39,3 +38,8 @@ S'ha de donar crèdit adequat, proporcionar un enllaç a aquesta llicència i in
 ## Configuració de xarxa
 
 ## Comandes generals i instal·lacions
+
+## Llicènciament
+Llicencia Creative Commons Atribució/Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)
+
+Aquest treball està llicenciat sota la [Llicencia Creative Commons Reconocimiento - No Comercial - Compartir Igual 4.0 Interncaional (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).

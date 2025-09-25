@@ -1,3 +1,4 @@
+---
 layout: default
 title: "Sprint 1: Instal·lació i Configuració Inicial"
 ---

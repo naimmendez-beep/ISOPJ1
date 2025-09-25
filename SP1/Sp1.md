@@ -32,7 +32,7 @@ S'ha de donar crèdit adequat, proporcionar un enllaç a aquesta llicència i in
 
 ## Gestors d'arrencada per a instal·acions DUALS
 <p>Fem la configuració del SO, farem les particions al disc</p>
-<img width="450" height="324" alt="Captura de pantalla de 2025-09-23 13-42-32" src="https://github.com/user-attachments/assets/5fb2e1fc-5282-494f-aee5-d2e70b9e1291" />
+<img width="550" height="424" alt="Captura de pantalla de 2025-09-23 13-42-32" src="https://github.com/user-attachments/assets/5fb2e1fc-5282-494f-aee5-d2e70b9e1291" />
 
 ## Punts de restauració
 

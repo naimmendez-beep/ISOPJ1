@@ -10,33 +10,29 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 
  
 ## Llicènciament
-Licencia Creative Commons Atribución/Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)
+Llicencia Creative Commons Atribució/Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)
 
-Este trabajo está licenciado bajo la [Licencia Creative Commons Reconocimiento - No Comercial - Compartir Igual 4.0 Interncaional (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
+Aquest treball està llicenciat sota la [Llicencia Creative Commons Reconocimiento - No Comercial - Compartir Igual 4.0 Interncaional (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
 
-## Resumen
 
-<p>Esta licencia permite que otros compartan, copien y distribuyan tu trabajo, así como adaptarlo o transformarlo, siempre que
-Reconozcan la autoría original
-No utilicen el trabajo con fines comerciales
-Distribuyan las obras derivadas bajo la misma licencia</p>  
+## Text legal complet
 
-## Texto legal completo
-
-Puedes consultar el texto completo de la licencia aquí:  
+Pots consultar el text complet de la llicéncia aquí:  
 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca
 
 ## Atribució y condicions
 
-Se debe dar crédito adecuado, proporcionar un enlace a esta licencia e indicar si se han realizado cambios. Cualquier obra derivada debe distribuirse con la misma licencia y no se pueden imponer restricciones adicionales.
+S'ha de donar crèdit adequat, proporcionar un enllaç a aquesta llicència i indicar si s'han fet canvis. Qualsevol obra derivada s'ha de distribuir amb la mateixa llicència i no es poden imposar restriccions addicionals.
 
 © 2025 Naim Méndez
+
 <img width="150" height="55" alt="image" src="https://github.com/user-attachments/assets/72a85103-32a0-42da-8952-a7a7060df3d5" />
 
 
 
 ## Gestors d'arrencada per a instal·acions DUALS
 <p>Fem la configuració del SO, farem les particions al disc</p>
+<img width="450" height="324" alt="Captura de pantalla de 2025-09-23 13-42-32" src="https://github.com/user-attachments/assets/5fb2e1fc-5282-494f-aee5-d2e70b9e1291" />
 
 ## Punts de restauració
 

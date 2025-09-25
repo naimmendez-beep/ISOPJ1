@@ -1,6 +1,6 @@
 # Curso de Machine Learning
 
-Este repositorio contiene el material del curso de Machine Learning desarrollado por Mireia Consarnau.
+Este repositorio contiene el material del curso de Machine Learning desarrollado por Naim Mendez.
 
 ## Contenido
 
@@ -12,14 +12,14 @@ Este repositorio contiene el material del curso de Machine Learning desarrollado
 
 Este repositorio está preparado para ser publicado con GitHub Pages.  
 Puedes ver la versión web pública en:  
-https://mireiaconsarnau.github.io/machine_learning/
+https://github.com/naimmendez-beep/ISOPJ1.git
 
 ## Licencia
 
-El contenido está bajo licencia [Creative Commons BY-NC-SA 3.0 ES](LICENSE.md).
+El contenido está bajo licencia [Creative Commons BY-NC-SA 4.0 ES](LICENSE.md).
 
 
 ---
 
-© 2025 Mireia Consarnau
+© 2025 Naim Mendez
 

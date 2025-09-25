@@ -19,13 +19,7 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 Pots consultar el text complet de la llicéncia aquí:  
 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca
 
-## Atribució y condicions
 
-S'ha de donar crèdit adequat, proporcionar un enllaç a aquesta llicència i indicar si s'han fet canvis. Qualsevol obra derivada s'ha de distribuir amb la mateixa llicència i no es poden imposar restriccions addicionals.
-
-© 2025 Naim Méndez
-
-<img width="150" height="55" alt="image" src="https://github.com/user-attachments/assets/72a85103-32a0-42da-8952-a7a7060df3d5" />
 
 
 
@@ -38,7 +32,13 @@ S'ha de donar crèdit adequat, proporcionar un enllaç a aquesta llicència i in
 ## Configuració de xarxa
 
 ## Comandes generals i instal·lacions
+## Atribució y condicions
 
+S'ha de donar crèdit adequat, proporcionar un enllaç a aquesta llicència i indicar si s'han fet canvis. Qualsevol obra derivada s'ha de distribuir amb la mateixa llicència i no es poden imposar restriccions addicionals.
+
+© 2025 Naim Méndez
+
+<img width="150" height="55" alt="image" src="https://github.com/user-attachments/assets/72a85103-32a0-42da-8952-a7a7060df3d5" />
 ## Llicènciament
 Llicencia Creative Commons Atribució/Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)
 

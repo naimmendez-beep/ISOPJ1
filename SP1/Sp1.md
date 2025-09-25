@@ -39,6 +39,7 @@ S'ha de donar crèdit adequat, proporcionar un enllaç a aquesta llicència i in
 © 2025 Naim Méndez
 
 <img width="150" height="55" alt="image" src="https://github.com/user-attachments/assets/72a85103-32a0-42da-8952-a7a7060df3d5" />
+
 ## Llicènciament
 Llicencia Creative Commons Atribució/Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)
 

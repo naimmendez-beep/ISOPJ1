@@ -1,6 +1,6 @@
-# Curso de Machine Learning
+# Curso 1r ASIX Implantació Sistemes Operatius
 
-Este repositorio contiene el material del curso de Machine Learning desarrollado por Naim Mendez.
+Este repositorio contiene el material del curso desarrollado por Naim Mendez.
 
 ## Contenido
 

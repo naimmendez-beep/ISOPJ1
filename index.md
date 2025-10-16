@@ -15,7 +15,7 @@ El contenido está bajo licencia [Creative Commons BY-NC-SA 4.0 ES](https://crea
 
 ## Contenido del curso
 
-###   Spreent 1: Instal·lació i configuració inicial <
+###   Spreent 1: Instal·lació i configuració inicial <a href="
 ###  
 ###  
 ### 

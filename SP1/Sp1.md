@@ -11,9 +11,9 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 <p>Anem configurant l'ubuntu per fer l'instal·lació</p>
 <img width="600" height="550 " alt="Captura de pantalla de 2025-10-16 13-17-34" src="https://github.com/user-attachments/assets/9a45ed83-2027-492f-abf3-3e09fc674164"/>
 <p>Creem les particions i fem l'última part de la configuració</p>
-<img width="804" height="680" alt="Captura de pantalla de 2025-10-16 13-22-53" src="https://github.com/user-attachments/assets/164d7c0c-640a-4101-9517-676590408b8c"/>
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-16 13-22-53" src="https://github.com/user-attachments/assets/164d7c0c-640a-4101-9517-676590408b8c"/>
 <p>Acabem la configuració i quan acabi la instal·lació ja tindrem la maquina preparada</p>
-<img width="804" height="680" alt="Captura de pantalla de 2025-10-16 13-24-25" src="https://github.com/user-attachments/assets/a6994b29-cc23-4f1c-9524-b29fd39a1c68"/>
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-16 13-24-25" src="https://github.com/user-attachments/assets/a6994b29-cc23-4f1c-9524-b29fd39a1c68"/>
 
  
 ## Instal·lació del SO Windows
@@ -38,16 +38,16 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca
 
 ## Gestors d'arrencada per a instal·acions DUALS
 <p>Fem la configuració del SO, farem les particions al disc</p>
-<img width="550" height="424" alt="Captura de pantalla de 2025-09-23 13-42-32" src="https://github.com/user-attachments/assets/5fb2e1fc-5282-494f-aee5-d2e70b9e1291" />
+<img width="600" height="550" alt="Captura de pantalla de 2025-09-23 13-42-32" src="https://github.com/user-attachments/assets/5fb2e1fc-5282-494f-aee5-d2e70b9e1291" />
 
 ## Punts de restauració
-<img width="736" height="483" alt="Captura de pantalla de 2025-10-07 13-22-46" src="https://github.com/user-attachments/assets/1ec1dbc2-9049-4bd4-9fa7-5288fe58e1f7" />
-<img width="799" height="667" alt="Captura de pantalla de 2025-10-07 13-17-27" src="https://github.com/user-attachments/assets/d894cb35-ecff-43e1-8a0c-b91a1ac783b0" />
-<img width="602" height="667" alt="Captura de pantalla de 2025-10-07 13-16-54" src="https://github.com/user-attachments/assets/87dbd0c4-8bf1-4fef-a1af-c6b096f1ebcc" />
-<img width="602" height="667" alt="Captura de pantalla de 2025-10-07 13-15-45" src="https://github.com/user-attachments/assets/2faadde5-12da-4ab3-8028-87e539db9b4b" />
-<img width="734" height="281" alt="Captura de pantalla de 2025-10-07 13-14-21" src="https://github.com/user-attachments/assets/a639c9b6-480b-4d2d-bca7-f70ee2e652b3" />
-<img width="734" height="482" alt="Captura de pantalla de 2025-10-07 13-12-39" src="https://github.com/user-attachments/assets/b9ff3d61-4b0f-45d9-8ffa-c2bd1470077f" />
-<img width="734" height="482" alt="Captura de pantalla de 2025-10-07 13-03-07" src="https://github.com/user-attachments/assets/a608727e-9534-48a7-9ee9-8e0a38f66ff1" />
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-07 13-22-46" src="https://github.com/user-attachments/assets/1ec1dbc2-9049-4bd4-9fa7-5288fe58e1f7" />
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-07 13-17-27" src="https://github.com/user-attachments/assets/d894cb35-ecff-43e1-8a0c-b91a1ac783b0" />
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-07 13-16-54" src="https://github.com/user-attachments/assets/87dbd0c4-8bf1-4fef-a1af-c6b096f1ebcc" />
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-07 13-15-45" src="https://github.com/user-attachments/assets/2faadde5-12da-4ab3-8028-87e539db9b4b" />
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-07 13-14-21" src="https://github.com/user-attachments/assets/a639c9b6-480b-4d2d-bca7-f70ee2e652b3" />
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-07 13-12-39" src="https://github.com/user-attachments/assets/b9ff3d61-4b0f-45d9-8ffa-c2bd1470077f" />
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-07 13-03-07" src="https://github.com/user-attachments/assets/a608727e-9534-48a7-9ee9-8e0a38f66ff1" />
 
 
 ## Configuració de xarxa

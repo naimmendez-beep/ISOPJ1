@@ -52,7 +52,7 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca
 
 
 ## Configuració de xarxa
-<img width="873" height="511" alt="image" src="https://github.com/user-attachments/assets/ab0c0364-b187-40a4-905a-709322d2eef1"/>
+<img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/ab0c0364-b187-40a4-905a-709322d2eef1"/>
 
 ## Comandes generals i instal·lacions
 ## Atribució y condicions

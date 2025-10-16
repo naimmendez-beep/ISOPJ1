@@ -9,7 +9,7 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 <p>2. El segon pas és instalar el sistema operatiu de Linux i continuar amb la configuració que ens demani</p>
 <img width="600" height="550" alt="Captura de pantalla de 2025-09-23 13-30-07" src="https://github.com/user-attachments/assets/bf7b1c3a-4d5f-4b5f-b0b5-044f2f5f3330"/>
 <p>Anem configurant l'ubuntu per fer l'instal·lació</p>
-<img width="804" height="680" alt="Captura de pantalla de 2025-10-16 13-17-34" src="https://github.com/user-attachments/assets/9a45ed83-2027-492f-abf3-3e09fc674164"/>
+<img width="600" height="550 " alt="Captura de pantalla de 2025-10-16 13-17-34" src="https://github.com/user-attachments/assets/9a45ed83-2027-492f-abf3-3e09fc674164"/>
 <p>Creem les particions i fem l'última part de la configuració</p>
 <img width="804" height="680" alt="Captura de pantalla de 2025-10-16 13-22-53" src="https://github.com/user-attachments/assets/164d7c0c-640a-4101-9517-676590408b8c"/>
 <p>Acabem la configuració i quan acabi la instal·lació ja tindrem la maquina preparada</p>
@@ -41,6 +41,13 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca
 <img width="550" height="424" alt="Captura de pantalla de 2025-09-23 13-42-32" src="https://github.com/user-attachments/assets/5fb2e1fc-5282-494f-aee5-d2e70b9e1291" />
 
 ## Punts de restauració
+<img width="736" height="483" alt="Captura de pantalla de 2025-10-07 13-22-46" src="https://github.com/user-attachments/assets/a4307b36-ca7d-413c-9c0c-c8af565cafc0" />
+<img width="799" height="667" alt="Captura de pantalla de 2025-10-07 13-17-27" src="https://github.com/user-attachments/assets/5043cf76-de7c-4731-af11-da717b01a905" />
+<img width="602" height="667" alt="Captura de pantalla de 2025-10-07 13-16-54" src="https://github.com/user-attachments/assets/ff0a0f7e-5102-4241-936b-c1410edf6a2b" />
+<img width="602" height="667" alt="Captura de pantalla de 2025-10-07 13-15-45" src="https://github.com/user-attachments/assets/aa9e517d-09a7-4ea7-8dcc-3a2b2b99c985" />
+<img width="734" height="281" alt="Captura de pantalla de 2025-10-07 13-14-21" src="https://github.com/user-attachments/assets/b32c2d69-596c-4bb8-b715-476f016e614c" />
+<img width="734" height="482" alt="Captura de pantalla de 2025-10-07 13-12-39" src="https://github.com/user-attachments/assets/ee1c61ce-840b-42b9-b620-58c1d4003cae" />
+<img width="734" height="482" alt="Captura de pantalla de 2025-10-07 13-03-07" src="https://github.com/user-attachments/assets/46c4ca8b-ac4e-45ba-9f5c-59f43c7a5dd2" />
 
 ## Configuració de xarxa
 

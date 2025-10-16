@@ -12,7 +12,8 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 <img width="600" height="550" alt="Captura de pantalla de 2025-10-16 12-37-48" src="https://github.com/user-attachments/assets/0253059c-5386-4767-b769-e4c4bb54b16d" />
 <p>Fem la configuració nessessaria per a windows</p>
 <img width="600" height="550" alt="Captura de pantalla de 2025-10-16 12-42-05" src="https://github.com/user-attachments/assets/6c736659-4269-4b60-a172-f32670cad653" />
-
+<p>Aqui veiem l'escriptori de windows</p>
+<img width="1023" height="853" alt="Captura de pantalla de 2025-10-16 13-13-33" src="https://github.com/user-attachments/assets/cd765d48-718c-4b5e-ae3c-6863379702f3" />
 
 ## Instal·lació del SO Windows
 <p>1. Igual que amb la d'Ubuntu, crearem la màquina virtual i procedirem a instal·lar Windows, </p>

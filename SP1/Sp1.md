@@ -9,7 +9,7 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 <p>2. El segon pas és instalar el sistema operatiu i continuar amb la configuració que ens demani</p>
 <img width="600" height="550" alt="Captura de pantalla de 2025-09-23 13-30-07" src="https://github.com/user-attachments/assets/bf7b1c3a-4d5f-4b5f-b0b5-044f2f5f3330" />
 <p>3. Fem la instal·lació de windows.</p>
-<img width="1023" height="853" alt="Captura de pantalla de 2025-10-16 12-37-48" src="https://github.com/user-attachments/assets/0253059c-5386-4767-b769-e4c4bb54b16d" />
+<img width="600" height="550" alt="Captura de pantalla de 2025-10-16 12-37-48" src="https://github.com/user-attachments/assets/0253059c-5386-4767-b769-e4c4bb54b16d" />
 
 
 ## Instal·lació del SO Windows

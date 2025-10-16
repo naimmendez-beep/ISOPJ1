@@ -6,7 +6,7 @@ title: "Sprint 1: Instal·lació i Configuració Inicial"
 ## Virtualització i instal·lació del SO Ubuntu
 <p>1. El primer pas serà crear i configurar la maquina virtual posant els paràmetres adequats, com seleccionar la memòria RAM que volem utilitzar, el número de processors que volem utilitzar, la memòria de video per pode veure tota la pantalla, i el més important, a emmagatzematge, la iso del sistema operatiu que utilitzarem</p>
 <img width="600" height="550" alt="Captura de maquina virtual5" src="https://github.com/user-attachments/assets/189d2a14-aa5a-46ce-bc65-61060cf1df55" />
-<p>2. El segon pas és instalar el sistema operatiu i continuar amb la configuració que ens demani</p>
+<p>2. El segon pas és instalar el sistema operatiu de Linux i continuar amb la configuració que ens demani</p>
 <img width="600" height="550" alt="Captura de pantalla de 2025-09-23 13-30-07" src="https://github.com/user-attachments/assets/bf7b1c3a-4d5f-4b5f-b0b5-044f2f5f3330" />
 <p>3. Fem la instal·lació de windows. I anem fent tota la configuració</p>
 <img width="600" height="550" alt="Captura de pantalla de 2025-10-16 12-37-48" src="https://github.com/user-attachments/assets/0253059c-5386-4767-b769-e4c4bb54b16d" />

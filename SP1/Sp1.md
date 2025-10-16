@@ -41,15 +41,17 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca
 <img width="550" height="424" alt="Captura de pantalla de 2025-09-23 13-42-32" src="https://github.com/user-attachments/assets/5fb2e1fc-5282-494f-aee5-d2e70b9e1291" />
 
 ## Punts de restauració
-<img width="736" height="483" alt="Captura de pantalla de 2025-10-07 13-22-46" src="https://github.com/user-attachments/assets/a4307b36-ca7d-413c-9c0c-c8af565cafc0" />
-<img width="799" height="667" alt="Captura de pantalla de 2025-10-07 13-17-27" src="https://github.com/user-attachments/assets/5043cf76-de7c-4731-af11-da717b01a905" />
-<img width="602" height="667" alt="Captura de pantalla de 2025-10-07 13-16-54" src="https://github.com/user-attachments/assets/ff0a0f7e-5102-4241-936b-c1410edf6a2b" />
-<img width="602" height="667" alt="Captura de pantalla de 2025-10-07 13-15-45" src="https://github.com/user-attachments/assets/aa9e517d-09a7-4ea7-8dcc-3a2b2b99c985" />
-<img width="734" height="281" alt="Captura de pantalla de 2025-10-07 13-14-21" src="https://github.com/user-attachments/assets/b32c2d69-596c-4bb8-b715-476f016e614c" />
-<img width="734" height="482" alt="Captura de pantalla de 2025-10-07 13-12-39" src="https://github.com/user-attachments/assets/ee1c61ce-840b-42b9-b620-58c1d4003cae" />
-<img width="734" height="482" alt="Captura de pantalla de 2025-10-07 13-03-07" src="https://github.com/user-attachments/assets/46c4ca8b-ac4e-45ba-9f5c-59f43c7a5dd2" />
+<img width="736" height="483" alt="Captura de pantalla de 2025-10-07 13-22-46" src="https://github.com/user-attachments/assets/1ec1dbc2-9049-4bd4-9fa7-5288fe58e1f7" />
+<img width="799" height="667" alt="Captura de pantalla de 2025-10-07 13-17-27" src="https://github.com/user-attachments/assets/d894cb35-ecff-43e1-8a0c-b91a1ac783b0" />
+<img width="602" height="667" alt="Captura de pantalla de 2025-10-07 13-16-54" src="https://github.com/user-attachments/assets/87dbd0c4-8bf1-4fef-a1af-c6b096f1ebcc" />
+<img width="602" height="667" alt="Captura de pantalla de 2025-10-07 13-15-45" src="https://github.com/user-attachments/assets/2faadde5-12da-4ab3-8028-87e539db9b4b" />
+<img width="734" height="281" alt="Captura de pantalla de 2025-10-07 13-14-21" src="https://github.com/user-attachments/assets/a639c9b6-480b-4d2d-bca7-f70ee2e652b3" />
+<img width="734" height="482" alt="Captura de pantalla de 2025-10-07 13-12-39" src="https://github.com/user-attachments/assets/b9ff3d61-4b0f-45d9-8ffa-c2bd1470077f" />
+<img width="734" height="482" alt="Captura de pantalla de 2025-10-07 13-03-07" src="https://github.com/user-attachments/assets/a608727e-9534-48a7-9ee9-8e0a38f66ff1" />
+
 
 ## Configuració de xarxa
+<img width="873" height="511" alt="image" src="https://github.com/user-attachments/assets/ab0c0364-b187-40a4-905a-709322d2eef1"/>
 
 ## Comandes generals i instal·lacions
 ## Atribució y condicions

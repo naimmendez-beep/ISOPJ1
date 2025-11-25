@@ -23,6 +23,12 @@ Sistemes de fitxers i particions
 
 <img width="845" height="599" alt="imatge" src="https://github.com/user-attachments/assets/86742c70-b3d8-42b7-9a9f-dfde9263b293" />
 
+<img width="273" height="65" alt="imatge" src="https://github.com/user-attachments/assets/e7cad38c-2109-4d76-9aac-ca7b1d1dfa8c" />
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/659e0cb5-d12e-4e92-bdc1-98a00d2e9fb1" />
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/83513d93-9fdb-4cc9-a67e-2782cfe4940b" />
+
 *Gestió de processos
 *Gestió d'usuaris i grups i permisos
 *Còpies de seguretat i automatització de tasques

@@ -34,6 +34,10 @@ title: "Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió 
 
 <img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/f8f73cf0-57fe-44c2-9247-ccbf528c3eee" />
 
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/f7d8d7af-5bbc-4eb9-a4f5-18dc8653dc88" />
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/79e47249-fe51-43d2-919a-70aeab277814" />
+
 *Gestió de processos
 *Gestió d'usuaris i grups i permisos
 *Còpies de seguretat i automatització de tasques

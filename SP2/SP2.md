@@ -2,8 +2,8 @@
 layout: default
 title: "Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió de Fitxers"
 ---
-Sistemes de fitxers i particions
-*Mida sector: el sector és la unitat mínima fisica del disc on es pot guardar les dades i per defecte son 512 Bytes
+<t>Sistemes de fitxers i particions</t>
+<p>*Mida sector: el sector és la unitat mínima fisica del disc on es pot guardar les dades i per defecte son 512 Bytes
 *Mida blcok: és la unitat logica on es guarden les dades al 50, per defecte són 4096 bytes. Es pot cambiar la mida quena es formata el disc.
   La mida del block o cluster i el sistema de fitxes pot ser diferent a cada partició del mateix disc.
 *Fragmentacio interna: es quan es desaprofita espai perque els blocs son massa grans per al que s'ha de guardar dins
@@ -15,6 +15,7 @@ Sistemes de fitxers i particions
 *Gestió de particions
 -GPARTED
 -comandes
+</p>
 <img width="853" height="510" alt="imatge" src="https://github.com/user-attachments/assets/ac015f40-023f-44d2-bc51-8245525388b8"/>
 
 <img width="851" height="125" alt="imatge" src="https://github.com/user-attachments/assets/45191349-7c16-44c5-a6cf-55feab66d291"/>
@@ -28,6 +29,10 @@ Sistemes de fitxers i particions
 <img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/659e0cb5-d12e-4e92-bdc1-98a00d2e9fb1" />
 
 <img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/83513d93-9fdb-4cc9-a67e-2782cfe4940b" />
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/75fa46ee-0d08-45f4-b280-8e80efc4098f" />
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/f8f73cf0-57fe-44c2-9247-ccbf528c3eee" />
 
 *Gestió de processos
 *Gestió d'usuaris i grups i permisos

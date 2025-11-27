@@ -38,6 +38,18 @@ title: "Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió 
 
 <img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/79e47249-fe51-43d2-919a-70aeab277814" />
 
+<img width="738" height="481" alt="image" src="https://github.com/user-attachments/assets/55bc29a4-02c0-4109-8d9c-97e303d6b36e" />
+
+<p>Podem treure els permisos per a certs usuaris i no deixar que entrin a certes carpetes, utilitzant setfacl i getfacl</p>
+<img width="738" height="221" alt="image" src="https://github.com/user-attachments/assets/8e23274e-8825-4ff7-b0f8-d140d1c44083" />
+
+<p>>Veiem que no deixa entrar a la carpeta</p>
+<img width="433" height="80" alt="image" src="https://github.com/user-attachments/assets/104ac7aa-485c-4806-ad3f-69febf2bb6dc" />
+
+<p>Es pot donar o treure permisos, tant a directoris com a arxius</p>
+<img width="546" height="438" alt="image" src="https://github.com/user-attachments/assets/0545fd02-0aba-4816-8ef8-651d935f88a8" />
+
+
 *Gestió de processos
 *Gestió d'usuaris i grups i permisos
 *Còpies de seguretat i automatització de tasques

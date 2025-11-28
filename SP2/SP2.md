@@ -15,7 +15,7 @@ Utilitzem la comanda tune2fs amb el grep block per veure les diferents carpetes 
 
 Per a la fragmentacio externa amb la comanda "e4defrag" ens indica si una partició fa falta fragmentar.
 
-<img width="600" height="550" alt="imatge" src="https://github.com/user-attachments/assets/fe221678-32e0-42b4-82c9-70854e596d7b" />
+<img width="600" height="400" alt="imatge" src="https://github.com/user-attachments/assets/fe221678-32e0-42b4-82c9-70854e596d7b" />
 
 # App Gparted
 

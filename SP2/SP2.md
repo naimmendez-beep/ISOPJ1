@@ -18,7 +18,7 @@ title: "Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió 
 </p>Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor.
 Hem de </p>
 <img width="853" height="510" alt="imatge" src="https://github.com/user-attachments/assets/ac015f40-023f-44d2-bc51-8245525388b8"/>
-
+<p>Utilitzem la comanda tune2fs amb el grep block per veure les diferents carpetes creades</p>
 <img width="851" height="125" alt="imatge" src="https://github.com/user-attachments/assets/45191349-7c16-44c5-a6cf-55feab66d291"/>
 
 <img width="600" height="550" alt="imatge" src="https://github.com/user-attachments/assets/fe221678-32e0-42b4-82c9-70854e596d7b" />

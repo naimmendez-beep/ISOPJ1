@@ -31,20 +31,20 @@ Amb comandes seria utilitzar la comanda fdisk podem crear i modificar particions
 
 *Grups*
 
-Un grup agrupa diversos usuaris amb permisos comuns sobre arxius o directoris.
+A un grup s'agrupen diversos usuaris amb permisos comuns sobre arxius o directoris.
 Cada usuari pertany a:
 
-- un grup principal, i
-- pot formar part de grups secundaris.
+- un grup principal
+- o pot formar part de grups secundaris.
 
 Els grups permeten definir permisos col·lectius, per exemple, donar accés a una carpeta compartida sense fer-ho usuari per usuari.
 
-Fitxer       | Funció principal                               |
+| Fitxer       | Funció principal                               |
 
-/etc/passwd  | Llista tots els usuaris definits al sistema.   |
-/etc/shadow  | Desa les contrasenyes xifrades dels usuaris.   |
-/etc/group   | Conté la llista de grups i els seus membres.   |
-/etc/gshadow | Desa contrasenyes i administradors dels grups. |
+| /etc/passwd  | Llista tots els usuaris definits al sistema.   |
+| /etc/shadow  | Desa les contrasenyes xifrades dels usuaris.   |
+| /etc/group   | Conté la llista de grups i els seus membres.   |
+| /etc/gshadow | Desa contrasenyes i administradors dels grups. |
 
 *Usuaris*
 

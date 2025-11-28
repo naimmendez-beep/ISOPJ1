@@ -15,8 +15,7 @@ title: "Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió 
 ## *Gestió de particions
 ## -GPARTED
 ## -comandes
-<p>Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor.
-Hem de </p>
+<p>Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor. Hem de </p>
 
 <img width="853" height="510" alt="imatge" src="https://github.com/user-attachments/assets/ac015f40-023f-44d2-bc51-8245525388b8"/>
 <p>Utilitzem la comanda tune2fs amb el grep block per veure les diferents carpetes creades per al sda5</p>

@@ -7,11 +7,11 @@ title: "Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió 
 
 Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor. 
 
-<img width="853" height="510" alt="imatge" src="https://github.com/user-attachments/assets/ac015f40-023f-44d2-bc51-8245525388b8"/>
+<img width="550" height="500" alt="imatge" src="https://github.com/user-attachments/assets/ac015f40-023f-44d2-bc51-8245525388b8"/>
 
 Utilitzem la comanda tune2fs amb el grep block per veure les diferents carpetes creades per al sda5
 
-<img width="851" height="125" alt="imatge" src="https://github.com/user-attachments/assets/45191349-7c16-44c5-a6cf-55feab66d291"/>
+<img width="750" height="125" alt="imatge" src="https://github.com/user-attachments/assets/45191349-7c16-44c5-a6cf-55feab66d291"/>
 
 Per a la fragmentacio externa amb la comanda "e4defrag" ens indica si una partició fa falta fragmentar.
 
@@ -23,7 +23,7 @@ Per a la fragmentacio externa amb la comanda "e4defrag" ens indica si una partic
 
    Permet triar el sistema de fitxers (FAT32, EXT4, NTFS...) però no permet canviar la mida del bloc.
 
-<img width="845" height="599" alt="imatge" src="https://github.com/user-attachments/assets/86742c70-b3d8-42b7-9a9f-dfde9263b293" />
+<img width="550" height="500" alt="imatge" src="https://github.com/user-attachments/assets/86742c70-b3d8-42b7-9a9f-dfde9263b293" />
 
 Amb comandes seria utilitzar la comanda fdisk podem crear i modificar particions manuals.
 

@@ -48,8 +48,6 @@ Fitxer       | Funció principal                               |
 
 *Usuaris*
 
-
-
 Per crear usuaris tenim dues comandes, adduser o useradd, amb adduser demana una serie d'informació bàsica sobre l'usuari com podem veure a la captura. També faig una comprovació de permisos.
 
 <img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/55bc29a4-02c0-4109-8d9c-97e303d6b36e" />
@@ -64,9 +62,16 @@ Es pot donar o treure permisos, tant a directoris com a arxius
 En sistemes UNIX, els permisos fan part del sistema. Sense ells no podem visualitzar, alterar o executar fitxers, entrar en directoris o llistar-ne el contingut.
 
 - El primer indica si es directori (d) o fitxer (-)
-- Els tres primers atributs després del primer (que identifica directoris), són per a **propietaris**
-- Els tres següents són per a **grup**
+- Els tres primers atributs després del primer (que identifica directoris), són per a *propietaris*
+- Els tres següents són per a *grup*
 - Els ultims són per als altres usuaris/ grups
+
+| Fitxer       | Funció principal                               |
+| ------------ | ---------------------------------------------- |
+| /etc/passwd  | Llista tots els usuaris definits al sistema.   |
+| /etc/shadow  | Desa les contrasenyes xifrades dels usuaris.   |
+| /etc/group   | Conté la llista de grups i els seus membres.   |
+| /etc/gshadow | Desa contrasenyes i administradors dels grups. |
 
 Per mirar quins permisos tenim a un directori podem utilitzar la comanda umask
 

@@ -3,7 +3,7 @@ layout: default
 title: "Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió de Fitxers"
 ---
 <t>Sistemes de fitxers i particions</t>
-<p>*Mida sector: el sector és la unitat mínima fisica del disc on es pot guardar les dades i per defecte son 512 Bytes
+## *Mida sector: el sector és la unitat mínima fisica del disc on es pot guardar les dades i per defecte son 512 Bytes
 ## *Mida blcok: és la unitat logica on es guarden les dades al 50, per defecte són 4096 bytes. Es pot cambiar la mida quena es formata el disc.
 ##  La mida del block o cluster i el sistema de fitxes pot ser diferent a cada partició del mateix disc.
 ## *Fragmentacio interna: es quan es desaprofita espai perque els blocs son massa grans per al que s'ha de guardar dins
@@ -15,8 +15,9 @@ title: "Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió 
 ## *Gestió de particions
 ## -GPARTED
 ## -comandes
-</p>Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor.
+<p>Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor.
 Hem de </p>
+
 <img width="853" height="510" alt="imatge" src="https://github.com/user-attachments/assets/ac015f40-023f-44d2-bc51-8245525388b8"/>
 <p>Utilitzem la comanda tune2fs amb el grep block per veure les diferents carpetes creades per al sda5</p>
 <img width="851" height="125" alt="imatge" src="https://github.com/user-attachments/assets/45191349-7c16-44c5-a6cf-55feab66d291"/>

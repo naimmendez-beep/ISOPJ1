@@ -46,6 +46,8 @@ Els grups permeten definir permisos col·lectius, per exemple, donar accés a un
 | /etc/group   | Conté la llista de grups i els seus membres.   |
 | /etc/gshadow | Desa contrasenyes i administradors dels grups. |
 
+
+
 *Usuaris*
 
 Per crear usuaris tenim dues comandes, adduser o useradd, amb adduser demana una serie d'informació bàsica sobre l'usuari com podem veure a la captura. També faig una comprovació de permisos.

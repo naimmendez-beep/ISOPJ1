@@ -5,6 +5,23 @@ title: "Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió 
 
 # Sistemes de fitxers i particions
 
+## Mida sector
+
+La unitat mínima fisica del disc on es guarden totes les dades, per defecte són 512 bytes, i no es pot cambiar la mida.
+
+## Mida block
+
+És la unitat mínima lògica on es guarden les dades del Sistema Operatiu, normalment solen ser de 4096 bytes, i es pot canviar la mida quan es formateja el disc.
+També anomentat clúster, i el sistema de fitxers pot ser diferent a cada partició del disc.
+
+Exemple:
+
+- En aquest cas podem veure que la mida amb la primera comanda el que pesa el text són 5 bytes, i amb la segona comanda podem observar la mida en el disc, que és l'espai mínim que el sistema de fitxers reserva per a un fitxer.
+
+<img width="480" height="270" alt="imatge" src="https://github.com/user-attachments/assets/d24f2dbe-64b5-4455-87a5-ed271c11cece" />
+
+# Gestió de Particions
+
 Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor. 
 
 <img width="550" height="500" alt="imatge" src="https://github.com/user-attachments/assets/ac015f40-023f-44d2-bc51-8245525388b8"/>

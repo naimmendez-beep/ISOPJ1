@@ -88,11 +88,27 @@ Amb comandes seria utilitzar la comanda fdisk, podem crear i modificar particion
 
 Utilitzem el fdisk i seleccionem el disc que volem fer la particio 
 
-<img width="731" height="478" alt="imatge" src="https://github.com/user-attachments/assets/81b9d6f0-07e7-4b48-9884-599680748a64" />
+<img width="731" height="488" alt="imatge" src="https://github.com/user-attachments/assets/8006bbc4-0c97-44d0-a5b4-ae21eabf900b" />
 
 Creem la partició
 
+<img width="731" height="324" alt="imatge" src="https://github.com/user-attachments/assets/e56b8f94-4dc4-44b6-9bc2-6ae8918bed1d" />
 
+Aqui podem observar que esta creat correctament
+
+<img width="690" height="256" alt="imatge" src="https://github.com/user-attachments/assets/19b5aeb7-3823-42b8-8076-4fd027e475cd" />
+
+I amb la comanda mkfs.ext4 podem canviar la mida del bloc, podem posar la mida que vulguem. 
+
+<img width="690" height="256" alt="imatge" src="https://github.com/user-attachments/assets/7b6be023-2bd5-4d0b-b474-ea25f2b9b67d" />
+
+I podem comprovar que s'han fet els canvis correctament amb la comanda 'tune2fs'
+
+<img width="563" height="97" alt="imatge" src="https://github.com/user-attachments/assets/7085df75-dc36-4f7a-8299-206cbe4450ee" />
+
+I amb NTFS per a que Windows ho reconeixi.
+
+<img width="564" height="109" alt="imatge" src="https://github.com/user-attachments/assets/91a69f98-31f1-45d9-a0b9-57e6fbdc14ea" />
 
 
 # Grups, Usuaris i Permisos

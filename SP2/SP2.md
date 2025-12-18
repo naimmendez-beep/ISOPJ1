@@ -159,34 +159,6 @@ En sistemes UNIX, els permisos fan part del sistema. Sense ells no podem visuali
 | /etc/group   | Conté la llista de grups i els seus membres.   |
 | /etc/gshadow | Desa contrasenyes i administradors dels grups. |
 
-# Fitxers importants
-
-En linux, la informació d'usuaris i grups es gestiona de manera centralitzada mitjançant fitxers de configuració de text ubicats dins del directori /etc.
-
-/etc/passwd
-<img width="723" height="454" alt="imatge" src="https://github.com/user-attachments/assets/5b1c27b1-522d-48ad-9b96-f4eadb8e1d7d" />
-
-Cada línia representa un usuari i conté 7 camps separats per dos punts, dins trobem els usuaris que poden accedir a aquest sistema:
-
-nom_usuari:x:UID:GID:GECOS:directori_home:shell 
-          
-El primer que trobem es el nom de l'usuari, la contrasenya, UID és el número d'identificació, GID el número del grup al que pertany, GECOS és la informació opcional sobre l'usuari, directori_home és el directori personal de l'usuari i la shell és l'interpret d'ordres que s'executa en iniciar
-
-/etc/shadow
-<img width="723" height="468" alt="imatge" src="https://github.com/user-attachments/assets/d2ad75f3-5977-45d3-8c17-acf46a5de7a3" />
-
-Aquest arxiu guarda l'informació de les contrasenys dels usuaris i polítiques d'expiració. És un arxiu segur que només pot llegir l'usuari root.
-
-Cada línia torna a representar cada usuari i conté 9 camps separats per dos punts.
-
-/etc/group
-<img width="723" height="468" alt="imatge" src="https://github.com/user-attachments/assets/3e5a8679-4cf7-4d08-bf12-ec1e953d9cdb" />
-
-L'arxiu /etc/group conté la informació dels grups del sistema i els seus membres. Defineix els grups d'usuaris i les seves relacions.
-
-Cada línia representa un grup i conté 4 camps separats per dos punts
-
-
 Per mirar quins permisos tenim a un directori podem utilitzar la comanda umask
 
 <img width="273" height="65" alt="imatge" src="https://github.com/user-attachments/assets/e7cad38c-2109-4d76-9aac-ca7b1d1dfa8c" />
@@ -222,6 +194,75 @@ Veiem que no deixa entrar a la carpeta
 I entrant a un usuari concret veiem que no tenim permisos
 
 <img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/79e47249-fe51-43d2-919a-70aeab277814" />
+
+# Fitxers importants
+
+En linux, la informació d'usuaris i grups es gestiona de manera centralitzada mitjançant fitxers de configuració de text ubicats dins del directori /etc.
+
+/etc/passwd
+
+<img width="723" height="454" alt="imatge" src="https://github.com/user-attachments/assets/5b1c27b1-522d-48ad-9b96-f4eadb8e1d7d" />
+
+Cada línia representa un usuari i conté 7 camps separats per dos punts, dins trobem els usuaris que poden accedir a aquest sistema:
+
+nom_usuari:x:UID:GID:GECOS:directori_home:shell 
+          
+El primer que trobem es el nom de l'usuari, la contrasenya, UID és el número d'identificació, GID el número del grup al que pertany, GECOS és la informació opcional sobre l'usuari, directori_home és el directori personal de l'usuari i la shell és l'interpret d'ordres que s'executa en iniciar
+
+/etc/shadow
+
+<img width="723" height="468" alt="imatge" src="https://github.com/user-attachments/assets/d2ad75f3-5977-45d3-8c17-acf46a5de7a3" />
+
+Aquest arxiu guarda l'informació de les contrasenys dels usuaris i polítiques d'expiració. És un arxiu segur que només pot llegir l'usuari root.
+
+Cada línia torna a representar cada usuari i conté 9 camps separats per dos punts.
+
+/etc/group
+
+<img width="723" height="468" alt="imatge" src="https://github.com/user-attachments/assets/3e5a8679-4cf7-4d08-bf12-ec1e953d9cdb" />
+
+L'arxiu /etc/group conté la informació dels grups del sistema i els seus membres. Defineix els grups d'usuaris i les seves relacions.
+
+Cada línia representa un grup i conté 4 camps separats per dos punts.
+
+/etc/gshadow 
+
+<img width="723" height="473" alt="imatge" src="https://github.com/user-attachments/assets/3a9a6172-0ecc-404d-b52e-a3d305987da6" />
+
+Al gshadow es guarda l'informació segura dels grups, incloent contrasenyes de grups i administradors, diguèssim que és el fitxer /etc/group però segura.
+
+/etc/skel
+
+El directori que conté els arxius de configuració dels usuaris és el /etc/skel, quan creeu un nou usuari al Linux (usant ordres com useradd o adduser), el sistema no només crea una entrada al fitxer de contrasenyes; també heu de configurar un entorn de treball inicial.
+
+En lloc de crear fitxers de configuració des de zero cada vegada, el sistema simplement fa un "copy-paste" de tot el que hi ha dins de /etc/skel cap al nou directori /home/nou_usuari, i per això és un dels directoris més importants. 
+
+<img width="723" height="237" alt="imatge" src="https://github.com/user-attachments/assets/604206ab-1e7b-4b23-b04f-6032aec25572" />
+
+El '.bashrc' és, probablement, el fitxer més important de la llista per a un usuari comú.
+
+Què fa: S'executa cada vegada que l'usuari obre una terminal interactiva nova.
+
+Per a què serveix: S'utilitza per definir "àlies" (abreviatures de comandes), personalitzar el color i el format del text de la línia de comandes (el prompt) o carregar variables d'entorn.
+    
+<img width="723" height="475" alt="imatge" src="https://github.com/user-attachments/assets/da7b4254-aaa7-47bc-8d83-54c9db6cb6d0" />
+
+El '.profile' 
+
+Què fa: Aquest fitxer s'executa només una vegada, en el moment en què l'usuari inicia la sessió al sistema (per exemple, en fer el login gràfic o per SSH).
+
+Per a què serveix: Normalment s'utilitza per configurar camins de programes (PATH) o paràmetres que han d'estar disponibles durant tota la sessió, no només dins de la terminal. Sovint conté un codi que crida al fitxer .bashrc.
+
+<img width="723" height="475" alt="imatge" src="https://github.com/user-attachments/assets/7e56a050-51e5-4a00-bf2f-b7853c4f1854" />
+
+El '.bash_logout'
+
+Què fa: S'executa automàticament quan l'usuari tanca la sessió de la terminal (quan surts de la terminal o fas un exit).
+
+Per a què serveix: Sol estar gairebé buit, però es pot fer servir per a tasques de neteja, com ara esborrar els fitxers temporals creats durant la sessió o netejar la pantalla per seguretat.
+
+<img width="723" height="475" alt="imatge" src="https://github.com/user-attachments/assets/1bb60c38-204a-4357-8c9b-5a9cc538049f" />
+
 
 
 # Gestió de processos
@@ -263,3 +304,11 @@ Els grups permeten definir permisos col·lectius, per exemple, donar accés a un
 | /etc/group   | Conté la llista de grups i els seus membres.   |
 | /etc/gshadow | Desa contrasenyes i administradors dels grups. |
 
+# Comandes Bàsiques
+
+## Adduser
+
+
+
+## Deluser
+<img width="723" height="304" alt="imatge" src="https://github.com/user-attachments/assets/d470d46e-16e3-4a13-8aad-599524cf1c58" />

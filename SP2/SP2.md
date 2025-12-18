@@ -159,6 +159,23 @@ En sistemes UNIX, els permisos fan part del sistema. Sense ells no podem visuali
 | /etc/group   | Conté la llista de grups i els seus membres.   |
 | /etc/gshadow | Desa contrasenyes i administradors dels grups. |
 
+# Fiyxers importants
+
+En linux, la informació d'usuaris i grups es gestiona de manera centralitzada mitjançant fitxers de configuració de text ubicats dins del directori /etc.
+
+/etc/passwd
+<img width="723" height="454" alt="imatge" src="https://github.com/user-attachments/assets/5b1c27b1-522d-48ad-9b96-f4eadb8e1d7d" />
+
+Cada línia representa un usuari i conté 7 camps separats per dos punts, dins trobem els usuaris que poden accedir a aquest sistema:
+
+nom_usuari:x:UID:GID:GECOS:directori_home:shell 
+          
+El primer que trobem es el nom de l'usuari, la contrasenya, UID és el número d'identificació, GID el número del grup al que pertany, GECOS és la informació opcional sobre l'usuari, directori_home és el directori personal de l'usuari i la shell és l'interpret d'ordres que s'executa en iniciar
+
+/etc/shadow
+<img width="723" height="468" alt="imatge" src="https://github.com/user-attachments/assets/d2ad75f3-5977-45d3-8c17-acf46a5de7a3" />
+
+
 Per mirar quins permisos tenim a un directori podem utilitzar la comanda umask
 
 <img width="273" height="65" alt="imatge" src="https://github.com/user-attachments/assets/e7cad38c-2109-4d76-9aac-ca7b1d1dfa8c" />

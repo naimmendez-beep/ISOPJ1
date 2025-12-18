@@ -20,9 +20,17 @@ Exemple:
 
 <img width="480" height="270" alt="imatge" src="https://github.com/user-attachments/assets/d24f2dbe-64b5-4455-87a5-ed271c11cece" />
 
+# Tipus de formateig
+
+Baix nivell: Borra sistema de fitxers, borra formateig, etc. És a dir, que borra totes les dades i el deixa com si fós nou, hem de tenir en compte que desde el sistema operatiu no es pot formatar, es necessiten programes adequats.
+
+Mig nivell: Només borra sistemes de fitxers, però si hi han sectors defectuosos els marca pero no els arregla.
+
+Alt nivell: El format d'alt nivell només borra el sistema de fitxers.
+
 # Gestió de Particions
 
-Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor. 
+Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor. Utilitzarem la comanda fdisk
 
 <img width="550" height="500" alt="imatge" src="https://github.com/user-attachments/assets/ac015f40-023f-44d2-bc51-8245525388b8"/>
 

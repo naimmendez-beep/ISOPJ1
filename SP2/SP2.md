@@ -78,11 +78,22 @@ Aqui posem l'opció NTFS i podem canviar la mida de la partició que volem.
 I per últim hem d'aplicar els canvis, per fer-ho cliquem el tick verd de adalt i apliquem canvis
 
 <img width="780" height="535" alt="imatge" src="https://github.com/user-attachments/assets/629bc579-72f5-41ba-b119-80483fc7520c" />
-i apliquem.
+
+I apliquem.
+
 <img width="780" height="535" alt="imatge" src="https://github.com/user-attachments/assets/3a0943b7-a6a8-403a-bf19-545c311a9e8c" />
 
 
-Amb comandes seria utilitzar la comanda fdisk podem crear i modificar particions manuals.
+Amb comandes seria utilitzar la comanda fdisk, podem crear i modificar particions manuals.
+
+Utilitzem el fdisk i seleccionem el disc que volem fer la particio 
+
+<img width="731" height="478" alt="imatge" src="https://github.com/user-attachments/assets/81b9d6f0-07e7-4b48-9884-599680748a64" />
+
+Creem la partició
+
+
+
 
 # Grups, Usuaris i Permisos
 

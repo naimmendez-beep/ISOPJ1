@@ -30,11 +30,11 @@ Alt nivell: El format d'alt nivell només borra el sistema de fitxers.
 
 # Gestió de Particions
 
-Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor. Utilitzarem la comanda fdisk
+Començarem amb les particions de disc, per poder emmagatzemar al mateix disc, però en diferents parts i organitzar-lo millor. Utilitzant la comanda fdisk -l podem veure l'espai.
 
 <img width="550" height="500" alt="imatge" src="https://github.com/user-attachments/assets/ac015f40-023f-44d2-bc51-8245525388b8"/>
 
-Utilitzem la comanda tune2fs amb el grep block per veure les diferents carpetes creades per al sda5
+Utilitzem la comanda tune2fs amb el grep block per veure les diferents carpetes creades per al sda5 i veure la mida del bloc de la partició.
 
 <img width="750" height="125" alt="imatge" src="https://github.com/user-attachments/assets/45191349-7c16-44c5-a6cf-55feab66d291"/>
 
@@ -42,13 +42,45 @@ Per a la fragmentacio externa amb la comanda "e4defrag" ens indica si una partic
 
 <img width="600" height="400" alt="imatge" src="https://github.com/user-attachments/assets/fe221678-32e0-42b4-82c9-70854e596d7b" />
 
+I en cas de voler fragmentar-ho podem executar-la sense el paràmetre '-c'.
+
 # App Gparted
+
+Hem de descarregar l'eina amb la comanda 'sudo apt install gparted' i un cop descarregada l'executem, posem la nostra contrasenya i ja la podem fer servir. 
+
+<img width="480" height="270" alt="imatge" src="https://github.com/user-attachments/assets/d9709fc1-5a22-4acf-aec7-b3d70d7ed504" />
 
 És una eina visual per crear, eliminar o formatar particions.
 
    Permet triar el sistema de fitxers (FAT32, EXT4, NTFS...) però no permet canviar la mida del bloc.
 
-<img width="550" height="500" alt="imatge" src="https://github.com/user-attachments/assets/86742c70-b3d8-42b7-9a9f-dfde9263b293" />
+Entrem a l'eina i seleccionem el disc /dev/sdb.
+
+<img width="780" height="538" alt="imatge" src="https://github.com/user-attachments/assets/5fc54fe8-575f-4e41-b0c9-7280782ceb0b" />
+
+Seleccionem l'opció 'Dispositivo' i 'Crear tabla de particiones'.
+
+<img width="780" height="538" alt="imatge" src="https://github.com/user-attachments/assets/c1c27bd6-97f8-4e65-8e65-a25c40730636" />
+
+Ens sortirà l'avís i hem de canviar el tipus de taula de particions i posar-ho en 'gpt'.
+
+<img width="780" height="538" alt="imatge" src="https://github.com/user-attachments/assets/ea354c27-4db4-43ee-95f7-eec5ab0744d8" />
+
+Un cop ho tenim fem clic dret damunt de la partició i crear una nova.
+
+<img width="780" height="609" alt="imatge" src="https://github.com/user-attachments/assets/c82d47fe-0ead-429d-9102-8820886d54aa" />
+
+Aqui posem l'opció NTFS i podem canviar la mida de la partició que volem.
+
+<img width="780" height="535" alt="imatge" src="https://github.com/user-attachments/assets/bd237775-8274-4486-b1cd-f3fe95afcb3c" />
+
+
+I per últim hem d'aplicar els canvis, per fer-ho cliquem el tick verd de adalt i apliquem canvis
+
+<img width="780" height="535" alt="imatge" src="https://github.com/user-attachments/assets/629bc579-72f5-41ba-b119-80483fc7520c" />
+i apliquem.
+<img width="780" height="535" alt="imatge" src="https://github.com/user-attachments/assets/3a0943b7-a6a8-403a-bf19-545c311a9e8c" />
+
 
 Amb comandes seria utilitzar la comanda fdisk podem crear i modificar particions manuals.
 

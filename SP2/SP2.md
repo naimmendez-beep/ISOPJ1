@@ -159,7 +159,7 @@ En sistemes UNIX, els permisos fan part del sistema. Sense ells no podem visuali
 | /etc/group   | Conté la llista de grups i els seus membres.   |
 | /etc/gshadow | Desa contrasenyes i administradors dels grups. |
 
-# Fiyxers importants
+# Fitxers importants
 
 En linux, la informació d'usuaris i grups es gestiona de manera centralitzada mitjançant fitxers de configuració de text ubicats dins del directori /etc.
 
@@ -174,6 +174,17 @@ El primer que trobem es el nom de l'usuari, la contrasenya, UID és el número d
 
 /etc/shadow
 <img width="723" height="468" alt="imatge" src="https://github.com/user-attachments/assets/d2ad75f3-5977-45d3-8c17-acf46a5de7a3" />
+
+Aquest arxiu guarda l'informació de les contrasenys dels usuaris i polítiques d'expiració. És un arxiu segur que només pot llegir l'usuari root.
+
+Cada línia torna a representar cada usuari i conté 9 camps separats per dos punts.
+
+/etc/group
+<img width="723" height="468" alt="imatge" src="https://github.com/user-attachments/assets/3e5a8679-4cf7-4d08-bf12-ec1e953d9cdb" />
+
+L'arxiu /etc/group conté la informació dels grups del sistema i els seus membres. Defineix els grups d'usuaris i les seves relacions.
+
+Cada línia representa un grup i conté 4 camps separats per dos punts
 
 
 Per mirar quins permisos tenim a un directori podem utilitzar la comanda umask

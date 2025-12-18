@@ -264,7 +264,6 @@ Per a què serveix: Sol estar gairebé buit, però es pot fer servir per a tasqu
 <img width="723" height="475" alt="imatge" src="https://github.com/user-attachments/assets/1bb60c38-204a-4357-8c9b-5a9cc538049f" />
 
 
-
 # Gestió de processos
 
 Els processos són programes en execució dins del sistema. Cada procés té un PID (Process ID), un usuari propietari i pot estar en diferents estats (actiu, en espera, aturat...). El sistema operatiu planifica i reparteix el temps de CPU entre ells.
@@ -278,32 +277,44 @@ Els processos són programes en execució dins del sistema. Cada procés té un 
 
 A nivell pràctic, cada procés hereta permisos de l’usuari que l’ha iniciat i pot estar vinculat a un servei o a una sessió d’usuari.
 
-*Gestió d'usuaris i grups i permisos*
-La seguretat en Linux es basa en usuaris i grups, que determinen qui pot accedir o modificar arxius i processos.
+Començarem utilitzant pstree
 
-*Tipus d’usuaris*
+| Paràmetre | Funció                                              |
+| --------- | --------------------------------------------------- |
+| -p        | Mostra el PID de cada procés.                       |
+| -u        | Mostra l’usuari propietari de cada procés.          |
+| -h        | Ressalta el procés actual (útil quan es filtra).    |
+| -n        | Ordena processos per PID dins de cada arbre.        |
+| -a        | Mostra els arguments complets del procés (cmdline). |
 
-- Usuari normal: pot iniciar sessió i executar programes dins del seu espai.
-- Superusuari (root): té tots els permisos i pot gestionar el sistema sencer.
-- Usuari de servei (daemon): creat per executar serveis com www-data, mysql, sshd (no inicien sessió interactiva).
-- Usuari de sistema: similar al d’un servei, amb UID baix (<1000), reservat per processos interns.
+Veiem el pstree del root i també filtrant per la terminal
 
+<img width="736" height="756" alt="imatge" src="https://github.com/user-attachments/assets/2cff2ab8-43eb-4aad-be26-aa1b32bbd782" />
 
-Un grup agrupa diversos usuaris amb permisos comuns sobre arxius o directoris.
-Cada usuari pertany a:
+<img width="729" height="96" alt="imatge" src="https://github.com/user-attachments/assets/c71a957d-4e40-4d4c-8553-2ee69df44d5b" />
 
-- un grup principal, i
-- pot formar part de grups secundaris.
+*ps*
+Aquesta comanda mostra informació sobre una seleccio dels processos actius. Una variant seria top, que el que fa és, una actualització repetitiva de la selecció i la informació mostrada.
 
-Els grups permeten definir permisos col·lectius, per exemple, donar accés a una carpeta compartida sense fer-ho usuari per usuari.
+<img width="729" height="701" alt="imatge" src="https://github.com/user-attachments/assets/f7e0504d-8c0e-4c8d-9970-e9a8550d4de1" />
 
-| Fitxer       | Funció principal                               |
-| ------------ | ---------------------------------------------- |
-| /etc/passwd  | Llista tots els usuaris definits al sistema.   |
-| /etc/shadow  | Desa les contrasenyes xifrades dels usuaris.   |
-| /etc/group   | Conté la llista de grups i els seus membres.   |
-| /etc/gshadow | Desa contrasenyes i administradors dels grups. |
+Si volem matar o finalitzar algun d'aquests processos, hauriem d'utiltizar les comandes 'kill' 
 
+Uns exemples de la comanda podrien ser 
+
+kill PID: Demana al procés finalitzar netament
+kill -9 PID: Mata immediatament, sense netejar recursos
+kill -1 PID: Demana al procés que recarregui la configuració
+kill -STOP PID: Pausa l’execució del procés
+kill -CONT PID: Continua un procés pausat
+kill -2 PID: Senyal d’interrupció (Ctrl+C)
+kill -6 PID: Senyal d’error abortat, sovint genera core dump
+
+Aqui tenim un exemple obrint xclock al fons amb el "&" i matant-lo suau, mentres comprovem amb ps aux que s'ha mort.
+
+<img width="729" height="304" alt="imatge" src="https://github.com/user-attachments/assets/1b0b08e1-5e82-4478-b3eb-5a249f186865" />
+
+També tenim dos altres comandes més simples
 # Comandes Bàsiques
 
 ## Adduser
@@ -311,4 +322,7 @@ Els grups permeten definir permisos col·lectius, per exemple, donar accés a un
 
 
 ## Deluser
+
+Podem observar que l'usuari Manuel que habiem creat s'elimina
+
 <img width="723" height="304" alt="imatge" src="https://github.com/user-attachments/assets/d470d46e-16e3-4a13-8aad-599524cf1c58" />

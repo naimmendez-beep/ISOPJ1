@@ -130,18 +130,11 @@ Els grups permeten definir permisos col·lectius, per exemple, donar accés a un
 | /etc/group   | Conté la llista de grups i els seus membres.   |
 | /etc/gshadow | Desa contrasenyes i administradors dels grups. |
 
-
-
 *Usuaris*
 
-Per crear usuaris tenim dues comandes, adduser o useradd, amb adduser demana una serie d'informació bàsica sobre l'usuari com podem veure a la captura. També faig una comprovació de permisos.
+Per crear usuaris tenim dues comandes, adduser o useradd, amb adduser demana una serie d'informació bàsica sobre l'usuari com podem veure a la captura (la primera part de la captura).
 
 <img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/55bc29a4-02c0-4109-8d9c-97e303d6b36e" />
-
-
-Es pot donar o treure permisos, tant a directoris com a arxius
-
-<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/0545fd02-0aba-4816-8ef8-651d935f88a8" />
 
 *Permisos*
 

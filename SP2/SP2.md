@@ -159,41 +159,9 @@ En sistemes UNIX, els permisos fan part del sistema. Sense ells no podem visuali
 | /etc/group   | Conté la llista de grups i els seus membres.   |
 | /etc/gshadow | Desa contrasenyes i administradors dels grups. |
 
-Per mirar quins permisos tenim a un directori podem utilitzar la comanda umask
 
-<img width="273" height="65" alt="imatge" src="https://github.com/user-attachments/assets/e7cad38c-2109-4d76-9aac-ca7b1d1dfa8c" />
 
-També tenim l'opció d'entrar al fitxer /etc/login.defs, en aquest arxiu podem configurar coses respecte a la contrasenya de l'usuari, com la duració, o per veure si els permisos, per a tots els usuaris que entrin a aquell concret directori o fitxer, son els mateixos, però seran permisos per a tots els usuaris, no específics com amb la comanda umask.
 
-<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/659e0cb5-d12e-4e92-bdc1-98a00d2e9fb1" />
-
-A l'arxiu .profile també podem veure quins permisos tenen els usuaris que no siguin administradors
-
-<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/83513d93-9fdb-4cc9-a67e-2782cfe4940b" />
-
-Utilitzant umask podem canviar els permisos a un directori o fitxer com veiem a continuacio, podem decidir els seus permisos.
-
-<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/75fa46ee-0d08-45f4-b280-8e80efc4098f" />
-
-Veiem com els permisos han canviat
-
-<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/f8f73cf0-57fe-44c2-9247-ccbf528c3eee" />
-
-També es poden canviar desde l'arxiu /etc/login.defs
-
-<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/f7d8d7af-5bbc-4eb9-a4f5-18dc8653dc88" />
-
-Podem treure els permisos per a certs usuaris i no deixar que entrin a certes carpetes, utilitzant setfacl i getfacl
-
-<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/8e23274e-8825-4ff7-b0f8-d140d1c44083" />
-
-Veiem que no deixa entrar a la carpeta
-
-<img width="400" height="150" alt="image" src="https://github.com/user-attachments/assets/104ac7aa-485c-4806-ad3f-69febf2bb6dc" />
-
-I entrant a un usuari concret veiem que no tenim permisos
-
-<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/79e47249-fe51-43d2-919a-70aeab277814" />
 
 # Fitxers importants
 
@@ -314,7 +282,39 @@ Aqui tenim un exemple obrint xclock al fons amb el "&" i matant-lo suau, mentres
 
 <img width="729" height="304" alt="imatge" src="https://github.com/user-attachments/assets/1b0b08e1-5e82-4478-b3eb-5a249f186865" />
 
-També tenim dos altres comandes més simples
+També tenim dos altres comandes més completes, que son top i htop
+
+*top* 
+
+Top és una comanda que mostra informació en temps real sobre processos i l'ús del sistema.
+
+<img width="1050" height="927" alt="image" src="https://github.com/user-attachments/assets/6fc41355-2501-4656-a3cc-1fc06fe2ae0d" />
+
+Comandes interactives de top
+
+tecla,  accio
+q,      Sortir del programa.
+h,      Ajuda (mostra totes les tecles disponibles).
+M,      Ordena els processos per ús de Memòria.
+P,      Ordena els processos per ús de CPU (opció per defecte).
+k,      Matar un procés: et demanarà el PID del procés que vols tancar.
+1,      Mostra el detall de cada nucli de la CPU individualment.
+z,      Canvia el color de l'interfície per fer-la més llegible.
+
+*htop*
+
+Si top és l'eina clàssica de tota la vida, htop és la seva evolució moderna, interactiva i molt més visual.
+
+<img width="1050" height="1035" alt="image" src="https://github.com/user-attachments/assets/6331f9b8-34d8-4d2c-add0-95d4d8614b52" />
+
+Tecla,   Acció,    Descripció
+F3,      Search,   Busca un procés pel seu nom.
+F4,      Filter,   Filtra la llista perquè només vegis el que t'interessa.
+F5,      Tree,     "Mostra la relació ""pare-fill"" dels processos."
+F6,      Sort,     Obre un menú per triar per quina columna vols ordenar.
+F9,      Kill,     Envia un senyal al procés (com el SIGKILL) per tancar-lo.
+F10,     Quit,     Surt del programa.
+
 # Comandes Bàsiques
 
 ## Adduser
@@ -342,4 +342,92 @@ Aqui utilitzem la comanda useradd per crear un usuari i fem les comprovacions ad
 
 <img width="511" height="121" alt="image" src="https://github.com/user-attachments/assets/c6606cd2-ff0a-4dfb-be37-6630177dae18" />
 
+I veiem els canvis de la shell
 
+<img width="443" height="255" alt="image" src="https://github.com/user-attachments/assets/71ee7426-00de-4ce9-9ff8-0a86b72264f9" />
+
+## Passwd
+
+Amb la comanda passwd podem canviar les contrasenyes dels usuaris
+
+<img width="431" height="99" alt="image" src="https://github.com/user-attachments/assets/6750f450-e4e6-48df-ab03-c33f3e1be5e4" />
+
+I amb la comanda usermod -L podem bloquejar l'usuari, hem de mirar l'arxiu shadow per comprovar-ho (veiem que surt al principi un ¡), fent un cat 
+
+<img width="728" height="145" alt="image" src="https://github.com/user-attachments/assets/2c99576c-3678-412a-8abc-d12cf8c9e440" />
+
+## Addgroup
+
+Podem crear grups i canviar algunes coses utilitzant la comanda groupmod
+
+<img width="735" height="378" alt="image" src="https://github.com/user-attachments/assets/fc9b3cfc-bfb7-49c6-b41d-182b0c887d91" />
+
+Podem asignar usuaris a grups i fer algunes altres modificacions en els grups
+
+<img width="545" height="300" alt="image" src="https://github.com/user-attachments/assets/4e33de8a-273a-410d-a4dd-4762fe8058cd" />
+
+## ACL
+
+- Raons principals per utilitzar ACL
+
+   1. Flexibilitat en gestió de permisos
+
+      Superen les limitacions del model usuari/grup/altres
+
+      Permeten assignar múltiples usuaris i grups al mateix recurs
+
+      Ofereixen control granular d'accés
+
+   2. Escalabilitat en entorns complexos
+
+      Necessàries en sistemes amb múltiples usuaris i grups
+
+      Essencials en servidors compartits
+
+      Importants en entorns corporatius
+
+   3. Seguretat més precisa
+
+      Permeten implementar polítiques d'accés detallades
+
+      Milloren el principi de mínim privilegi
+
+      Faciliten l'auditoria d'accés
+
+Podem treure els permisos per a certs usuaris i no deixar que entrin a certes carpetes, utilitzant setfacl i getfacl
+
+<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/8e23274e-8825-4ff7-b0f8-d140d1c44083" />
+
+Veiem que no deixa entrar a la carpeta
+
+<img width="400" height="150" alt="image" src="https://github.com/user-attachments/assets/104ac7aa-485c-4806-ad3f-69febf2bb6dc" />
+
+I entrant a un usuari concret veiem que no tenim permisos
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/79e47249-fe51-43d2-919a-70aeab277814" />
+
+## Umask
+
+Per mirar quins permisos tenim a un directori podem utilitzar la comanda umask
+
+<img width="273" height="65" alt="imatge" src="https://github.com/user-attachments/assets/e7cad38c-2109-4d76-9aac-ca7b1d1dfa8c" />
+
+També tenim l'opció d'entrar al fitxer /etc/login.defs, en aquest arxiu podem configurar coses respecte a la contrasenya de l'usuari, com la duració, o per veure si els permisos, per a tots els usuaris que entrin a aquell concret directori o fitxer, son els mateixos, però seran permisos per a tots els usuaris, no específics com amb la comanda umask.
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/659e0cb5-d12e-4e92-bdc1-98a00d2e9fb1" />
+
+A l'arxiu .profile també podem veure quins permisos tenen els usuaris que no siguin administradors
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/83513d93-9fdb-4cc9-a67e-2782cfe4940b" />
+
+Utilitzant umask podem canviar els permisos a un directori o fitxer com veiem a continuacio, podem decidir els seus permisos.
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/75fa46ee-0d08-45f4-b280-8e80efc4098f" />
+
+Veiem com els permisos han canviat
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/f8f73cf0-57fe-44c2-9247-ccbf528c3eee" />
+
+També es poden canviar desde l'arxiu /etc/login.defs permanentment
+
+<img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/f7d8d7af-5bbc-4eb9-a4f5-18dc8653dc88" />

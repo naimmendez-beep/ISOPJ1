@@ -708,6 +708,11 @@ I reemplaçem el valor per 1.
 
 <img width="773" height="295" alt="image" src="https://github.com/user-attachments/assets/fa678fe4-dfe5-481b-ab0d-82707f231190" />
 
+Al pasar el temps nombrat comprovem que automaticament es crea l'arxiu a l'escriptori.
+
+<img width="195" height="290" alt="image" src="https://github.com/user-attachments/assets/2ca03e96-f85a-4cbc-ba18-45a919235a1b" />
+
+
 # Quotes d'usuari
 
 Que es una quota?

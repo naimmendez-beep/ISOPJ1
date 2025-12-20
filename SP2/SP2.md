@@ -319,6 +319,9 @@ També tenim dos altres comandes més simples
 
 ## Adduser
 
+La comanda bàsica per crear usuaris es adduser 
+
+<img width="684" height="394" alt="image" src="https://github.com/user-attachments/assets/55585ba6-810c-464a-acf9-b68f4ec00f1c" />
 
 
 ## Deluser
@@ -326,3 +329,17 @@ També tenim dos altres comandes més simples
 Podem observar que l'usuari Manuel que habiem creat s'elimina
 
 <img width="723" height="304" alt="imatge" src="https://github.com/user-attachments/assets/d470d46e-16e3-4a13-8aad-599524cf1c58" />
+
+## Userdel
+
+Aqui veiem com l'usuari 'eros' que habiem creat s'elimina 
+
+<img width="696" height="125" alt="image" src="https://github.com/user-attachments/assets/55855805-3e51-46d0-91fa-00572640733a" />
+
+## Useradd
+
+Aqui utilitzem la comanda useradd per crear un usuari i fem les comprovacions adients per veure quins permisos te
+
+<img width="511" height="121" alt="image" src="https://github.com/user-attachments/assets/c6606cd2-ff0a-4dfb-be37-6630177dae18" />
+
+

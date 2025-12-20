@@ -132,9 +132,17 @@ Els grups permeten definir permisos col·lectius, per exemple, donar accés a un
 
 *Usuaris*
 
-Per crear usuaris tenim dues comandes, adduser o useradd, amb adduser demana una serie d'informació bàsica sobre l'usuari com podem veure a la captura (la primera part de la captura).
+## Tipus d'Usuaris
 
-<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/55bc29a4-02c0-4109-8d9c-97e303d6b36e" />
+Usuari Normal: Un usuari estàndard que pot iniciar sessió i treballar dins del seu entorn i espai personal. Els seus permisos són limitats per protegir la integritat del sistema.
+
+Superusuari (root): L'administrador del sistema. Té accés i control absolut sobre totes les operacions i arxius. S'ha d'utilitzar amb extrema cura.
+
+Usuari de Servei (Daemon): Comptes especials creats per a l'execució de serveis o aplicacions (com www-data per a un servidor web o mysql per a la base de dades). No poden iniciar sessió interactiva.
+
+Usuari de Sistema: Són similars als usuaris de servei i solen tenir un UID (User ID) baix (normalment per sota de 1000). Estan reservats per a processos i funcions internes del sistema operatiu.
+
+Per crear usuaris tenim dues comandes, adduser o useradd, amb adduser demana una serie d'informació bàsica sobre l'usuari.
 
 *Permisos*
 

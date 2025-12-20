@@ -431,3 +431,296 @@ Veiem com els permisos han canviat
 També es poden canviar desde l'arxiu /etc/login.defs permanentment
 
 <img width="737" height="480" alt="imatge" src="https://github.com/user-attachments/assets/f7d8d7af-5bbc-4eb9-a4f5-18dc8653dc88" />
+
+# Còpies de seguretat i automatització de tasques
+
+Còpies de seguretat
+
+Una còpia de seguretat és una duplicació de les dades que permet recuperar informació en cas de pèrdua, dany, error humà, virus o qualsevol altre desastre. Aquestes còpies s’emmagatzemen de manera independent de les dades originals, preferiblement en un altre dispositiu, servidor o servei al núvol.
+
+Normalment segueixen polítiques definides, com ara el temps de retenció, el nombre de versions guardades i la realització de proves de restauració per assegurar que les dades es poden recuperar correctament.
+
+Tipus principals de còpia de seguretat
+Còpia completa
+
+Desa totes les dades cada vegada que es fa la còpia.
+
+És la més lenta i la que ocupa més espai, però també la més segura i la més fàcil de restaurar, ja que només cal una única còpia per recuperar tota la informació.
+
+Còpia incremental
+
+Només guarda els canvis realitzats des de l’última còpia, sigui completa o incremental.
+
+És molt ràpida i ocupa poc espai. L’inconvenient principal és que, per restaurar les dades, cal disposar de la còpia completa inicial i de totes les còpies incrementals posteriors.
+
+Còpia diferencial
+
+Guarda tots els canvis fets des de l’última còpia completa.
+
+És més ràpida que la còpia completa i ocupa un espai intermig. La restauració és més senzilla que amb les incrementals, però cada nova còpia diferencial ocupa més espai fins que es fa una nova còpia completa.
+
+Exemples de funcionament
+Còpia completa
+
+Dilluns: còpia completa
+Dimarts: còpia completa
+Dimecres: còpia completa
+
+Si es perd un fitxer dijous, només cal restaurar la còpia completa de dimecres.
+
+Còpia incremental
+
+Dilluns: còpia completa
+Dimarts: còpia incremental
+Dimecres: còpia incremental
+
+Per recuperar un fitxer perdut dijous, cal la còpia completa de dilluns i totes les còpies incrementals fins dimecres.
+
+Còpia diferencial
+
+Dilluns: còpia completa
+Dimarts: còpia diferencial
+Dimecres: còpia diferencial
+
+Si es perd un fitxer dijous, cal la còpia completa de dilluns i l’última còpia diferencial, la de dimecres.
+
+RAID i emmagatzematge
+
+Els sistemes RAID combinen diversos discs perquè funcionin conjuntament, millorant el rendiment i/o la seguretat segons el tipus de RAID utilitzat.
+
+RAID 0 uneix la capacitat i la velocitat de diversos discs, però no ofereix cap protecció: si un disc falla, es perden totes les dades.
+RAID 1 crea una còpia mirall: les dades es dupliquen i, si un disc falla, l’altre continua funcionant.
+RAID 5 i RAID 6 reparteixen les dades i la informació de paritat entre diversos discs, oferint un bon equilibri entre velocitat i seguretat.
+RAID 10 combina la velocitat del RAID 0 amb la seguretat del RAID 1.
+
+És important recordar que RAID no és una còpia de seguretat. Si s’esborren fitxers o un virus afecta les dades, l’error es replica a tots els discs.
+
+Imatge de disc
+
+Una imatge de disc és una còpia exacta de tot un disc o partició, incloent el sistema operatiu, els programes, la configuració i les dades. S’utilitza per clonar equips o restaurar un sistema complet tal com estava en un moment concret.
+
+És molt completa, però requereix molt espai i temps per crear-se. A canvi, permet restaurar un ordinador sencer en molt poc temps.
+
+Snapshot
+
+Un snapshot és una captura instantània de l’estat d’un sistema de fitxers o d’un dispositiu d’emmagatzematge. Normalment depèn de la tecnologia utilitzada (LVM, ZFS, Btrfs, màquines virtuals, etc.) i és molt ràpid de crear, ja que només guarda els canvis fets a partir del moment en què es crea.
+
+Els snapshots són útils per tornar enrere ràpidament o fer proves, però no són una còpia de seguretat segura si es guarden al mateix disc. Si el disc falla, el snapshot també es perd.
+
+Resum final
+
+La còpia de seguretat serveix per protegir les dades guardant-les en un lloc segur.
+La imatge de disc copia tot el sistema exactament com és en un moment concret.
+El snapshot permet tornar enrere ràpidament, però no protegeix contra fallades del mateix disc.
+
+No s’ha de confiar només en snapshots locals com a única protecció. La millor estratègia combina snapshots per recuperacions ràpides i còpies de seguretat externes per protegir-se davant desastres.
+
+1. cp -> Es una copia simple no inteligent nomes transfereix fitxers localment es molt simple de utilitzar pero no optimitzar
+2. rsync -> Es una eina inteligent que nomes copia els fitxers modificats i la sincronitzacio pot ser local o en remot via ssh
+3. dd -> Es una eina per a clonar discs o particions i no es inteligent copia tots els sectors
+
+## Comanda cp
+Comanda cp (teoria)
+
+La comanda cp s’utilitza en sistemes operatius Linux i Unix per copiar fitxers i directoris d’una ubicació a una altra. Permet duplicar informació mantenint, si es vol, atributs com permisos, dates i propietari.
+
+Funcionament general
+
+cp copia un o més fitxers cap a un fitxer o directori de destí. Quan el destí ja existeix, el fitxer pot ser sobreescrit segons les opcions utilitzades. Per defecte, cp només copia fitxers; per copiar directoris cal indicar-ho explícitament.
+
+Opcions i paràmetres principals Còpia recursiva
+
+Permet copiar directoris sencers amb tots els seus subdirectoris i fitxers. Sense aquesta opció, els directoris no es copien.
+
+Mode interactiu
+
+Fa que el sistema demani confirmació abans de sobreescriure un fitxer existent, evitant pèrdues accidentals d’informació.
+
+Mode forçat
+
+Sobreescriu els fitxers de destí sense demanar confirmació, fins i tot si estan protegits contra escriptura.
+
+Mode detallat
+
+Mostra informació del procés de còpia, indicant quins fitxers s’estan copiant.
+
+Actualització
+
+Només copia els fitxers que són més nous que els del destí o que encara no existeixen, estalviant temps i espai.
+
+Conservació d’atributs
+
+Manté els permisos, el propietari, el grup i les dates originals dels fitxers copiats.
+
+Mode arxiu
+
+Realitza una còpia completa conservant l’estructura, els atributs i els enllaços, i és l’opció més utilitzada per fer còpies de seguretat de directoris.
+
+Gestió d’enllaços
+
+La comanda pot tractar els enllaços simbòlics de diverses maneres:
+
+Copiar l’enllaç com a enllaç
+
+Seguir l’enllaç i copiar el fitxer real
+
+No seguir l’enllaç i conservar-lo tal com és
+
+També permet crear enllaços simbòlics o enllaços durs en lloc de fer una còpia real del fitxer.
+
+Altres funcionalitats
+
+cp pot copiar múltiples fitxers alhora cap a un mateix directori. Permet mantenir l’estructura de directoris original quan es copien fitxers individuals. Pot limitar la còpia perquè no travessi diferents sistemes de fitxers. Es pot utilitzar com a eina bàsica dins d’estratègies de còpies de seguretat simples.
+
+<img width="825" height="489" alt="image" src="https://github.com/user-attachments/assets/92e1093c-7301-4a57-a468-d8e45c129819" />
+
+## Comanda rsync
+
+La comanda rsync és una eina de Linux/Unix utilitzada per sincronitzar fitxers i directoris entre dues ubicacions, ja sigui dins del mateix sistema, entre diferents discs o entre equips a través de la xarxa. És especialment eficient per a còpies de seguretat i transferències de dades grans.
+
+Funcionament general
+
+rsync compara els fitxers d’origen i destí i només transfereix les diferències, fent que sigui molt més ràpid i eficient que copiar tot el contingut de nou. Pot treballar amb fitxers locals o remots i permet mantenir atributs i permisos dels fitxers originals.
+
+Opcions i paràmetres principals Mode recursiu
+
+Permet copiar directoris sencers, incloent subdirectoris i fitxers. Sense aquesta opció, només es copien fitxers individuals.
+
+Conservació d’atributs
+
+Manté propietari, grup, permisos, dates i atributs especials dels fitxers copiats. Això assegura que la còpia sigui exacta a l’original.
+
+Compressió
+
+Redueix la quantitat de dades transferides quan s’utilitza en xarxa, comprimint els fitxers durant la transmissió.
+
+Modes detallats
+
+Permet mostrar informació del procés de sincronització, indicant quins fitxers es transfereixen i quins ja estan actualitzats.
+
+Actualització i sincronització
+
+Només copia fitxers que han canviat o que no existeixen al destí, evitant duplicacions innecessàries i estalviant temps i espai.
+
+Eliminació de fitxers obsolets
+
+Permet eliminar del destí els fitxers que ja no existeixen a l’origen, mantenint les dues ubicacions sincronitzades exactament.
+
+Modes segurs
+
+Pot funcionar a través de connexions segures (per exemple SSH) quan es sincronitzen fitxers entre diferents equips, protegint la informació durant la transferència.
+
+Enllaços i enllaços simbòlics
+
+Rsync pot copiar enllaços simbòlics com a enllaços o bé seguir-los i copiar el contingut real, segons es configuri.
+
+Altres funcionalitats
+
+Permet filtrar fitxers per extensió, nom o directoris específics.
+
+Admet transferències parcials per reprendre còpies interrompudes.
+
+Pot funcionar de manera programada per automatitzar còpies de seguretat regulars.
+
+És molt eficaç per sincronitzar grans quantitats de dades entre servidors, discs locals o sistemes de backup.
+
+<img width="736" height="296" alt="image" src="https://github.com/user-attachments/assets/27850945-65eb-4e47-8087-42d0e98c4a55" />
+
+## Comanda dd
+
+La comanda dd és una eina de Linux/Unix utilitzada per copiar i transformar dades a baix nivell, normalment fitxers, discs o dispositius de blocs. És molt potent i flexible, ja que treballa amb dades binàries directament i permet fer còpies exactes sector per sector.
+
+Funcionament general
+
+dd llegeix dades des d’una font i les escriu en un destí especificat, amb la possibilitat de transformar-les durant el procés. Es pot utilitzar per crear imatges de discs, copiar particions, fer còpies de seguretat de dispositius complets o fins i tot escriure fitxers d’arrencada.
+
+Opcions i paràmetres principals Input (if)
+
+Defineix el fitxer o dispositiu d’origen d’on s’han de llegir les dades.
+
+Output (of)
+
+Especifica el fitxer o dispositiu de destí on s’escriuran les dades.
+
+Block size (bs)
+
+Permet establir la mida dels blocs de dades llegits i escrits. Ajustar aquesta mida pot millorar el rendiment de la còpia.
+
+Count
+
+Indica quants blocs s’han de copiar des de l’origen. Permet limitar la quantitat de dades copiades.
+
+Skip
+
+Permet saltar un nombre determinat de blocs al començar a llegir de l’origen, útil per treballar amb fragments de discs o fitxers grans.
+
+Seek
+
+Permet saltar blocs al destí abans de començar a escriure, facilitant la còpia parcial dins d’un dispositiu o fitxer.
+
+conv
+
+Permet aplicar transformacions a les dades durant la còpia, com per exemple canviar majúscules/minúscules, convertir entre formats o truncar dades.
+
+Status
+
+Mostra informació del progrés de la còpia, útil en operacions amb grans quantitats de dades.
+
+<img width="745" height="454" alt="image" src="https://github.com/user-attachments/assets/e9b5f103-18ba-4fdb-a232-095805e88a36" />
+
+# Atumatitzacio de tasques
+
+## Cron
+
+El cron es guarda a la ruta /etc/crontab i és, en essència, una agenda automatitzada que el sistema operatiu consulta cada minut per saber si ha d'executar alguna tasca
+
+<img width="722" height="470" alt="image" src="https://github.com/user-attachments/assets/6c08e0bb-ac67-4486-abf3-5b71a1fe4e6b" />
+
+Amb la comanda crontab -e -u 'usuari' podem especificar desde quin usuari volem entrar i el primer cop que entrem ens dirà en quin editor ho volem fer.
+
+<img width="837" height="624" alt="image" src="https://github.com/user-attachments/assets/3d07ee0d-5343-42ca-8811-8cba7cf0bafc" />
+
+Amb la seguent ruta podem veure tots els binaris del cron.
+
+<img width="352" height="185" alt="image" src="https://github.com/user-attachments/assets/2f856852-543e-4804-b7c2-7ce2901a2054" />
+
+I aquest es el anacron que està guardat en la ruta /etc/anacrontab
+
+<img width="721" height="469" alt="image" src="https://github.com/user-attachments/assets/05d0aa01-3a19-4f21-9c2a-6e6846a2eef5" />
+
+Ara he programat un script que conté el següent codi:
+
+<img width="681" height="121" alt="image" src="https://github.com/user-attachments/assets/2a8153eb-71bb-41d6-9c78-a49661d54d09" />
+
+Li dono permisos d'execució 
+
+<img width="622" height="223" alt="image" src="https://github.com/user-attachments/assets/5fb817a7-8473-4760-8fa9-8b2bb8b456b3" />
+
+Vaig al directori 'Documents' i creo dos imatges que seran les que copiarem
+
+<img width="534" height="130" alt="image" src="https://github.com/user-attachments/assets/6a9115f6-dadb-46c1-9b8a-dab0eb30c220" />
+
+Copio el script, el poso al cron.daily i comprovo que estan aññi.
+
+<img width="754" height="100" alt="image" src="https://github.com/user-attachments/assets/b322d909-f264-422b-ad97-cb52d43cec07" />
+
+I reemplaçem el valor per 1.
+
+# Quotes d'usuari
+
+Que es una quota?
+
+En Linux, una quota és un mecanisme de control d’ús d’espai i fitxers dins d’un sistema de fitxers. Serveix per limitar la quantitat de disc o nombre d’inodes (fitxers) que un usuari o grup pot utilitzar, evitant que una sola persona ocupi tot l’espai i afecti la resta de l’equip.
+
+Instal·larem el paquet 'quota'
+
+<img width="736" height="542" alt="image" src="https://github.com/user-attachments/assets/af65110c-31e5-4c05-a6b7-21f987399cc2" />
+
+Ara creem una carpeta anomenada 'dades'
+
+<img width="371" height="91" alt="image" src="https://github.com/user-attachments/assets/dd02dd65-9efb-4df7-af3d-00bc504cc981" />
+
+I farem el muntatge d'aquesta carpeta permanentment, a més aqui afegirem usrquota i grquota per a que puguem configurar les quotes aqui.
+
+<img width="741" height="414" alt="image" src="https://github.com/user-attachments/assets/a9ab399f-a472-4511-b0bc-1d0e142cbcca" />
+

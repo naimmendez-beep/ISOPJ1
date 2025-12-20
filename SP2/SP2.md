@@ -132,7 +132,7 @@ Els grups permeten definir permisos col·lectius, per exemple, donar accés a un
 
 *Usuaris*
 
-## Tipus d'Usuaris
+Tipus d'Usuaris
 
 Usuari Normal: Un usuari estàndard que pot iniciar sessió i treballar dins del seu entorn i espai personal. Els seus permisos són limitats per protegir la integritat del sistema.
 

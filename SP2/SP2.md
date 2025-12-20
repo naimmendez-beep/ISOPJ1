@@ -706,6 +706,8 @@ Copio el script, el poso al cron.daily i comprovo que estan aññi.
 
 I reemplaçem el valor per 1.
 
+<img width="773" height="295" alt="image" src="https://github.com/user-attachments/assets/fa678fe4-dfe5-481b-ab0d-82707f231190" />
+
 # Quotes d'usuari
 
 Que es una quota?

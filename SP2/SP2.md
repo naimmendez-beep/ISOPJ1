@@ -153,18 +153,14 @@ En sistemes UNIX, els permisos fan part del sistema. Sense ells no podem visuali
 - Els tres següents són per a *grup*
 - Els ultims són per als altres usuaris/ grups
 
+# Fitxers importants
+
 | Fitxer       | Funció principal                               |
 | ------------ | ---------------------------------------------- |
 | /etc/passwd  | Llista tots els usuaris definits al sistema.   |
 | /etc/shadow  | Desa les contrasenyes xifrades dels usuaris.   |
 | /etc/group   | Conté la llista de grups i els seus membres.   |
 | /etc/gshadow | Desa contrasenyes i administradors dels grups. |
-
-
-
-
-
-# Fitxers importants
 
 En linux, la informació d'usuaris i grups es gestiona de manera centralitzada mitjançant fitxers de configuració de text ubicats dins del directori /etc.
 

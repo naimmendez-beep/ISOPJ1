@@ -24,5 +24,6 @@ El contenido está bajo licencia [Creative Commons BY-NC-SA 4.0 ES](https://crea
 ### Ús
 Este repositorio se encuentra prepardo para ser publicado con GitHub Pages.
 Puedes ver la versión web pública en:
-   
+https://naimmendez-beep.github.io/ISOPJ1/
+
 © 2025 Naim Mendez

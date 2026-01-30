@@ -20,6 +20,9 @@ El contenido está bajo licencia [Creative Commons BY-NC-SA 4.0 ES](https://crea
 ### [SP3. Administració de Dominis i Seguretat](SP3/SP3.md)  
 ### [SP4. Configuració del Programari de Base i Sistemes d’Emmagatzematge en Ubuntu](SP4/SP4.md)  
 ### [SP5. Monitoratge, Auditories i Programari Client/Servidor](SP5/SP5.md)  
-### 
-
-###   
+ 
+### Ús
+Este repositorio se encuentra prepardo para ser publicado con GitHub Pages.
+Puedes ver la versión web pública en:
+   
+© 2025 Naim Mendez

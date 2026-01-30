@@ -4,9 +4,11 @@ Este repositorio contiene el material del curso desarrollado por Naim Mendez.
 
 ## Contenido
 
-- Índice y enlaces a las unidades del curso.
-- Recursos en formato PDF, vídeos, y Google Colab.
-- Código y ejemplos prácticos.
+- [Sprint 1: Instal·lació, Configuració Inicial i Programari de Base (13h)]
+- [Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió de Fitxers (20h)]
+- [Sprint 3: Administració de Dominis i Seguretat (20h)]
+- [Sprint 4: Configuració del Programari de Base i Sistemes d’Emmagatzematge en Ubuntu (13h)]
+- [Sprint 5: Monitoratge, Auditories i Programari Client/Servidor (20h)]
 
 ## Uso
 

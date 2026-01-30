@@ -81,3 +81,4 @@ Per veure tota la configuració realitzada fem un slapcat de nou
 <img width="515" height="789" alt="imatge" src="https://github.com/user-attachments/assets/517436da-cec4-4ec9-ac98-6e9346877713" />
 
 ## Configuració client
+

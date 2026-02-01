@@ -5,7 +5,7 @@ title: 'Sprint 3: Administració de dominis i seguretat (20h)'
 
 # Administració de dominis i seguretat
 
-<img width="1280" height="720" alt="imatge" src="https://github.com/user-attachments/assets/9dc088ca-5213-4b62-9029-7c31c7e3aede"/>
+<img width="1280" height="720" alt="imatge" src="https://github.com/user-attachments/assets/bd85f89a-7920-463d-abc2-425d61ba7bdb" />
 
 ## Configuració previa
 Començarem fent dos màquines virtuals, una de servidor i una de client.

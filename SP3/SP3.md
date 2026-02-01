@@ -32,7 +32,8 @@ I per obtenir la info dels objectes, unitats, etc, utilitzem la comanda slapcat
 
 <img width="656" height="283" alt="imatge" src="https://github.com/user-attachments/assets/b5495379-f44d-4d5b-b1ec-d5a6825d9da4" />
 
-Fem un dpkg-reconfigure slapd per configurar el paquet i sortirà les opcions a configurar <img width="658" height="140" alt="imatge" src="https://github.com/user-attachments/assets/45566d01-31d1-40b4-8173-4301caee5a34" />
+Fem un dpkg-reconfigure slapd per configurar el paquet i sortiran les opcions a configurar 
+<img width="658" height="140" alt="imatge" src="https://github.com/user-attachments/assets/45566d01-31d1-40b4-8173-4301caee5a34" />
 
 <img width="660" height="120" alt="imatge" src="https://github.com/user-attachments/assets/b96b289a-6f75-495d-9ac6-5908813c1608" />
 
@@ -47,19 +48,6 @@ Fem un dpkg-reconfigure slapd per configurar el paquet i sortirà les opcions a 
 Un cop configurat el paquet, hauria de retornar un missatge dient que la configuració s'ha dessat correctament
 
 <img width="654" height="101" alt="imatge" src="https://github.com/user-attachments/assets/ebd88392-0c1e-4fd5-9f5a-f8e69b864d6b" />
-
-I podem fer un dpkg-reconfigure ldap-auth-config per configurar la autenticació d'usuaris contra un servidor LDAP.
-
-<img width="649" height="499" alt="imatge" src="https://github.com/user-attachments/assets/5311b981-0fd0-4807-86e0-7cbe088567d4" />
-<img width="646" height="360" alt="imatge" src="https://github.com/user-attachments/assets/0a09f427-4002-4312-8a71-fc107141d56f" />
-<img width="642" height="338" alt="imatge" src="https://github.com/user-attachments/assets/29ed8b68-a2b6-4786-9b58-3c818bf29e9b" />
-<img width="641" height="353" alt="imatge" src="https://github.com/user-attachments/assets/e9fcc79d-d8f0-46d9-9ffb-d623e3fd86c3" />
-<img width="640" height="373" alt="imatge" src="https://github.com/user-attachments/assets/dda84fab-d0a1-47f9-9fef-74672c538929" />
-<img width="642" height="342" alt="imatge" src="https://github.com/user-attachments/assets/f6c9a321-7f5d-4e9e-9bd4-c1c1a620c88f" />
-<img width="645" height="337" alt="imatge" src="https://github.com/user-attachments/assets/ce4c8555-bff3-4d61-a2cb-2466fc8a922f" />
-<img width="639" height="333" alt="imatge" src="https://github.com/user-attachments/assets/3eaf79ab-65f5-41fe-9817-ef5c8fd3a8e5" />
-<img width="645" height="357" alt="imatge" src="https://github.com/user-attachments/assets/0847f6e6-6b08-4e2a-85f7-c3838ca6a376" />
-<img width="638" height="396" alt="imatge" src="https://github.com/user-attachments/assets/e7ba5164-8cbe-4016-bfbe-fb581963063e" />
 
 Que fa realment? 
 Quan l'executes, s'obre un assistent a la terminal que et permet definir els paràmetres crítics perquè el sistema es comuniqui amb el directori.
@@ -81,4 +69,28 @@ Per veure tota la configuració realitzada fem un slapcat de nou
 <img width="515" height="789" alt="imatge" src="https://github.com/user-attachments/assets/517436da-cec4-4ec9-ac98-6e9346877713" />
 
 ## Configuració client
+
+Primer canviarem el hostname amb la comanda adequada 
+
+<img width="814" height="111" alt="imatge" src="https://github.com/user-attachments/assets/cd13d5ac-5a2d-4f26-9bef-6350f69eaa93" />
+
+I utilitzarem la comanda apt install per descarregar els paquets libnss-ldap libpam-ldap nscd
+
+<img width="773" height="71" alt="imatge" src="https://github.com/user-attachments/assets/a92feb2c-7e3b-4d8d-a65b-d40b337ab3f6" />
+
+I podem fer un 'dpkg-reconfigure ldap-auth-config' per configurar el paquet, que gestiona la connexió entre el sistema operatiu i el servidor LDAP.
+
+<img width="649" height="499" alt="imatge" src="https://github.com/user-attachments/assets/5311b981-0fd0-4807-86e0-7cbe088567d4" />
+<img width="646" height="360" alt="imatge" src="https://github.com/user-attachments/assets/0a09f427-4002-4312-8a71-fc107141d56f" />
+<img width="642" height="338" alt="imatge" src="https://github.com/user-attachments/assets/29ed8b68-a2b6-4786-9b58-3c818bf29e9b" />
+<img width="641" height="353" alt="imatge" src="https://github.com/user-attachments/assets/e9fcc79d-d8f0-46d9-9ffb-d623e3fd86c3" />
+<img width="640" height="373" alt="imatge" src="https://github.com/user-attachments/assets/dda84fab-d0a1-47f9-9fef-74672c538929" />
+<img width="642" height="342" alt="imatge" src="https://github.com/user-attachments/assets/f6c9a321-7f5d-4e9e-9bd4-c1c1a620c88f" />
+<img width="645" height="337" alt="imatge" src="https://github.com/user-attachments/assets/ce4c8555-bff3-4d61-a2cb-2466fc8a922f" />
+<img width="639" height="333" alt="imatge" src="https://github.com/user-attachments/assets/3eaf79ab-65f5-41fe-9817-ef5c8fd3a8e5" />
+<img width="645" height="357" alt="imatge" src="https://github.com/user-attachments/assets/0847f6e6-6b08-4e2a-85f7-c3838ca6a376" />
+<img width="638" height="396" alt="imatge" src="https://github.com/user-attachments/assets/e7ba5164-8cbe-4016-bfbe-fb581963063e" />
+
+Un cop feta la instal·lacio i configuració del paquet hem d'anar a l'arxiu /etc/nsswitch.conf i afegir 'ldap' per a que cerqui usuari, contrasenyes i grups. 
+<img width="655" height="501" alt="imatge" src="https://github.com/user-attachments/assets/ed0e9243-068f-4e3c-a92d-38ab4b4d856a" />
 

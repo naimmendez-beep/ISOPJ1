@@ -91,6 +91,16 @@ I podem fer un 'dpkg-reconfigure ldap-auth-config' per configurar el paquet, que
 <img width="645" height="357" alt="imatge" src="https://github.com/user-attachments/assets/0847f6e6-6b08-4e2a-85f7-c3838ca6a376" />
 <img width="638" height="396" alt="imatge" src="https://github.com/user-attachments/assets/e7ba5164-8cbe-4016-bfbe-fb581963063e" />
 
-Un cop feta la instal·lacio i configuració del paquet hem d'anar a l'arxiu /etc/nsswitch.conf i afegir 'ldap' per a que cerqui usuari, contrasenyes i grups. 
-<img width="655" height="501" alt="imatge" src="https://github.com/user-attachments/assets/ed0e9243-068f-4e3c-a92d-38ab4b4d856a" />
+Un cop feta la instal·lacio i configuració del paquet hem d'anar a l'arxiu /etc/nsswitch.conf i afegir 'ldap' per a que cerqui usuari, contrasenyes i grups.
 
+<img width="657" height="503" alt="imatge" src="https://github.com/user-attachments/assets/3965578a-2dc3-4ac2-9095-2df8d36bdcd4" />
+
+També hem de fer algunes configuracions dins de l'arxiu /etc/pam.d/common-session com
+- En el /etc/pam.d/common-password he eliminat el use_authtok.
+- Afegit session optional pam_mkhomedir.so skel=/etc/skel umask=077 al final.
+
+<img width="655" height="501" alt="imatge" src="https://github.com/user-attachments/assets/37633db5-214e-4738-a3ab-97ba1db86083" />
+
+I he configurat el fitxer de configuració de LightDM per permetre l'inici de sessió manual d'usuaris LDAP. Això és necessari perquè, per defecte, LightDM només mostra els usuaris locals i no permet introduir manualment un nom d'usuari. Afegint aquestes opcions:
+
+<img width="656" height="502" alt="imatge" src="https://github.com/user-attachments/assets/fcc3816f-9436-4c77-939c-c2b3e1ab6acb" />

@@ -54,15 +54,15 @@ Quan l'executes, s'obre un assistent a la terminal que et permet definir els par
 
 Posteriorment he modificat els arxius uo.ldif, usu.ldif, grup.ldif, base.ldif i primerqueres.ldif.
 
-"uo.ldif":  <img width="288" height="108" alt="imatge" src="https://github.com/user-attachments/assets/a351e681-8a6a-4f57-8adc-68beb4b030c2" />
+**"uo.ldif":**  <img width="288" height="108" alt="imatge" src="https://github.com/user-attachments/assets/a351e681-8a6a-4f57-8adc-68beb4b030c2"/>
 
-"usu.ldif:  <img width="296" height="352" alt="imatge" src="https://github.com/user-attachments/assets/37baaf1f-1308-49c0-813a-148b7910c7eb" />
+**"usu.ldif:**  <img width="296" height="352" alt="imatge" src="https://github.com/user-attachments/assets/37baaf1f-1308-49c0-813a-148b7910c7eb"/>
 
-"grup.ldif":  <img width="324" height="144" alt="imatge" src="https://github.com/user-attachments/assets/566e9adc-951b-4fe6-ac91-671f6f15ad4f" />
+**"grup.ldif":**  <img width="324" height="144" alt="imatge" src="https://github.com/user-attachments/assets/566e9adc-951b-4fe6-ac91-671f6f15ad4f"/>
 
-"base.ldif":   <img width="956" height="466" alt="imatge" src="https://github.com/user-attachments/assets/e6cdc30d-52e0-419f-90e5-0a32b89c78e1" />
+**"base.ldif":**   <img width="956" height="466" alt="imatge" src="https://github.com/user-attachments/assets/e6cdc30d-52e0-419f-90e5-0a32b89c78e1"/>
 
-"primerqueres.ldif":  <img width="331" height="272" alt="imatge" src="https://github.com/user-attachments/assets/5aeb1dc7-0cb0-4f02-988a-b5f3fd1c6714" />
+**"primerqueres.ldif":**  <img width="331" height="272" alt="imatge" src="https://github.com/user-attachments/assets/5aeb1dc7-0cb0-4f02-988a-b5f3fd1c6714" />
 
 Per veure tota la configuració realitzada fem un slapcat de nou 
 

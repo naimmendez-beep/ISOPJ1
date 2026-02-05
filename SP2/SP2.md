@@ -559,7 +559,7 @@ La comanda pot tractar els enllaços simbòlics de diverses maneres:
 
 **Copiar l’enllaç com a enllaç**
 
-**Seguir l’enllaç i copiar el fitxer real**
+** Seguir l’enllaç i copiar el fitxer real **
 
 **No seguir l’enllaç i conservar-lo tal com és**
 
@@ -613,11 +613,11 @@ Rsync pot copiar enllaços simbòlics com a enllaços o bé seguir-los i copiar 
 
 ## Altres funcionalitats
 
-**Permet filtrar fitxers per extensió, nom o directoris específics.**
+**- Permet filtrar fitxers per extensió, nom o directoris específics.**
 
-**Admet transferències parcials per reprendre còpies interrompudes.**
+**- Admet transferències parcials per reprendre còpies interrompudes.**
 
-**Pot funcionar de manera programada per automatitzar còpies de seguretat regulars.**
+**- Pot funcionar de manera programada per automatitzar còpies de seguretat regulars.**
 
 És molt eficaç per sincronitzar grans quantitats de dades entre servidors, discs locals o sistemes de backup.
 

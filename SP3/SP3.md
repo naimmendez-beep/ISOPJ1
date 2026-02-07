@@ -185,19 +185,31 @@ Primer de tot hem d'instal·lar el paquet samba, utilitzem la comanda **sudo apt
 
 **Preparació del Directori i Permisos de Sistema**
 
-Abans de configurar el recurs compartit, cal preparar la carpeta física al servidor que la nombrarem asixa.
+Abans de configurar el recurs compartit, cal preparar la carpeta física al servidor que la nombrarem *asixa*.
 
 <img width="798" height="691" alt="2026-01-29_12-47" src="https://github.com/user-attachments/assets/bac33e5c-a051-40b8-a076-b02924d383ba" />
 
-Crearem 3 usuaris i greups per a realitzar algunes proves, i els crearem de forma que no puguin accesdir al sistema mitjançant la shell.
+Crearem 3 usuaris i grups per a realitzar algunes proves, i els crearem de forma que no puguin accedir al sistema mitjançant la shell.
 
 <img width="517" height="260" alt="2026-01-29_12-51" src="https://github.com/user-attachments/assets/e4b56524-2fcc-4ae4-8cdb-6eaa8221db50" />
 
-I els hi assignarem una contrasenya a cadascún d'ells. Per assignar les contrasenyes hem utilitzat smbpasswd, i el paràmetre -a és per indicar l'usuari.
+I els hi assignarem una contrasenya a cadascún d'ells. Per assignar les contrasenyes hem utilitzat **smbpasswd**, i el paràmetre *-a* és per indicar l'usuari.
 
 <img width="301" height="208" alt="2026-01-29_13-12" src="https://github.com/user-attachments/assets/32de38f9-ab89-4770-a748-bb12b0d65991" />
 
-Ara entrarem a l'arxiu **smb.conf** ubicat a **/etc/samba/smb.conf** i editarem alguns paràmetres, afegint al final de l'arxiu:  
+Ara entrarem a l'arxiu **smb.conf** ubicat a **/etc/samba/smb.conf** i editarem alguns paràmetres, afegint al final de l'arxiu: 
+
+[asixa]
+   path = /asixa
+   guest ok = yes
+   directory mask = 0755
+   create mask = 0644
+   browseable = yes
+   read only = no
+   writable = yes
+   read list = @madrid, hugo, guest
+   write list = hugo, guest
+   invalid user = bryan
 
 <img width="794" height="757" alt="2026-01-29_12-55" src="https://github.com/user-attachments/assets/68f995eb-12de-4123-bf03-2d44e88a6908" />
 
@@ -207,7 +219,7 @@ I comprovem l'status del smbd i nmbd
 
 ## Configuració del client smb
 
-Accedim al client i fem un ping per comprovar la connexió server-client i instal·larem el paquet smbclient
+Accedim al client i fem un **ping** per comprovar la connexió server-client i instal·larem el paquet **smbclient**
 
 <img width="693" height="266" alt="2026-01-29_13-05" src="https://github.com/user-attachments/assets/fda17d03-39f0-4657-b637-d7789d468c06" />
 
@@ -226,7 +238,5 @@ I amb l'usuari que haviem donat permisos per connectar-se, crear directoris, arx
 <img width="608" height="267" alt="2026-01-29_13-13_1" src="https://github.com/user-attachments/assets/c3c70ea2-1aae-4b03-86a9-a00d401ae19f" />
 
 Pero amb l'usuari que haviem apartat no ens deixa eliminar o crear arxius, però si connectar-se
-
-<img width="566" height="456" alt="image" src="https://github.com/user-attachments/assets/fbdbad1d-5094-45b1-b231-ada2741adba2" />
 
 <img width="657" height="368" alt="image" src="https://github.com/user-attachments/assets/0fc27fed-8f4e-4362-9f3d-c5e067d23160" />

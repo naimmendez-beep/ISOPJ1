@@ -35,6 +35,7 @@ I per obtenir la info dels objectes, unitats, etc, utilitzem la comanda slapcat
 <img width="656" height="283" alt="imatge" src="https://github.com/user-attachments/assets/b5495379-f44d-4d5b-b1ec-d5a6825d9da4" />
 
 Fem un dpkg-reconfigure slapd per configurar el paquet i sortiran les opcions a configurar 
+
 <img width="658" height="140" alt="imatge" src="https://github.com/user-attachments/assets/45566d01-31d1-40b4-8173-4301caee5a34" />
 
 <img width="660" height="120" alt="imatge" src="https://github.com/user-attachments/assets/b96b289a-6f75-495d-9ac6-5908813c1608" />

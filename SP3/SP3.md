@@ -24,6 +24,8 @@ Canviarem la ip i el nom del servidor dins l'arxiu /etc/hosts
 
 <img width="658" height="181" alt="imatge" src="https://github.com/user-attachments/assets/c401c036-877d-4e35-b77a-ceb6acb4865d" />
 
+## Creació i configuració del servidor
+
 Utilitzem les comandes 'sudo apt update' i 'sudo apt install slapd ldap-utils', i un cop instal·lat el ldap demanarà que posem una contrasenya d'administrador de domini.
 
 <img width="658" height="162" alt="imatge" src="https://github.com/user-attachments/assets/d7ba879d-de53-4990-8251-39d15ad00066" />
@@ -49,7 +51,7 @@ Un cop configurat el paquet, hauria de retornar un missatge dient que la configu
 
 <img width="654" height="101" alt="imatge" src="https://github.com/user-attachments/assets/ebd88392-0c1e-4fd5-9f5a-f8e69b864d6b" />
 
-Que fa realment? 
+### Que fa realment? 
 Quan l'executes, s'obre un assistent a la terminal que et permet definir els paràmetres crítics perquè el sistema es comuniqui amb el directori.
 
 Posteriorment he modificat els arxius uo.ldif, usu.ldif, grup.ldif, base.ldif i primerqueres.ldif.
@@ -95,8 +97,10 @@ Un cop feta la instal·lacio i configuració del paquet hem d'anar a l'arxiu /et
 
 <img width="657" height="503" alt="imatge" src="https://github.com/user-attachments/assets/3965578a-2dc3-4ac2-9095-2df8d36bdcd4" />
 
-També hem de fer algunes configuracions dins de l'arxiu /etc/pam.d/common-session com
+També hem de fer algunes configuracions dins de l'arxiu /etc/pam.d/common-session com:
+
 **- En el /etc/pam.d/common-password he eliminat el use_authtok.**
+
 **- Afegit session optional pam_mkhomedir.so skel=/etc/skel umask=077 al final.**
 
 <img width="655" height="501" alt="imatge" src="https://github.com/user-attachments/assets/37633db5-214e-4738-a3ab-97ba1db86083" />
@@ -104,3 +108,62 @@ També hem de fer algunes configuracions dins de l'arxiu /etc/pam.d/common-sessi
 I he configurat el fitxer de configuració de LightDM per permetre l'inici de sessió manual d'usuaris LDAP. Això és necessari perquè, per defecte, LightDM només mostra els usuaris locals i no permet introduir manualment un nom d'usuari. Afegint aquestes opcions:
 
 <img width="656" height="502" alt="imatge" src="https://github.com/user-attachments/assets/fcc3816f-9436-4c77-939c-c2b3e1ab6acb" />
+
+## Entorn gràfic
+
+Tenim varies eines per crear **scripts** .ldif, podem utilitzar els programes seguents:
+
+- **phpldapadmin**
+
+- **apache directory stdio**
+
+- **jxplorer**
+
+- **ldap account manager (LAM)**
+
+### El programa que documentaré es LAM
+
+**Instal·lació Previ he instal·lat les dependencies de php i altres necessaries.**
+
+Primer haurem d'instal·lar varios paquets, les dependencies de php i algunes altres neccessitats.
+
+**apt install -y fonts-dejavu gettext libapache2-mod-php8.3 libphp-phpmailer \
+  php php-bcmath php-constant-time php-gd php-gmp php-ldap php-monolog \
+  php-mysql php-phpseclib3 php-random-compat php-sqlite3 php-xml \
+  php8.3 php8.3-bcmath php8.3-gd php8.3-gmp php8.3-ldap \
+  php8.3-mysql php8.3-sqlite3 php8.3-xml**
+
+<img width="1217" height="344" alt="image" src="https://github.com/user-attachments/assets/4878ab60-f867-46c0-b4a9-d02e80679868" />
+
+Tot seguit he agafat el paquet següent desde github amb la comanda:
+
+**wget -q https://github.com/LDAPAccountManager/lam/releases/download/9.4/ldap-account-manager_9.4-1_all.deb** 
+
+i fet un  **dpkg -i ldap-account-manager_9.4-1_all.deb**
+
+<img width="1270" height="209" alt="image" src="https://github.com/user-attachments/assets/3f6e0d68-5a7f-4cf0-b47d-96ed4f90bd61" />
+
+I per accedir hem d'entrar desde el navegador web posant la url: http://localhost/lam, dins pots configurar la contrasenya.  
+
+<img width="931" height="458" alt="image" src="https://github.com/user-attachments/assets/18ff41bd-cf82-4276-91ff-62dca4d30be9" />
+
+<img width="1292" height="552" alt="image" src="https://github.com/user-attachments/assets/2c529391-fc6a-4d1a-91ff-5e5f5ddb360f" />
+
+<img width="621" height="456" alt="image" src="https://github.com/user-attachments/assets/a79688b8-a030-4d15-bc05-78234536fbbd" />
+
+<img width="928" height="523" alt="image" src="https://github.com/user-attachments/assets/2c18d66c-cccf-429c-bcf3-5817f53d0485" />
+
+<img width="828" height="336" alt="image" src="https://github.com/user-attachments/assets/f6bb2962-d562-4114-a6e5-c9a9dd8332d1" />
+
+<img width="583" height="294" alt="image" src="https://github.com/user-attachments/assets/9e9bc066-6392-48c2-8424-edfdbf91a342" />
+
+<img width="983" height="322" alt="image" src="https://github.com/user-attachments/assets/17e81389-7af2-4046-b901-bcba4012adb5" />
+
+Un cop configurada la contrasenya accedim al LAM i proporcionem l'informació del servidor en **Ajustes generales** i els tipus de comptes en **Tipos de cuentas** i comprovem que l'arbre de directori és correcte.
+
+<img width="938" height="670" alt="image" src="https://github.com/user-attachments/assets/7e9c227b-b934-4ea4-9d77-c78547b7d95f" />
+
+<img width="913" height="528" alt="image" src="https://github.com/user-attachments/assets/2e0271c1-e270-412c-bf98-5d73f80607ee" />
+
+<img width="887" height="539" alt="image" src="https://github.com/user-attachments/assets/20f67f99-1ae6-4039-bbad-1ecbc5f6b134" />
+

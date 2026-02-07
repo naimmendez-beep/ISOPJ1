@@ -72,15 +72,15 @@ Per veure tota la configuració realitzada fem un slapcat de nou
 
 ## Configuració client
 
-Primer canviarem el hostname amb la comanda adequada 
+Primer canviarem el hostname amb la comanda **hostname** 
 
 <img width="814" height="111" alt="imatge" src="https://github.com/user-attachments/assets/cd13d5ac-5a2d-4f26-9bef-6350f69eaa93" />
 
-I utilitzarem la comanda apt install per descarregar els paquets libnss-ldap libpam-ldap nscd
+I utilitzarem la comanda **apt install** per descarregar els paquets **libnss-ldap libpam-ldap nscd**
 
 <img width="773" height="71" alt="imatge" src="https://github.com/user-attachments/assets/a92feb2c-7e3b-4d8d-a65b-d40b337ab3f6" />
 
-I podem fer un 'dpkg-reconfigure ldap-auth-config' per configurar el paquet, que gestiona la connexió entre el sistema operatiu i el servidor LDAP.
+I podem fer un **'dpkg-reconfigure ldap-auth-config'** per configurar el paquet, que gestiona la connexió entre el sistema operatiu i el servidor LDAP.
 
 <img width="649" height="499" alt="imatge" src="https://github.com/user-attachments/assets/5311b981-0fd0-4807-86e0-7cbe088567d4" />
 <img width="646" height="360" alt="imatge" src="https://github.com/user-attachments/assets/0a09f427-4002-4312-8a71-fc107141d56f" />
@@ -93,7 +93,7 @@ I podem fer un 'dpkg-reconfigure ldap-auth-config' per configurar el paquet, que
 <img width="645" height="357" alt="imatge" src="https://github.com/user-attachments/assets/0847f6e6-6b08-4e2a-85f7-c3838ca6a376" />
 <img width="638" height="396" alt="imatge" src="https://github.com/user-attachments/assets/e7ba5164-8cbe-4016-bfbe-fb581963063e" />
 
-Un cop feta la instal·lacio i configuració del paquet hem d'anar a l'arxiu /etc/nsswitch.conf i afegir 'ldap' per a que cerqui usuari, contrasenyes i grups.
+Un cop feta la instal·lacio i configuració del paquet hem d'anar a l'arxiu **/etc/nsswitch.conf** i afegir **'ldap'** per a que cerqui usuari, contrasenyes i grups.
 
 <img width="657" height="503" alt="imatge" src="https://github.com/user-attachments/assets/3965578a-2dc3-4ac2-9095-2df8d36bdcd4" />
 
@@ -105,7 +105,7 @@ També hem de fer algunes configuracions dins de l'arxiu /etc/pam.d/common-sessi
 
 <img width="655" height="501" alt="imatge" src="https://github.com/user-attachments/assets/37633db5-214e-4738-a3ab-97ba1db86083" />
 
-I he configurat el fitxer de configuració de LightDM per permetre l'inici de sessió manual d'usuaris LDAP. Això és necessari perquè, per defecte, LightDM només mostra els usuaris locals i no permet introduir manualment un nom d'usuari. Afegint aquestes opcions:
+I he configurat el fitxer de configuració de **LightDM** per permetre l'inici de sessió manual d'usuaris LDAP. Això és necessari perquè, per defecte, **LightDM** només mostra els usuaris locals i no permet introduir manualment un nom d'usuari. Afegint aquestes opcions:
 
 <img width="656" height="502" alt="imatge" src="https://github.com/user-attachments/assets/fcc3816f-9436-4c77-939c-c2b3e1ab6acb" />
 

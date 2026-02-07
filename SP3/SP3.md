@@ -111,7 +111,7 @@ També hem de fer algunes configuracions dins de l'arxiu /etc/pam.d/common-sessi
 
 **- En el /etc/pam.d/common-password he eliminat el use_authtok.**
 
-**- Afegit session optional pam_mkhomedir.so skel=/etc/skel umask=077 al final.**
+**- Afegit session optional pam_mkhomedir.so skel=/etc/skel umask=022 al final.**
 
 <img width="655" height="501" alt="imatge" src="https://github.com/user-attachments/assets/37633db5-214e-4738-a3ab-97ba1db86083" />
 

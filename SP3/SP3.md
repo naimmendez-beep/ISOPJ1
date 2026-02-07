@@ -84,14 +84,23 @@ I utilitzarem la comanda **apt install** per descarregar els paquets **libnss-ld
 I podem fer un **'dpkg-reconfigure ldap-auth-config'** per configurar el paquet, que gestiona la connexió entre el sistema operatiu i el servidor LDAP.
 
 <img width="649" height="499" alt="imatge" src="https://github.com/user-attachments/assets/5311b981-0fd0-4807-86e0-7cbe088567d4" />
+
 <img width="646" height="360" alt="imatge" src="https://github.com/user-attachments/assets/0a09f427-4002-4312-8a71-fc107141d56f" />
+
 <img width="642" height="338" alt="imatge" src="https://github.com/user-attachments/assets/29ed8b68-a2b6-4786-9b58-3c818bf29e9b" />
+
 <img width="641" height="353" alt="imatge" src="https://github.com/user-attachments/assets/e9fcc79d-d8f0-46d9-9ffb-d623e3fd86c3" />
+
 <img width="640" height="373" alt="imatge" src="https://github.com/user-attachments/assets/dda84fab-d0a1-47f9-9fef-74672c538929" />
+
 <img width="642" height="342" alt="imatge" src="https://github.com/user-attachments/assets/f6c9a321-7f5d-4e9e-9bd4-c1c1a620c88f" />
+
 <img width="645" height="337" alt="imatge" src="https://github.com/user-attachments/assets/ce4c8555-bff3-4d61-a2cb-2466fc8a922f" />
+
 <img width="639" height="333" alt="imatge" src="https://github.com/user-attachments/assets/3eaf79ab-65f5-41fe-9817-ef5c8fd3a8e5" />
+
 <img width="645" height="357" alt="imatge" src="https://github.com/user-attachments/assets/0847f6e6-6b08-4e2a-85f7-c3838ca6a376" />
+
 <img width="638" height="396" alt="imatge" src="https://github.com/user-attachments/assets/e7ba5164-8cbe-4016-bfbe-fb581963063e" />
 
 Un cop feta la instal·lacio i configuració del paquet hem d'anar a l'arxiu **/etc/nsswitch.conf** i afegir **'ldap'** per a que cerqui usuari, contrasenyes i grups.

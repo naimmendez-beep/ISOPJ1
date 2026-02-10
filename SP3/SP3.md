@@ -240,3 +240,37 @@ I amb l'usuari que haviem donat permisos per connectar-se, crear directoris, arx
 Pero amb l'usuari que haviem apartat no ens deixa eliminar o crear arxius, però si connectar-se
 
 <img width="657" height="368" alt="image" src="https://github.com/user-attachments/assets/0fc27fed-8f4e-4362-9f3d-c5e067d23160" />
+
+## NFS
+És un protocol que permet compartir fitxers, direcoris, (impresores no), a través d’una xarxa local, l’autenticació es fa a nivell de host no usuari, a diferencia de samba, poden accedir tant clients windows com linux.
+
+## 1r exercici NFS sense ldap: 
+
+### Server
+<img width="649" height="223" alt="NFS1" src="https://github.com/user-attachments/assets/cabd170a-bae7-41e9-bf84-c8035ce91ca1" />
+
+<img width="420" height="128" alt="NFS2" src="https://github.com/user-attachments/assets/e6b14f80-696d-421e-b985-b84d615d0b1a" />
+
+Hem de posar aquest parametres per tal de donar certs permisos 
+
+<img width="935" height="239" alt="NFS3" src="https://github.com/user-attachments/assets/7d83f37d-4d3c-4f6a-8648-7afb30a634ff" />
+
+<img width="774" height="215" alt="NFS4" src="https://github.com/user-attachments/assets/448a8e11-1856-48ce-95a3-39ee121d1b0a" />
+
+
+### Client
+<img width="810" height="179" alt="imatge" src="https://github.com/user-attachments/assets/ffe44d84-ce59-4d50-adc7-cdc8bcb70054" />
+
+<img width="800" height="340" alt="NFS5" src="https://github.com/user-attachments/assets/5516d0e4-7616-4305-b07f-70aa32bf1819" />
+
+<img width="719" height="339" alt="NFS6" src="https://github.com/user-attachments/assets/4810fc2b-570d-4cce-baa3-ade07f7b7fe4" />
+
+<img width="659" height="253" alt="NFS7_Ping" src="https://github.com/user-attachments/assets/27de1444-d1fb-4d0c-b643-4fb0168e42cc" />
+
+<img width="810" height="276" alt="NFS8" src="https://github.com/user-attachments/assets/d2b61220-b831-4ce5-8927-6ccb3ea0e394" />
+
+<img width="393" height="64" alt="NFSprova" src="https://github.com/user-attachments/assets/5adc1b37-9ac4-420d-918e-1e0e6fc539eb" />
+
+<img width="720" height="293" alt="NFS9" src="https://github.com/user-attachments/assets/47d2ce88-002c-43ff-b09c-fd0b392ac926" />
+
+## NFS amb LDAP

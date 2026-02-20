@@ -257,11 +257,18 @@ Ara passem a la configuració, primer de tot hem d'editar el /etc/samba/smb.conf
 | **ldap ssl =** | `no` | SSL desactivat segons la configuració actual |
 | **ldap passwd sync =** | `yes` | Activa la sincronització de contrasenyes |
 
-També hem d'executar la comanda
+També hem d'executar la comanda:
 
-sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f /usr/share/doc/samba/examples/LDAP/samba.ldif
+**sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f /usr/share/doc/samba/examples/LDAP/samba.ldif**
 
 <img width="862" height="64" alt="imatge" src="https://github.com/user-attachments/assets/e595f393-c66e-4c71-aa8f-f20e19de1a1e" />
+
+Posem la constrasenya a l'usuari alumne amb smbpasswd
+
+<img width="566" height="60" alt="imatge" src="https://github.com/user-attachments/assets/3f5438b4-6cf1-48e0-8cd8-026dc57686fe" />
+
+Per a que OpenLDAP es pugui utilitzar com a backend per a Samba, el DIT haurà d'utilitzar atributs que puguin descriure correctament les dades de Samba. Aquests atributs es poden obtenir introduint un esquema LDAP de Samba.
+
 
 
 ## NFS

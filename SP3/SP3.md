@@ -241,6 +241,29 @@ Pero amb l'usuari que haviem apartat no ens deixa eliminar o crear arxius, però
 
 <img width="657" height="368" alt="image" src="https://github.com/user-attachments/assets/0fc27fed-8f4e-4362-9f3d-c5e067d23160" />
 
+## Integració OpenLDAP
+
+Primerament començarem descarregant el paquet.
+
+<img width="621" height="136" alt="imatge" src="https://github.com/user-attachments/assets/0bbd9152-4c2a-4b93-bfde-b165e021dee1" />
+
+Ara passem a la configuració, primer de tot hem d'editar el /etc/samba/smb.conf i afegir el següent:
+
+| Paràmetre | Valor | Descripció |
+| :--- | :--- | :--- |
+| **passdb backend =** | `ldapsam:ldap://10.0.2.7` | Indica on buscar les contrasenyes (servidor LDAP) |
+| **ldap suffix =** | `dc=naim,dc=cat` | Informació del domini LDAP |
+| **ldap admin dn =** | `cn=admin,dc=naim,dc=cat` | DN de l'administrador per a la gestió |
+| **ldap ssl =** | `no` | SSL desactivat segons la configuració actual |
+| **ldap passwd sync =** | `yes` | Activa la sincronització de contrasenyes |
+
+També hem d'executar la comanda
+
+sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f /usr/share/doc/samba/examples/LDAP/samba.ldif
+
+<img width="862" height="64" alt="imatge" src="https://github.com/user-attachments/assets/e595f393-c66e-4c71-aa8f-f20e19de1a1e" />
+
+
 ## NFS
 És un protocol que permet compartir fitxers, direcoris, (impresores no), a través d’una xarxa local, l’autenticació es fa a nivell de host no usuari, a diferencia de samba, poden accedir tant clients windows com linux.
 

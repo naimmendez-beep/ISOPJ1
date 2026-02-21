@@ -272,6 +272,7 @@ Posem la constrasenya a l'usuari alumne amb smbpasswd
 <img width="566" height="60" alt="imatge" src="https://github.com/user-attachments/assets/3f5438b4-6cf1-48e0-8cd8-026dc57686fe" />
 
 ### Proves client via CLI (fotos tretes amb el consentiment de Eros, ja que a mi m'ha donat certs problemes i no he pogut realitzar les proves)
+<img width="1149" height="401" alt="imatge" src="https://github.com/user-attachments/assets/f11d7dec-48bf-4751-b6e1-00510b931643" />
 
 Usuari Enric
 

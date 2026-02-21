@@ -137,11 +137,11 @@ Tenim varies eines per crear **scripts** .ldif, podem utilitzar els programes se
 
 Primer haurem d'instal·lar varios paquets, les dependencies de php i algunes altres neccessitats.
 
-**apt install -y fonts-dejavu gettext libapache2-mod-php8.3 libphp-phpmailer \
+  apt install -y fonts-dejavu gettext libapache2-mod-php8.3 libphp-phpmailer \
   php php-bcmath php-constant-time php-gd php-gmp php-ldap php-monolog \
   php-mysql php-phpseclib3 php-random-compat php-sqlite3 php-xml \
   php8.3 php8.3-bcmath php8.3-gd php8.3-gmp php8.3-ldap \
-  php8.3-mysql php8.3-sqlite3 php8.3-xml**
+  php8.3-mysql php8.3-sqlite3 php8.3-xml
 
 <img width="1217" height="344" alt="image" src="https://github.com/user-attachments/assets/4878ab60-f867-46c0-b4a9-d02e80679868" />
 

@@ -257,6 +257,10 @@ Ara passem a la configuració, primer de tot hem d'editar el /etc/samba/smb.conf
 | **ldap ssl =** | `no` | SSL desactivat segons la configuració actual |
 | **ldap passwd sync =** | `yes` | Activa la sincronització de contrasenyes |
 
+<img width="805" height="664" alt="imatge" src="https://github.com/user-attachments/assets/294800b2-e312-43b5-85e2-5bb10da76ab1" />
+
+**Per a que OpenLDAP es pugui utilitzar com a backend per a Samba, el DIT haurà d'utilitzar atributs que puguin descriure correctament les dades de Samba. Aquests atributs es poden obtenir introduint un esquema LDAP de Samba.**
+
 També hem d'executar la comanda:
 
 **sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f /usr/share/doc/samba/examples/LDAP/samba.ldif**
@@ -267,9 +271,15 @@ Posem la constrasenya a l'usuari alumne amb smbpasswd
 
 <img width="566" height="60" alt="imatge" src="https://github.com/user-attachments/assets/3f5438b4-6cf1-48e0-8cd8-026dc57686fe" />
 
-Per a que OpenLDAP es pugui utilitzar com a backend per a Samba, el DIT haurà d'utilitzar atributs que puguin descriure correctament les dades de Samba. Aquests atributs es poden obtenir introduint un esquema LDAP de Samba.
+### Proves client via CLI (fotos tretes amb el consentiment de Eros, ja que a mi m'ha donat certs problemes i no he pogut realitzar les proves)
 
+Usuari Enric
 
+<img width="853" height="529" alt="imatge" src="https://github.com/user-attachments/assets/a8bb0151-e0e7-4d59-a387-8ac436fea36a" />
+
+Usuari Marc
+
+<img width="882" height="469" alt="imatge" src="https://github.com/user-attachments/assets/81d55935-300c-4297-b214-6d7c34cae659" />
 
 ## NFS
 És un protocol que permet compartir fitxers, direcoris, (impresores no), a través d’una xarxa local, l’autenticació es fa a nivell de host no usuari, a diferencia de samba, poden accedir tant clients windows com linux.
@@ -277,7 +287,12 @@ Per a que OpenLDAP es pugui utilitzar com a backend per a Samba, el DIT haurà d
 ## 1r exercici NFS sense ldap: 
 
 ### Server
+
+Instalarem el paquet nfs-kernel-server
+
 <img width="649" height="223" alt="NFS1" src="https://github.com/user-attachments/assets/cabd170a-bae7-41e9-bf84-c8035ce91ca1" />
+
+Creem el directori que compartirem i li assignem els permisos necessaris.
 
 <img width="420" height="128" alt="NFS2" src="https://github.com/user-attachments/assets/e6b14f80-696d-421e-b985-b84d615d0b1a" />
 
@@ -285,22 +300,67 @@ Hem de posar aquest parametres per tal de donar certs permisos
 
 <img width="935" height="239" alt="NFS3" src="https://github.com/user-attachments/assets/7d83f37d-4d3c-4f6a-8648-7afb30a634ff" />
 
+Guardem la configuració i reiniciem el servei per assegurarnos de guardar els canvis.
+
 <img width="774" height="215" alt="NFS4" src="https://github.com/user-attachments/assets/448a8e11-1856-48ce-95a3-39ee121d1b0a" />
 
 
 ### Client
+
+Fem un update i instal·larem le paquet **nfs-common rpcbind**
+
 <img width="810" height="179" alt="imatge" src="https://github.com/user-attachments/assets/ffe44d84-ce59-4d50-adc7-cdc8bcb70054" />
 
 <img width="800" height="340" alt="NFS5" src="https://github.com/user-attachments/assets/5516d0e4-7616-4305-b07f-70aa32bf1819" />
 
+Muntarem els recursos compartits NFS a una carpeta anomenada 'prova' i li donem els permisos necessaris.
+
 <img width="719" height="339" alt="NFS6" src="https://github.com/user-attachments/assets/4810fc2b-570d-4cce-baa3-ade07f7b7fe4" />
+
+Comprovem que tenim connexió amb el servidor.
 
 <img width="659" height="253" alt="NFS7_Ping" src="https://github.com/user-attachments/assets/27de1444-d1fb-4d0c-b643-4fb0168e42cc" />
 
+I hem d'editar el fitxer fstab afegint IP i ruta al final del fitxer, a part de fer que el muntatge sigui permanent i es mantingui després de reiniciar, afegim l'entrada corresponent al fitxer
+
 <img width="810" height="276" alt="NFS8" src="https://github.com/user-attachments/assets/d2b61220-b831-4ce5-8927-6ccb3ea0e394" />
+
+Fem un echo hola, des del servidor per comprovar que el recurs es comparteix.
 
 <img width="393" height="64" alt="NFSprova" src="https://github.com/user-attachments/assets/5adc1b37-9ac4-420d-918e-1e0e6fc539eb" />
 
 <img width="720" height="293" alt="NFS9" src="https://github.com/user-attachments/assets/47d2ce88-002c-43ff-b09c-fd0b392ac926" />
 
-## NFS amb LDAP
+## NFS amb Windows
+
+Principalment haurem d'anar a **programas y caracteristicas** i instal·lar el paquet 'Servicios para NFS' com a client.
+
+<img width="961" height="612" alt="imatge" src="https://github.com/user-attachments/assets/423aaf11-5f7c-4051-a651-491edc4089df" />
+
+Un cop instal·lat, el cerquem amb el buscador i entrem
+
+<img width="942" height="430" alt="imatge" src="https://github.com/user-attachments/assets/27edf79d-4fbe-4728-9284-6941762d9fe3" />
+
+Tornem al servidor i crearem una carpeta amb els permisos corresponents 
+
+<img width="683" height="176" alt="imatge" src="https://github.com/user-attachments/assets/fb00452c-ab3a-496b-85dd-bf067af21ccd" />
+
+I l'afegirem a l'arxiu /etc/exports
+
+<img width="737" height="344" alt="imatge" src="https://github.com/user-attachments/assets/9a29d622-7747-4954-b73e-f9274ac8ae57" />
+
+Reiniciem el servei 
+
+<img width="980" height="353" alt="imatge" src="https://github.com/user-attachments/assets/97252808-ebc9-40cd-803a-3d83dec773e1" />
+
+I obrim el CMD del client de Windows i utilitzem la comanda mount.exe ...
+
+<img width="512" height="90" alt="imatge" src="https://github.com/user-attachments/assets/c96667e8-705f-4e7c-8237-d3336f9d40bb" />
+
+I tot seguit per visualitzar el share aquest hem d'anar al nostre explorador d'arxius i ja apareixerà.
+
+<img width="679" height="203" alt="imatge" src="https://github.com/user-attachments/assets/990933c1-7bd7-4cf7-a031-f5c2229bba35" />
+
+Comprovem que a la ruta que haviem fet el mount surt l'arxiu.
+
+<img width="842" height="221" alt="imatge" src="https://github.com/user-attachments/assets/0b4bd86c-dd06-4481-b5aa-c3aedf2cfacf" />

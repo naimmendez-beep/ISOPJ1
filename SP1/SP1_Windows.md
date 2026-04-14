@@ -2,7 +2,7 @@
 layout: custom
 title: "Sprint 1: Instal·lació i Configuració Inicial – Windows"
 ---
-Fase 1 – Instal·lació del sistema operatiu
+## Fase 1 – Instal·lació del sistema operatiu
 ### Pas 1 – Crear la màquina virtual amb VirtualBox
 
 Aquí inicio la creació de la nova màquina virtual a VirtualBox. Anomeno la màquina Windos 10 Pro, selecciono el tipus Microsoft Windows i la versió Windows 10 (64-bit).

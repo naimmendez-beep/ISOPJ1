@@ -232,64 +232,84 @@ Existen diferentes canales de distribución según el origen y la finalidad del 
 Es poden trobar llicències a preus inferiors a botigues de programari autoritzades com Amazon, El Corte Inglés Digital o el propi Microsoft Store. Les llicències OEM (per a PC nous) solen ser més barates perquè van lligades al maquinari.
 
 Fase 4 – Gestor d'arrencada
-Pas 16 – Obrir Command Prompt com a administrador
+### Pas 16 – Obrir Command Prompt com a administrador
+Al cercador de Windows busco "cmd" (Símbolo del sistema) i clico "Ejecutar como administrador" per tenir tots els permisos necessaris per executar bcdedit.
 
-    Al cercador de Windows busco "cmd" (Símbolo del sistema) i clico "Ejecutar como administrador" per tenir tots els permisos necessaris per executar bcdedit.
+<img width="889" height="770" alt="imatge" src="https://github.com/user-attachments/assets/828b51d6-ecee-451d-b477-30cfe74ca4a6" />
 
-Pas 16 – Obrir CMD com administrador
-Pas 17 – Executar bcdedit
+### Pas 17 – Executar bcdedit
 
-    Executo la comanda bcdedit que mostra la configuració completa del gestor d'arrencada de Windows (BCD – Boot Configuration Data).
+Executo la comanda bcdedit que mostra la configuració completa del gestor d'arrencada de Windows (BCD – Boot Configuration Data).
 
-Pas 17 – Resultat de bcdedit amb els blocs Boot Manager i Boot Loader
-Pas 18 – Identificar els blocs Boot Manager i Boot Loader
+<img width="630" height="565" alt="imatge" src="https://github.com/user-attachments/assets/40052429-c998-44ea-8f3e-c278ef2ed6c1" />
 
-A la sortida de bcdedit s'identifiquen dos blocs principals:
+## Pas 18 – Identificar els blocs Boot Manager i Boot Loader
 
-Bloc 1 – Administrador de arranque de Windows (Boot Manager):
+A la sortida de `bcdedit` s'identifiquen dos blocs principals:
 
+**Bloc 1 – Administrador de arranque de Windows (Boot Manager):**
+```
 Identificador    {bootmgr}
 device           partition=\Device\HarddiskVolume1
 path             \EFI\Microsoft\Boot\bootmgfw.efi
 description      Windows Boot Manager
 default          {current}
 timeout          30
+```
 
-Bloc 2 – Cargador de arranque de Windows (Boot Loader):
-
+**Bloc 2 – Cargador de arranque de Windows (Boot Loader):**
+```
 Identificador    {current}
 device           partition=C:
 path             \WINDOWS\system32\winload.efi
-description      Windos 10
+description      Windows 11
+```
 
-Pas 19 – Interpretar dades concretes
+---
 
-    Del bloc Boot Manager:
-    Camp 	Valor 	Significat
-    default 	{current} 	El sistema que arrenca per defecte és el Windos 10 actual
-    timeout 	30 	Espera 30 segons al menú d'arrencada abans d'iniciar automàticament
+## Pas 19 – Interpretar dades concretes
 
-    Del bloc Boot Loader:
-    Camp 	Valor 	Significat
-    device 	partition=C: 	Windows està instal·lat a la partició C:
-    path 	\WINDOWS\system32\winload.efi 	Fitxer que carrega el sistema operatiu
-    description 	Windos 10 	Nom del sistema operatiu
+**Del bloc Boot Manager:**
 
-Pas 20 – Respostes a les preguntes curtes
+| Camp | Valor | Significat |
+|---|---|---|
+| `default` | `{current}` | El sistema que arrenca per defecte és el Windows 11 actual |
+| `timeout` | `30` | Espera 30 segons al menú d'arrencada abans d'iniciar automàticament |
 
-    Quin sistema s'està arrencant? → Windos 10 (identificador {current}).
+**Del bloc Boot Loader:**
 
-    A quin disc o partició està instal·lat? → A la partició C: del primer disc dur.
+| Camp | Valor | Significat |
+|---|---|---|
+| `device` | `partition=C:` | Windows està instal·lat a la partició C: |
+| `path` | `\WINDOWS\system32\winload.efi` | Fitxer que carrega el sistema operatiu |
+| `description` | `Windows 11` | Nom del sistema operatiu |
 
-    Quant temps espera abans d'arrencar? → 30 segons (timeout 30).
+---
 
-    Quin fitxer inicia Windows? → \WINDOWS\system32\winload.efi
+## Pas 20 – Respostes a les preguntes curtes
 
-Pas 21 – Interpretació final
+**Quin sistema s'està arrencant?**
+→ **Windows 11** (identificador `{current}`).
 
-    Qui decideix l'arrencada (Boot Manager): El Windows Boot Manager (bootmgr) és el responsable de mostrar el menú d'arrencada i decidir quin sistema operatiu s'iniciarà, en funció de la configuració del BCD.
+**A quin disc o partició està instal·lat?**
+→ A la partició **C:** del primer disc dur.
 
-    Qui carrega el sistema (Boot Loader): El Windows Boot Loader (winload.efi) és el fitxer que realment carrega el nucli de Windows a la memòria i inicia el sistema operatiu un cop el Boot Manager ha pres la decisió.
+**Quant temps espera abans d'arrencar?**
+→ **30 segons** (`timeout 30`).
+
+**Quin fitxer inicia Windows?**
+→ `\WINDOWS\system32\winload.efi`
+
+---
+
+## Pas 21 – Interpretació final
+
+**Qui decideix l'arrencada (Boot Manager):**
+El **Windows Boot Manager** (`bootmgr`) és el responsable de mostrar el menú d'arrencada i decidir quin sistema operatiu s'iniciarà, en funció de la configuració del BCD.
+
+**Qui carrega el sistema (Boot Loader):**
+El **Windows Boot Loader** (`winload.efi`) és el fitxer que realment carrega el nucli de Windows a la memòria i inicia el sistema operatiu un cop el Boot Manager ha pres la decisió.
+
 
 Fase 5 – Xarxa bàsica
 Pas 22 – Obrir la configuració de xarxa

@@ -388,50 +388,55 @@ Quan usar cadascun:
 
 - Executo dir per veure els fitxers i carpetes del directori arrel C:\. Es mostren carpetes com Program Files, Users, Windows, etc.
 
-<img width="560" height="129" alt="imatge" src="https://github.com/user-attachments/assets/db049055-0482-484d-8fcf-d984417ed23b" />
+<img width="529" height="262" alt="imatge" src="https://github.com/user-attachments/assets/5b9f6272-8ca5-4189-8f8e-8c43150771ec" />
 
 - Executo cd Naim per moure'm a la carpeta de l'usuari, mkdir prova per crear una nova carpeta i echo hola > fitxer.txt per crear un fitxer de text.
 
-Pas 29b – cd, mkdir prova i echo hola > fitxer.txt
+<img width="560" height="129" alt="imatge" src="https://github.com/user-attachments/assets/db049055-0482-484d-8fcf-d984417ed23b" />
 
-    Torno a executar dir per confirmar que tant la carpeta prova com el fitxer fitxer.txt (14 bytes) han estat creats correctament.
+<img width="442" height="185" alt="imatge" src="https://github.com/user-attachments/assets/596ce80b-1bb0-4d36-a4b3-2ae013e20781" />
 
-Pas 29c – dir: confirmació de la carpeta prova i fitxer.txt creats
+- Torno a executar dir per confirmar que tant la carpeta prova com el fitxer fitxer.txt (14 bytes) han estat creats correctament.
 
-    Finalment executo del fitxer.txt per eliminar el fitxer i torno a fer dir per confirmar que ja no apareix al llistat.
+<img width="481" height="340" alt="imatge" src="https://github.com/user-attachments/assets/bb58055b-d32e-4cd0-9063-807f7620f718" />
 
-Pas 29d – del fitxer.txt i comprovació amb dir
-Pas 30 – Comandes útils del sistema
+- Finalment executo **del** "fitxer.txt" per eliminar el fitxer i torno a fer dir per confirmar que ja no apareix al llistat.
 
-    tasklist → Mostra tots els processos actius al sistema amb el seu PID, sessió i consum de memòria. Es poden veure processos com System, svchost.exe, wininit.exe, etc.
+<img width="436" height="350" alt="imatge" src="https://github.com/user-attachments/assets/ae86cded-b186-4633-b8e0-70ab87f9d16a" />
 
-Pas 30a – tasklist: llistat de processos actius
+### Pas 30 – Comandes útils del sistema
 
-    taskkill /IM notepad.exe /F → Força el tancament del procés Notepad. El sistema confirma: "se terminó el proceso Notepad.exe con PID 4316".
+- tasklist → Mostra tots els processos actius al sistema amb el seu PID, sessió i consum de memòria. Es poden veure processos com System, svchost.exe, wininit.exe, etc.
 
-Pas 30b – taskkill: tancament forçat del Notepad
+<img width="552" height="465" alt="imatge" src="https://github.com/user-attachments/assets/d8a696ff-c517-483c-9fa2-7fe4266997a3" />
 
-    systeminfo → Mostra informació detallada del sistema: nom de l'equip (ASTRO), sistema operatiu (Windos 10 Pro), fabricant (VirtualBox), memòria, processador, data d'instal·lació, etc.
+- taskkill /IM notepad.exe /F → Força el tancament del procés Notepad. El sistema confirma: "se terminó el proceso Notepad.exe con PID 5712".
 
-Pas 30c – systeminfo: informació completa del sistema
+<img width="435" height="54" alt="imatge" src="https://github.com/user-attachments/assets/315878b3-6a65-4653-893e-5953346c5aa2" />
 
-    hostname i whoami → hostname retorna el nom de l'equip (Astro) i whoami retorna l'usuari atual (astro\Naim).
+- systeminfo → Mostra informació detallada del sistema: nom de l'equip (ASTRO), sistema operatiu (Windos 10 Pro), fabricant (VirtualBox), memòria, processador, data d'instal·lació, etc.
 
-Pas 30d – hostname i whoami
-Pas 31 – Comandes de xarxa
+<img width="800" height="562" alt="imatge" src="https://github.com/user-attachments/assets/745ba6ac-9037-443c-ac2a-14df70ea3a5b" />
 
-    ipconfig mostra la configuració IP de l'adaptador Ethernet: IP 10.0.2.5, màscara 255.255.255.0 i gateway 10.0.2.2.
 
-    ping google.com envia paquets a Google i el resultat confirma connexió a Internet amb 0% de pèrdua i temps de resposta ~23 ms.
+- hostname i whoami → hostname retorna el nom de l'equip (Astro) i whoami retorna l'usuari atual (astro\Naim).
 
-Pas 31a – ipconfig i ping google.com
+<img width="200" height="78" alt="imatge" src="https://github.com/user-attachments/assets/e0f0994b-30fd-426e-851c-cea54a233267" />
 
-    netstat -an mostra totes les connexions de xarxa obertes al sistema, tant les que estan en estat LISTENING (escoltant) com les ESTABLISHED (connectades). És útil per detectar connexions actives o ports oberts.
+### Pas 31 – Comandes de xarxa
 
-Pas 31b – netstat -an: connexions obertes i ports en escolta
-Pas 32 – Comandes interessants (avançades)
+- ipconfig mostra la configuració IP de l'adaptador Ethernet: IP 10.0.2.5, màscara 255.255.255.0 i gateway 10.0.2.2.
+  ping google.com envia paquets a Google i el resultat confirma connexió a Internet amb 0% de pèrdua i temps de resposta ~23 ms.
 
-    tree → Mostra l'estructura de carpetes en forma d'arbre des del directori actual. En aquest cas mostra totes les subcarpetes de l'usuari Naim com Desktop, Documents, Downloads, prova, etc.
+<img width="571" height="370" alt="imatge" src="https://github.com/user-attachments/assets/015084e5-db32-4472-a686-d7b31c9b510d" />
+
+netstat -an mostra totes les connexions de xarxa obertes al sistema, tant les que estan en estat LISTENING (escoltant) com les ESTABLISHED (connectades). És útil per detectar connexions actives o ports oberts.
+
+<img width="551" height="364" alt="imatge" src="https://github.com/user-attachments/assets/49467045-2e95-4cd5-b4c0-ccc9047a37b4" />
+
+### Pas 32 – Comandes interessants (avançades)
+
+tree → Mostra l'estructura de carpetes en forma d'arbre des del directori actual. En aquest cas mostra totes les subcarpetes de l'usuari Naim com Desktop, Documents, Downloads, prova, etc.
 
 Pas 32a – tree: estructura de carpetes en arbre
 

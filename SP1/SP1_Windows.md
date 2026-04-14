@@ -27,7 +27,7 @@ Pas 3 – Disc virtual de 40 GB i ISO de Windows 11 carregada
 <img width="868" height="474" alt="imatge" src="https://github.com/user-attachments/assets/67e3e769-7be8-4c8a-aa36-3aaf1ff84a40" />
 
 * A continuació puc veure el **resum final** de la VM abans de crear-la. Confirmo que tot és correcte:
-    - **Nom:** Windows 11 Pro
+    - **Nom:** Windows 10 Pro
     - **Memòria:** 4096 MB | **Processadors:** 4 | **EFI:** activat
     - **Disc:** 45 GB
     - **ISO:** Win10_22H2_Spanish_x64.iso

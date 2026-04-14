@@ -108,7 +108,7 @@ Un cop arrencada la VM des de la ISO, apareix la pantalla de configuració d'idi
 
 Windows 10 arrenca correctament i apareix l'escriptori. Es pot veure la barra de tasques, la icona de la Paperera de reciclatge i l'accés directe a Microsoft Edge. La instal·lació ha estat exitosa.
 
-<img width="1021" height="769" alt="imatge" src="https://github.com/user-attachments/assets/7b3a4a43-5fbd-4b79-b0fc-eaae940da791" />
+<img width="1021" height="761" alt="imatge" src="https://github.com/user-attachments/assets/aef1907c-b494-42fa-914b-0b76c54d1478" />
 
 ## Fase 2 – Punts de restauració
 ### Pas 6 – Cercar "Crear un punt de restauració"
@@ -145,10 +145,9 @@ Introdueixo la descripció "Naim - 14/04/2026: 15:41" per identificar el punt. W
 
 ### Pas 9 – Fer un canvi (crear un arxiu de prova)
 
-Com a canvi de sistema, creo un arxiu anomenat PROVA a l'escriptori. Amb la protecció activa al disc C:, Windows pot revertir aquest canvi si es fa una restauració.
+Com a canvi de sistema, creo un arxiu anomenat Prueba a l'escriptori. Amb la protecció activa al disc C:, Windows pot revertir aquest canvi si es fa una restauració.
 
 <img width="874" height="577" alt="imatge" src="https://github.com/user-attachments/assets/b4e7eaba-7ccb-473d-923e-74b6638b17d5" />
-
 
 ### Pas 10 – Restaurar i comprovar
 
@@ -158,36 +157,39 @@ Clico Restaurar sistema... per iniciar el procés de restauració al punt creat 
 
 Selecciono el punt de restauració "Naim - 14/04/2026: 15:41" creat manualment i clico Següent per continuar.
 
-<img width="693" height="550" alt="imatge" src="https://github.com/user-attachments/assets/0e7f6af2-72b2-47c6-a68f-a679ecb055bc" />
+<img width="573" height="461" alt="imatge" src="https://github.com/user-attachments/assets/0fab8381-c00d-4ce5-968b-3b35f8cab010" />
 
+Apareix un avís confirmant que el procés no es pot interrompre un cop iniciat. Clico Sí per confirmar la restauració.
 
-    Apareix un avís confirmant que el procés no es pot interrompre un cop iniciat. Clico Sí per confirmar la restauració.
+<img width="560" height="457" alt="imatge" src="https://github.com/user-attachments/assets/3a21b672-e136-44ae-b89d-52b8ed18454e" />
 
-Pas 10c – Confirmació per iniciar la restauració
+Windows reinicia i comença a restaurar els arxius i la configuració. Es pot veure la pantalla de "Restaurar sistema se está inicializando...".
 
-    Windows reinicia i comença a restaurar els arxius i la configuració. Es pot veure la pantalla de "Restaurar sistema se está inicializando...".
+<img width="951" height="466" alt="imatge" src="https://github.com/user-attachments/assets/75ca0a99-8aed-4f2c-b053-d13597e7ffb2" />
 
-Pas 10d – Restauració del sistema en curs
+Un cop acabada la restauració, Windows torna a l'escriptori en l'estat anterior. L'arxiu Prueba ha desaparegut, confirmant que la restauració ha funcionat correctament.
 
-    Un cop acabada la restauració, Windows torna a l'escriptori en l'estat anterior. L'arxiu PROVA ha desaparegut, confirmant que la restauració ha funcionat correctament.
+<img width="1012" height="725" alt="imatge" src="https://github.com/user-attachments/assets/fceecd16-1817-4ae2-b76a-3039d4359682" />
 
-Pas 10e – Escriptori restaurat: l'arxiu PROVA ja no hi és
-Fase 3 – Llicències de Windows
-Pas 11 – Obrir Configuració → Sistema → Activació
+## Fase 3 – Llicències de Windows
+### Pas 11 – Obrir Configuració → Sistema → Activació
 
-    Obro Configuració i vaig a Sistema ① → Activació ② per consultar l'estat de la llicència de Windows.
+Obro Configuració i busco "activacion" per consultar l'estat de la llicència de Windows.
 
-Pas 11 – Configuració > Sistema > Activació
-Pas 12 – Veure si Windows està activat
+<img width="963" height="676" alt="imatge" src="https://github.com/user-attachments/assets/98c92229-45b8-44b8-9d13-738840860a9a" />
 
-    La pantalla d'activació mostra que Windows 11 Pro té l'estat "No está activo". L'error 0xC004F213 indica que no s'ha trobat cap clau de producte al dispositiu. Això és normal en una instal·lació de prova sense llicència comprada.
+### Pas 12 – Veure si Windows està activat
 
-Pas 12 – Windows 11 Pro no activat (codi error 0xC004F213)
-Pas 13 – Executar al CMD: slmgr /xpr
+La pantalla d'activació mostra que Windows 10 Pro té l'estat "No está activo". L'error 0xC004F213 indica que no s'ha trobat cap clau de producte al dispositiu. Això és normal en una instal·lació de prova sense llicència comprada.
 
-    Obro el symbol del sistema i executo la comanda slmgr /xpr. Apareix una finestra de Windows Script Host que indica: "Windows(R), Professional edition: Windows está en modo de notificación". Això confirma que Windows funciona però sense llicència activa.
+<img width="959" height="448" alt="imatge" src="https://github.com/user-attachments/assets/de84d22b-b1c1-444a-9654-75d5e0e36083" />
 
-Pas 13 – Resultat de slmgr /xpr: mode de notificació
+### Pas 13 – Executar al CMD: slmgr /xpr
+
+Obro el symbol del sistema i executo la comanda slmgr /xpr. Apareix una finestra de Windows Script Host que indica: "Windows(R), Professional edition: Windows está en modo de notificación". Això confirma que Windows funciona però sense llicència activa.
+
+<img width="966" height="458" alt="imatge" src="https://github.com/user-attachments/assets/034f8c46-8f88-4973-9d1d-8bfac39c4b91" />
+
 Pas 14 – Tipus de llicenciament de Windows
 
     Tipus de llicències de Windows més habituals:

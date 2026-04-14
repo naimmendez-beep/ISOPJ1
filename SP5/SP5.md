@@ -70,6 +70,49 @@ Filtrem per els que siguin mail
 
 <img width="714" height="213" alt="image" src="https://github.com/user-attachments/assets/fcec7695-c6c0-4acd-8641-53841ea4c94a" />
 
+## Exercici 2: Enviar logs remotament a una altra màquina
+
+En aquest exercici configurem dues màquines:
+
+    ferranserver (IP 10.0.2.15) → actua com a servidor de logs (rep els logs)
+    ferranbernis1-VirtualBox → actua com a client (envia els logs)
+
+Configuració del servidor (ferranserver)
+
+Al servidor creem /etc/rsyslog.d/10-remote.conf per habilitar la recepció de logs per UDP i TCP al port 514 i desar-los a /var/log/remote/<hostname>/syslog.log:
+
+<img width="800" height="325" alt="imatge" src="https://github.com/user-attachments/assets/cb3351f8-059c-42a5-a57a-c5fda909dd09" />
+
+Comprovem que rsyslog escolta al port 514 tant per UDP com per TCP amb ss -tulpn | grep 514:
+
+<img width="1016" height="191" alt="imatge" src="https://github.com/user-attachments/assets/496e4379-7018-466b-90ca-c66856e083bc" />
+
+### Configuració del client (ferranbernis1-VirtualBox)
+
+Al client creem /etc/rsyslog.d/90-forward.conf amb la directiva *.* @@10.0.2.15:514 per reenviar tots els logs al servidor via TCP:
+
+<img width="706" height="60" alt="imatge" src="https://github.com/user-attachments/assets/d98c23f8-2feb-46d3-a274-c9221d64acb0" />
+
+**Prova**: enviar un log des del client
+
+Des del client enviem un missatge de prova amb logger "PROVA":
+
+<img width="548" height="67" alt="imatge" src="https://github.com/user-attachments/assets/3e6ce968-8ed8-436b-a411-771762387b7a" />
+
+**Verificació al servidor**
+
+Al servidor comprovem que s'ha creat la carpeta remota per a cada màquina client dins de /var/log/remote/:
+
+<img width="733" height="165" alt="imatge" src="https://github.com/user-attachments/assets/813b634f-2a9d-4c04-a9a6-170e4d86c235" />
+
+Dins de la carpeta del client (ferranbernis1-VirtualBox) hi ha el fitxer syslog.log amb els logs rebuts:
+
+<img width="739" height="116" alt="imatge" src="https://github.com/user-attachments/assets/f1b68db7-df38-4244-86e1-942d85193db7" />
+
+Finalment, visualitzem el contingut del syslog.log remot i confirmem que el missatge "PROVA" enviat pel client ha arribat correctament al servidor:
+
+<img width="1574" height="773" alt="imatge" src="https://github.com/user-attachments/assets/32c6e6bd-3cdb-4bcb-9c07-79869b9ad3f5" />
+
 ## Servidor de actualitzacions
 ### Per què és recomanable tenir un servidor d'actualitzacions
 

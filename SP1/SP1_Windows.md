@@ -5,7 +5,7 @@ title: "Sprint 1: Instal·lació i Configuració Inicial – Windows"
 Fase 1 – Instal·lació del sistema operatiu
 ### Pas 1 – Crear la màquina virtual amb VirtualBox
 
-Aquí inicio la creació de la nova màquina virtual a VirtualBox. Anomeno la màquina Windows 11 Pro, selecciono el tipus Microsoft Windows i la versió Windows 11 (64-bit). En aquest punt la ISO encara no hi és seleccionada, la carregaré al pas 3.
+Aquí inicio la creació de la nova màquina virtual a VirtualBox. Anomeno la màquina Windows 11 Pro, selecciono el tipus Microsoft Windows i la versió Windows 10 (64-bit).
 
 <img width="864" height="474" alt="imatge" src="https://github.com/user-attachments/assets/e94011d3-674e-4210-be33-91875609fb67" />
 

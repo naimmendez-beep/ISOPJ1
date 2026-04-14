@@ -438,19 +438,19 @@ netstat -an mostra totes les connexions de xarxa obertes al sistema, tant les qu
 
 tree → Mostra l'estructura de carpetes en forma d'arbre des del directori actual. En aquest cas mostra totes les subcarpetes de l'usuari Naim com Desktop, Documents, Downloads, prova, etc.
 
-Pas 32a – tree: estructura de carpetes en arbre
+<img width="324" height="327" alt="imatge" src="https://github.com/user-attachments/assets/e206e9ab-9768-4bf0-aee8-aab298016b4e" />
 
-    cls → Neteja completament la pantalla del terminal. La pantalla queda buida i el cursor torna a l'inici.
+cls → Neteja completament la pantalla del terminal. La pantalla queda buida i el cursor torna a l'inici.
 
-Pas 32b – cls: pantalla netejada
+<img width="191" height="46" alt="imatge" src="https://github.com/user-attachments/assets/a1079d08-ab11-454f-9713-219ca4309838" />
 
-    help → Mostra el sistema d'ajuda de PowerShell amb informació sobre els cmdlets, funcions i conceptes disponibles.
+help → Mostra el sistema d'ajuda de PowerShell amb informació sobre els cmdlets, funcions i conceptes disponibles.
 
-Pas 32c – help: sistema d'ajuda de PowerShell
+<img width="772" height="685" alt="imatge" src="https://github.com/user-attachments/assets/48d9c136-b707-4e5b-a194-df16ce039e18" />
 
-    Nota sobre shutdown /s /t 0: Aquesta comanda apaga l'equip immediatament (temps = 0 segons). No he fet captura per evitar apagar la màquina virtual durant la sessió de treball.
-
-Pas 33 – Mini interpretació
+**Nota sobre shutdown /s /t 0: Aquesta comanda apaga l'equip immediatament (temps = 0 segons). No he fet captura per evitar apagar la màquina virtual durant la sessió de treball.
+**
+### Pas 33 – Mini interpretació
 
     Què mostra tasklist? → Mostra tots els processos actius en el moment d'executar la comanda, amb el nom del procés, el seu PID (identificador de procés), la sessió on s'executa i el consum de memòria. Permet veure quins programes estan en marxa i consumint recursos.
 
@@ -458,71 +458,78 @@ Pas 33 – Mini interpretació
 
     Què mostra systeminfo? → Mostra un resum complet de la informació del sistema: nom de l'equip, versió del sistema operatiu, fabricant del maquinari, quantitat de RAM, processador instal·lat, data d'instal·lació de Windows i molt més. Equivalent a "Sobre aquest equip" però molt més detallat.
 
-Fase 7 – Instal·lació d'aplicacions
-Pas 34 – Descarregar un programa des del navegador (VS Code)
+## Fase 7 – Instal·lació d'aplicacions
+### Pas 34 – Descarregar un programa des del navegador (VS Code)
 
-    Obro el navegador Microsoft Edge i busco "vscode" a Bing. Clico a l'enllaç de descàrrega oficial de Visual Studio Code.
+- Obro el navegador Microsoft Edge i busco "vscode" a Bing. Clico a l'enllaç de descàrrega oficial de Visual Studio Code.
 
-Pas 34a – Cerca de VS Code a Bing
+<img width="1023" height="773" alt="imatge" src="https://github.com/user-attachments/assets/0d885656-4f74-44b5-8364-156c80cfb778" />
 
-    A la pàgina oficial code.visualstudio.com/Download selecciono la versió per Windows (Windows 10, 11) i inicio la descàrrega de l'instal·lador.
+- A la pàgina oficial code.visualstudio.com/Download selecciono la versió per Windows (Windows 10, 11) i inicio la descàrrega de l'instal·lador.
 
-Pas 34b – Pàgina de descàrrega de VS Code per a Windows
-Pas 35 – Instal·lar seguint l'assistent
+<img width="1000" height="649" alt="imatge" src="https://github.com/user-attachments/assets/b6125936-59c3-4781-babc-e8b8dd99104b" />
 
-    Segueixo l'assistent d'instal·lació. Primer accepto el acord de llicència de Microsoft per a VS Code i clico Següent.
+### Pas 35 – Instal·lar seguint l'assistent
 
-Pas 35a – Acord de llicència de VS Code
+- Segueixo l'assistent d'instal·lació. Primer accepto el acord de llicència de Microsoft per a VS Code i clico Següent.
 
-    Confirmo la carpeta de destinació on s'instal·larà VS Code: C:\Users\Naim\AppData\Local\Programs\Microsoft VS Code (requereix mínim 576,5 MB).
+<img width="598" height="463" alt="imatge" src="https://github.com/user-attachments/assets/1731bde4-1ab0-4250-957e-76bdc991165c" />
 
-Pas 35b – Selecció de carpeta de destinació
+- Confirmo la carpeta de destinació on s'instal·larà VS Code: C:\Users\Naim\AppData\Local\Programs\Microsoft VS Code (requereix mínim 576,5 MB).
 
-    Selecciono les tasques addicionals: registro VS Code com a editor per a tipus de fitxers admesos i l'afegeixo al PATH del sistema (disponible després de reiniciar).
+<img width="592" height="461" alt="imatge" src="https://github.com/user-attachments/assets/430bafb1-809d-4d84-8a1a-fe7a13ee1d85" />
 
-Pas 35c – Tasques addicionals: PATH i registre d'editor
+- Selecciono les tasques addicionals: registro VS Code com a editor per a tipus de fitxers admesos i l'afegeixo al PATH del sistema (disponible després de reiniciar).
 
-L'instal·lació de VS Code s'executa i la barra de progrés avança mentre s'extreuen els arxius.
+<img width="592" height="455" alt="imatge" src="https://github.com/user-attachments/assets/15ac54a8-5cf0-4299-98fc-57e9a605ed2b" />
 
-Pas 35d – Instal·lació de VS Code en curs
-Pas 36 – Obrir i comprovar que funciona
+- L'instal·lació de VS Code s'executa i la barra de progrés avança mentre s'extreuen els arxius.
 
-L'instal·lador finalitza correctament. Apareix la pantalla de "Completando la instalación de Visual Studio Code" amb l'opció d'executar VS Code immediatament. Clico Finalizar.
+<img width="597" height="459" alt="imatge" src="https://github.com/user-attachments/assets/d248b80b-1fc3-4045-b67c-0bd02eed5dce" />
 
-Pas 36a – Instal·lació completada. Llest per obrir VS Code
+### Pas 36 – Obrir i comprovar que funciona
 
-Visual Studio Code s'obre correctament i mostra la pantalla de benvinguda amb les opcions de Walkthrough: Setup VS Code. L'aplicació funciona perfectament a Windos 10.
+- L'instal·lador finalitza correctament. Apareix la pantalla de "Completando la instalación de Visual Studio Code" amb l'opció d'executar VS Code immediatament. Clico Finalizar.
 
-Pas 36b – VS Code obert i funcionant correctament
-Pas 37 – Instal·lar una aplicació des de Microsoft Store
+<img width="594" height="466" alt="imatge" src="https://github.com/user-attachments/assets/c2924627-8dae-4551-909d-8fc53b3a53e7" />
 
-Obro la Microsoft Store i busco "Python 3". Apareix Python 3.13 de la Python Software Foundation (valoració 4.6★). Clico Obtener per instal·lar-lo.
+- Visual Studio Code s'obre correctament i mostra la pantalla de benvinguda amb les opcions de Walkthrough: Setup VS Code. L'aplicació funciona perfectament a Windos 10.
 
-Pas 37 – Python 3.13 a la Microsoft Store
-Pas 38 – Obrir i comprovar el funcionament
+<img width="1018" height="727" alt="imatge" src="https://github.com/user-attachments/assets/5ec7c9ff-0f75-459f-9da3-373cdaeb4af2" />
 
-Un cop instal·lat, obro el CMD i executo python3. L'intèrpret de Python 3.13.12 s'inicia correctament indicant la versió i la plataforma (win32). El prompt >>> confirma que Python està llest per executar codi.
+### Pas 37 – Instal·lar una aplicació des de Microsoft Store
 
-Pas 38 – Python 3.13 instal·lat i funcionant al CMD
-Pas 39 – Desinstal·lar una aplicació
+- Obro la Microsoft Store i busco "Python 3". Apareix Python 3.13 de la Python Software Foundation (valoració 4.6★). Clico Obtener per instal·lar-lo.
 
-Obro Configuració > Aplicaciones ① i clico Aplicaciones instaladas ② per veure la llista de programes instal·lats.
+<img width="799" height="630" alt="imatge" src="https://github.com/user-attachments/assets/bbf6aa3c-63ed-4c49-94de-87acef7c689a" />
 
-Pas 39a – Configuració > Aplicaciones > Aplicaciones instaladas
+### Pas 38 – Obrir i comprovar el funcionament
 
-Busco "visual" al cercador. Apareix Microsoft Visual Studio Code (User) v1.115.0 (577 MB). Clico els tres punts (···) per veure les opcions.
+- Un cop instal·lat, obro el CMD i executo python3. L'intèrpret de Python 3.13.12 s'inicia correctament indicant la versió i la plataforma (win32). El prompt >>> confirma que Python està llest per executar codi.
 
-Pas 39b – Localitzar VS Code a les aplicacions instal·lades
+<img width="788" height="156" alt="imatge" src="https://github.com/user-attachments/assets/fc8dfd3f-b9cc-48c4-866c-5cd230378607" />
 
-Al menú desplegable selecciono Desinstalar per iniciar el procés d'eliminació de VS Code.
+### Pas 39 – Desinstal·lar una aplicació
 
-Pas 39c – Opció Desinstalar de VS Code
+- Obro Configuració > Aplicaciones ① i lista de aplicaciones per buscar la aplicacio instal·lada.
 
-L'assistent de desinstal·lació s'executa i mostra la pantalla "Estado de la Desinstalación" mentre elimina tots els arxius de VS Code del sistema.
+<img width="971" height="684" alt="imatge" src="https://github.com/user-attachments/assets/f90d3e3d-6fd7-43a8-a3c4-8317ab2435fe" />
 
-Pas 39d – Procés de desinstal·lació de VS Code en curs
+- Busco "visual" al cercador. Apareix Microsoft Visual Studio Code (User) v1.115.0 (577 MB). Clico els tres punts (···) per veure les opcions.
+
+<img width="580" height="205" alt="imatge" src="https://github.com/user-attachments/assets/bec5c772-afac-471d-b021-9d691ef97467" />
+
+- Al menú desplegable selecciono Desinstalar per iniciar el procés d'eliminació de VS Code.
+
+<img width="463" height="144" alt="imatge" src="https://github.com/user-attachments/assets/68122e60-2817-4994-8d60-f073d7fb86f0" />
+
+
+- L'assistent de desinstal·lació s'executa i mostra la pantalla "Estado de la Desinstalación" mentre elimina tots els arxius de VS Code del sistema.
+
+<img width="394" height="151" alt="imatge" src="https://github.com/user-attachments/assets/62d0b505-e1a9-413a-ab58-63c4a2758c09" />
+
 Pas 40 – Verificació: comprovar que ja no apareix al sistema
 
 Faig una cerca de "Visual Studio" al cercador de Windows. Abans apareixia VS Code com a millor coincidència; ara ja no apareix cap aplicació instal·lada, només suggeriments de cerca web. Això confirma que VS Code ha estat desinstal·lat correctament.
 
-Pas 40 – Verificació: VS Code ja no apareix al sistema
+<img width="789" height="683" alt="imatge" src="https://github.com/user-attachments/assets/6d064b69-e6f1-413f-bbb3-d284a3c307bc" />

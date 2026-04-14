@@ -30,7 +30,7 @@ Pas 3 – Disc virtual de 40 GB i ISO de Windows 11 carregada
     - **Nom:** Windows 10 Pro
     - **Memòria:** 4096 MB | **Processadors:** 4 | **EFI:** activat
     - **Disc:** 45 GB
-    - **ISO:** Win10_22H2_Spanish_x64.iso
+    - **ISO:** Win10_22H2_Spanish_x64v1.iso
 
 <img width="856" height="475" alt="imatge" src="https://github.com/user-attachments/assets/b69466f2-9102-4529-aab1-a02648e698e8" />
 
@@ -40,86 +40,126 @@ Un cop arrencada la VM des de la ISO, apareix la pantalla de configuració d'idi
 
 <img width="617" height="458" alt="imatge" src="https://github.com/user-attachments/assets/39d7f790-e772-4ad5-b166-eb9128f4e947" />
 
-
-Selecciono Instal·lar Windows.
+- Selecciono Instal·lar Windows.
 
 <img width="616" height="461" alt="imatge" src="https://github.com/user-attachments/assets/2f315021-dded-49be-b246-fef39040b754" />
 
-Selecciono l'edició Windows 10 Pro de les disponibles a la ISO i accepto els **"términos y condiciones"**.
+- Selecciono l'edició Windows 10 Pro de les disponibles a la ISO i accepto els **"términos y condiciones"**.
 
 <img width="643" height="477" alt="imatge" src="https://github.com/user-attachments/assets/f4bfdd1c-e8c4-4c94-a792-669c62e90106" />
 
 <img width="639" height="484" alt="imatge" src="https://github.com/user-attachments/assets/fd5cc0c7-636e-4146-a00f-58b67afc1e35" />
 
-Selecciono el disc de 45 GB (sense assignar) com a ubicació on instal·lar Windows 10.
+- Selecciono el disc de 45 GB (sense assignar) com a ubicació on instal·lar Windows 10.
 
 <img width="643" height="481" alt="imatge" src="https://github.com/user-attachments/assets/e6c7d7e9-cfb0-4a55-9757-2680090cbcb1" />
 
-I selecciono el disc en cocret
+- I selecciono el disc en cocret
 
 <img width="642" height="481" alt="imatge" src="https://github.com/user-attachments/assets/19449a2b-43cc-42cc-b73a-37f700efd435" />
 
-Comença la instal·lació de Windows 10. La barra de progrés avança mentre es copien els arxius al disc.
+- Comença la instal·lació de Windows 10. La barra de progrés avança mentre es copien els arxius al disc.
 
 <img width="635" height="480" alt="imatge" src="https://github.com/user-attachments/assets/0144d15b-ea6a-401e-b313-036e594e600f" />
 
-Un cop instal·lat, Windows arrenca el procés de configuració inicial (OOBE). Selecciono España com a país o regió.
+- Un cop instal·lat, Windows arrenca el procés de configuració inicial. Selecciono España com a país o regió i teclat.
 
+<img width="1012" height="675" alt="imatge" src="https://github.com/user-attachments/assets/90406eb6-9e6a-4743-983d-a6a68383a513" />
 
-Introdueixo el nom del dispositiu: Naim.
+<img width="1024" height="674" alt="imatge" src="https://github.com/user-attachments/assets/5ea353e1-ec39-4e2c-8928-1775af20e24c" />
 
-Creo el compte d'usuari local: nom Naim.
+- Ara hem d'anar seleccionant la configuració més adequada a les nostres necessitats.
 
-Estableixo la contrasenya per a l'usuari Eros: eros1234.
+<img width="1014" height="678" alt="imatge" src="https://github.com/user-attachments/assets/f8ca9f11-0837-4313-932b-56329b7dbc8a" />
 
-Pas 4j – Creació de contrasenya de l'usuari
-Pas 5 – Comprovar que arrenca correctament
+- Li afegim un correu electronic "si volem".
 
-    Windows 11 arrenca correctament i apareix l'escriptori. Es pot veure la barra de tasques, la icona de la Paperera de reciclatge i l'accés directe a Microsoft Edge. La instal·lació ha estat exitosa.
+<img width="1020" height="671" alt="imatge" src="https://github.com/user-attachments/assets/f6a58eac-224d-430e-be7d-617af1ca79a9" />
 
-Pas 5 – Windows 11 arrencat correctament
-Fase 2 – Punts de restauració
-Pas 6 – Cercar "Crear un punt de restauració"
+- Fiquem el nom corresponent.
 
-    Al cercador de Windows busco "Crear un punto de restauración" i clico sobre el resultat del Panel de control per obrir-lo.
+<img width="1017" height="658" alt="imatge" src="https://github.com/user-attachments/assets/9c6bcd70-e7d2-489d-aa1d-3b3cc4e1a435" />
 
-Pas 6 – Cerca de "Crear un punto de restauración"
-Pas 7 – Activar la protecció del sistema al disc C:
+- Fiquem la constrasenya (Naim123).
+<img width="1019" height="664" alt="imatge" src="https://github.com/user-attachments/assets/9fc0a890-d6e3-487f-9736-89e656ff679a" />
 
-    A la finestra de Propietats del sistema > Protecció del sistema, veig que la protecció del disc C: apareix com a Desactivada. Clico Configurar... per activar-la.
+- Com no he iniciat sessió, demanarà que escollim tres preguntes per a identificar-nos.
 
-Pas 7a – Protecció desactivada: cal clicar Configurar
+<img width="1007" height="675" alt="imatge" src="https://github.com/user-attachments/assets/6c550b1c-6fa0-4c1a-820b-10427efadefb" />
 
-    A la finestra de configuració selecciono Activar protecció del sistema ①, aplico ② i accepto ③. Ara el disc C: ja té protecció activa.
+- Ara anem configurant el nostre windows (tot això a gust de cadascú).
 
-Pas 7b – Activar protecció del sistema i aplicar
+<img width="1024" height="675" alt="imatge" src="https://github.com/user-attachments/assets/7b7a09c9-5453-4393-a663-fddba592bfc5" />
+<img width="1013" height="671" alt="imatge" src="https://github.com/user-attachments/assets/265d0adc-2a21-45ee-9ae5-4b17e98c26f2" />
+<img width="1014" height="671" alt="imatge" src="https://github.com/user-attachments/assets/09df97bd-47bc-465c-bfa4-d09f269bb4ab" />
+<img width="1024" height="672" alt="imatge" src="https://github.com/user-attachments/assets/3cce1d49-8ff9-4b8f-baf6-a7f8e8f0c051" />
+<img width="1020" height="670" alt="imatge" src="https://github.com/user-attachments/assets/e85a8293-1261-4048-b401-e843f03f9a9e" />
+<img width="1017" height="668" alt="imatge" src="https://github.com/user-attachments/assets/d029acf2-aa2b-4070-921a-1de2c47e1f68" />
 
-    Comprovo que la protecció del disc C: (Sistema) ara apareix com a Activada.
+- Seleccionem el tipus d'ús que li donarem
 
-Pas 7c – Protecció del sistema activada correctament
-Pas 8 – Crear un punt de restauració manual
+<img width="1013" height="668" alt="imatge" src="https://github.com/user-attachments/assets/796a17fb-e86d-454d-8635-6c99af830e56" />
 
-    Clico Crear... per crear un nou punt de restauració manualment.
+- I un cop configurat tot hauria de sorir un missatge com aquest
+
+<img width="1021" height="769" alt="imatge" src="https://github.com/user-attachments/assets/f622efc9-e12b-4117-96ef-499692f047d4" />
+
+### Pas 5 – Comprovar que arrenca correctament
+
+Windows 10 arrenca correctament i apareix l'escriptori. Es pot veure la barra de tasques, la icona de la Paperera de reciclatge i l'accés directe a Microsoft Edge. La instal·lació ha estat exitosa.
+
+<img width="1021" height="769" alt="imatge" src="https://github.com/user-attachments/assets/7b3a4a43-5fbd-4b79-b0fc-eaae940da791" />
+
+## Fase 2 – Punts de restauració
+### Pas 6 – Cercar "Crear un punt de restauració"
+
+Al cercador de Windows busco "Crear un punto de restauración" i clico sobre el resultat del Panel de control per obrir-lo.
+
+<img width="829" height="731" alt="imatge" src="https://github.com/user-attachments/assets/cd9c74b2-4e13-4d8d-a595-e37190924325" />
+
+### Pas 7 – Activar la protecció del sistema al disc C:
+
+A la finestra de Propietats del sistema > Protecció del sistema, veig que la protecció del disc C: apareix com a Desactivada. Clico Configurar... per activar-la.
+
+<img width="409" height="485" alt="imatge" src="https://github.com/user-attachments/assets/a571e1f2-8275-4e40-988b-6e7b3805bc0d" />
+
+A la finestra de configuració selecciono Activar protecció del sistema ①, aplico ② i accepto ③. Ara el disc C: ja té protecció activa.
+
+<img width="404" height="461" alt="imatge" src="https://github.com/user-attachments/assets/ad6ce03e-cf22-4357-a45c-28dec905658f" />
+
+Comprovo que la protecció del disc C: (Sistema) ara apareix com a Activada.
+
+<img width="369" height="117" alt="imatge" src="https://github.com/user-attachments/assets/228de6f3-0864-40cf-a183-b4ca50a84c5b" />
+
+### Pas 8 – Crear un punt de restauració manual
+
+Clico Crear... per crear un nou punt de restauració manualment.
+
+<img width="417" height="468" alt="imatge" src="https://github.com/user-attachments/assets/27b758f6-fb86-42b5-bf0a-94168a794ad5" />
 
 Pas 8a – Botó Crear un punt de restauració
 
-    Introdueixo la descripció "Eros - 12/04/2026: 15:53" per identificar el punt. Windows afegirà automàticament la data i hora exactes.
+Introdueixo la descripció "Naim - 14/04/2026: 15:41" per identificar el punt. Windows afegirà automàticament la data i hora exactes.
 
-Pas 8b – Descripció del punt de restauració
-Pas 9 – Fer un canvi (crear un arxiu de prova)
+<img width="432" height="259" alt="imatge" src="https://github.com/user-attachments/assets/00fa83a7-ccfe-4288-8d1a-cc2e38fd667c" />
 
-    Com a canvi de sistema, creo un arxiu anomenat PROVA a l'escriptori. Amb la protecció activa al disc C:, Windows pot revertir aquest canvi si es fa una restauració.
+### Pas 9 – Fer un canvi (crear un arxiu de prova)
 
-Pas 9 – Arxiu PROVA creat a l'escriptori com a canvi de prova
-Pas 10 – Restaurar i comprovar
+Com a canvi de sistema, creo un arxiu anomenat PROVA a l'escriptori. Amb la protecció activa al disc C:, Windows pot revertir aquest canvi si es fa una restauració.
 
-    Clico Restaurar sistema... per iniciar el procés de restauració al punt creat prèviament.
+<img width="874" height="577" alt="imatge" src="https://github.com/user-attachments/assets/b4e7eaba-7ccb-473d-923e-74b6638b17d5" />
 
-Pas 10a – Botó Restaurar sistema
 
-    Selecciono el punt de restauració "Eros - 12/04/2026: 15:53" creat manualment (tipus: Manual) i clico Següent per continuar.
+### Pas 10 – Restaurar i comprovar
 
-Pas 10b – Selecció del punt de restauració a aplicar
+Clico Restaurar sistema... per iniciar el procés de restauració al punt creat prèviament.
+
+<img width="693" height="550" alt="imatge" src="https://github.com/user-attachments/assets/3fc09fc3-169b-47c2-bb9e-a351d7fc30e8" />
+
+Selecciono el punt de restauració "Naim - 14/04/2026: 15:41" creat manualment i clico Següent per continuar.
+
+<img width="693" height="550" alt="imatge" src="https://github.com/user-attachments/assets/0e7f6af2-72b2-47c6-a68f-a679ecb055bc" />
+
 
     Apareix un avís confirmant que el procés no es pot interrompre un cop iniciat. Clico Sí per confirmar la restauració.
 

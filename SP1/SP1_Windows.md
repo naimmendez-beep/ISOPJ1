@@ -311,72 +311,86 @@ El **Windows Boot Manager** (`bootmgr`) és el responsable de mostrar el menú d
 El **Windows Boot Loader** (`winload.efi`) és el fitxer que realment carrega el nucli de Windows a la memòria i inicia el sistema operatiu un cop el Boot Manager ha pres la decisió.
 
 
-Fase 5 – Xarxa bàsica
-Pas 22 – Obrir la configuració de xarxa
+## Fase 5 – Xarxa bàsica
+### Pas 22 – Obrir la configuració de xarxa
 
-    Obro Configuració > Red e Internet ① i entro a Ethernet ② per veure i modificar la configuració de la connexió de xarxa.
+Obro Configuració > Red e Internet ① i entro a Ethernet ② per veure i modificar la configuració de la connexió de xarxa.
 
-Pas 22 – Configuració > Red e Internet > Ethernet
-Pas 23 – Consultar la IP amb ipconfig
+<img width="974" height="685" alt="imatge" src="https://github.com/user-attachments/assets/098296cc-177d-4334-8a1e-92092003e3b0" />
 
-    Obro el CMD i executo ipconfig. Es mostren les dades de la interfície Ethernet:
-        Adreça IPv4: 10.0.2.5
-        Màscara de subxarxa: 255.255.255.0
-        Porta d'enllaç (gateway): 10.0.2.2
+### Pas 23 – Consultar la IP amb ipconfig
 
-Pas 23 – Resultat d'ipconfig: IP 10.0.2.5
-Pas 24 – Configurar IP dinàmica (DHCP automàtic)
+Obro el CMD i executo ipconfig. Es mostren les dades de la interfície Ethernet:
 
-    A la configuració d'Ethernet, verifico que l'assignació d'IP és Automático (DHCP). Amb DHCP, el router assigna automàticament una IP al dispositiu cada vegada que es connecta, sense necessitat de configuració manual.
+<img width="642" height="252" alt="imatge" src="https://github.com/user-attachments/assets/96474f46-0721-4abf-89be-e799072fe34d" />
 
-Pas 24 – Configuració de IP dinàmica (DHCP) activa
-Pas 25 – Configurar IP fixa (manual)
+### Pas 24 – Configurar IP dinàmica (DHCP automàtic)
 
-    A la pantalla d'informació de l'adaptador Ethernet, es pot veure la configuració actual obtinguda per DHCP que establiré de forma estàtica:
-        IP: 10.0.2.5
+A la configuració d'Ethernet, verifico que l'assignació d'IP és Automático (DHCP). Amb DHCP, el router assigna automàticament una IP al dispositiu cada vegada que es connecta, sense necessitat de configuració manual.
+
+<img width="534" height="146" alt="imatge" src="https://github.com/user-attachments/assets/b85c3301-4389-4d57-956d-c45ca1d99fac" />
+<img width="521" height="155" alt="imatge" src="https://github.com/user-attachments/assets/48cc4ad4-ba96-4c56-bf30-3f2ce738cb0a" />
+
+### Pas 25 – Configurar IP fixa (manual)
+
+A la pantalla d'informació de l'adaptador Ethernet, es pot veure la configuració actual obtinguda per DHCP que establiré de forma estàtica:
+        IP: 10.0.2.15
         Màscara: 255.255.255.0 (prefixe /24)
         Gateway: 10.0.2.2
         DNS: 10.0.2.3
 
-    Per configurar una IP fixa, des d'aquest panell es pot clicar Editar als camps "Asignación de IP" i canviar-ho a Manual, introduint els mateixos valors però de forma estàtica.
+Per configurar una IP fixa, des d'aquest panell es pot clicar Editar als camps "Asignación de IP" i canviar-ho a Manual, introduint els mateixos valors però de forma estàtica.
 
-Pas 25 – Detalls de la IP obtinguda per DHCP (base per IP fixa)
-Pas 26 – Comprovar la connexió amb ping google.com
+<img width="397" height="686" alt="imatge" src="https://github.com/user-attachments/assets/9217948c-6b0e-4341-bd49-2f7ef4b37999" />
 
-    Executo ping google.com al CMD. El resultat mostra que els 4 paquets enviats han estat rebuts amb 0 pèrdues i un temps de resposta d'aproximadament 23-24 ms, confirmant que la connexió a Internet és correcta.
+### Pas 26 – Comprovar la connexió amb ping google.com
 
-Pas 26 – ping google.com: connexió verificada correctament
-Fase 6 – Comandes generals
+Executo ping google.com al CMD. El resultat mostra que els 4 paquets enviats han estat rebuts amb 0 pèrdues i un temps de resposta d'aproximadament 23-24 ms, confirmant que la connexió a Internet és correcta.
+
+<img width="585" height="241" alt="imatge" src="https://github.com/user-attachments/assets/b8a15fc8-5a95-439f-8cc0-db58d19457fb" />
+
+## Fase 6 – Comandes generals
 Pas 27 – Obrir PowerShell
 
-    Busco "Windows PowerShell" al cercador i el selecciono per obrir-lo.
+Busco "Windows PowerShell" al cercador i el selecciono per obrir-lo.
+
+<img width="646" height="679" alt="imatge" src="https://github.com/user-attachments/assets/18750fe5-e980-4d26-8199-d45538adab67" />
 
 Pas 27a – Cerca i selecció de Windows PowerShell
 
-    El terminal de Windows PowerShell s'obre correctament, identificat per el prefix PS i la ruta actual C:\WINDOWS\system32>.
+El terminal de Windows PowerShell s'obre correctament, identificat per el prefix PS i la ruta actual C:\WINDOWS\system32>.
 
-Pas 27b – Terminal de PowerShell obert
-Pas 28 – Diferenciar CMD i PowerShell
+<img width="559" height="149" alt="imatge" src="https://github.com/user-attachments/assets/a85920ad-d21a-40f0-9b8f-ab5f9cd50312" />
 
-    Característica 	CMD (Símbol del Sistema) 	PowerShell
-    Propòsit 	Comandes bàsiques i clàssiques de Windows 	Automatització avançada i scripting
-    Objectes 	Traballa amb text pla 	Treballa amb objectes .NET
-    Potència 	Limitada, herència de MS-DOS 	Molt potent, permet pipelines d'objectes
-    Scripts 	Arxius .bat 	Arxius .ps1
-    Exemple 	dir, copy, del 	Get-ChildItem, Copy-Item, Remove-Item
+### Pas 28 – Diferenciar CMD i PowerShell
 
-    Quan usar cadascun:
+- Tabla Maestra de Windows 10/11 (Abril 2026)
 
-        CMD → Per a tasques ràpides, scripts simples o compatibilitat amb aplicacions antigues.
-        PowerShell → Per automatitzar tasques, gestionar el sistema, treballar amb serveis, registres i objectes complexos.
+| Categoría | Concepto | Precio / Detalle | Características |
+| :--- | :--- | :--- | :--- |
+| **Licencias** | Windows 10/11 Home | 145,00 € | Versión para usuarios particulares. |
+| **Licencias** | Windows 10/11 Pro | 259,00 € | Funciones avanzadas y seguridad empresarial. |
+| **Soporte** | Suscripción ESU | 30€ - 61€ / año | Parches de seguridad críticos tras el fin de soporte. |
+| **Tipo** | OEM | No transferible | Preinstalada por fabricantes (Dell, HP, etc.). |
+| **Tipo** | Retail | Transferible | Comprada por el usuario, se puede mover de PC. |
+| **Tipo** | Volume (MAK/KMS) | Empresarial | Activación por clave maestra o servidor interno. |
+| **Tipo** | Digital License | Cuenta Microsoft | Se activa sola al conectar tu cuenta online. |
+| **Herramientas** | CMD | Texto plano | Comandos clásicos (dir, copy, del) y archivos .bat. |
+| **Herramientas** | PowerShell | Objetos .NET | Automatización avanzada y scripts .ps1. |
+| **Estado** | Modo Notificación | No activado | Estado de prueba o error de licencia; funcional pero limitado. |
 
-Pas 29 – Comandes bàsiques (provades)
+Quan usar cadascun:
 
-    Executo dir per veure els fitxers i carpetes del directori arrel C:\. Es mostren carpetes com Program Files, Users, Windows, etc.
+  - CMD → Per a tasques ràpides, scripts simples o compatibilitat amb aplicacions antigues.
+  - PowerShell → Per automatitzar tasques, gestionar el sistema, treballar amb serveis, registres i objectes complexos.
 
-Pas 29a – dir: llistat de fitxers i carpetes de C:
+## Pas 29 – Comandes bàsiques (provades)
 
-    Executo cd Eros per moure'm a la carpeta de l'usuari, mkdir prova per crear una nova carpeta i echo hola > fitxer.txt per crear un fitxer de text.
+- Executo dir per veure els fitxers i carpetes del directori arrel C:\. Es mostren carpetes com Program Files, Users, Windows, etc.
+
+<img width="560" height="129" alt="imatge" src="https://github.com/user-attachments/assets/db049055-0482-484d-8fcf-d984417ed23b" />
+
+- Executo cd Naim per moure'm a la carpeta de l'usuari, mkdir prova per crear una nova carpeta i echo hola > fitxer.txt per crear un fitxer de text.
 
 Pas 29b – cd, mkdir prova i echo hola > fitxer.txt
 
@@ -401,7 +415,7 @@ Pas 30b – taskkill: tancament forçat del Notepad
 
 Pas 30c – systeminfo: informació completa del sistema
 
-    hostname i whoami → hostname retorna el nom de l'equip (Astro) i whoami retorna l'usuari atual (astro\eros).
+    hostname i whoami → hostname retorna el nom de l'equip (Astro) i whoami retorna l'usuari atual (astro\Naim).
 
 Pas 30d – hostname i whoami
 Pas 31 – Comandes de xarxa
@@ -417,7 +431,7 @@ Pas 31a – ipconfig i ping google.com
 Pas 31b – netstat -an: connexions obertes i ports en escolta
 Pas 32 – Comandes interessants (avançades)
 
-    tree → Mostra l'estructura de carpetes en forma d'arbre des del directori actual. En aquest cas mostra totes les subcarpetes de l'usuari Eros com Desktop, Documents, Downloads, prova, etc.
+    tree → Mostra l'estructura de carpetes en forma d'arbre des del directori actual. En aquest cas mostra totes les subcarpetes de l'usuari Naim com Desktop, Documents, Downloads, prova, etc.
 
 Pas 32a – tree: estructura de carpetes en arbre
 
@@ -455,7 +469,7 @@ Pas 35 – Instal·lar seguint l'assistent
 
 Pas 35a – Acord de llicència de VS Code
 
-    Confirmo la carpeta de destinació on s'instal·larà VS Code: C:\Users\Eros\AppData\Local\Programs\Microsoft VS Code (requereix mínim 576,5 MB).
+    Confirmo la carpeta de destinació on s'instal·larà VS Code: C:\Users\Naim\AppData\Local\Programs\Microsoft VS Code (requereix mínim 576,5 MB).
 
 Pas 35b – Selecció de carpeta de destinació
 

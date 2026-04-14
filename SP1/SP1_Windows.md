@@ -5,24 +5,24 @@ title: "Sprint 1: Instal·lació i Configuració Inicial – Windows"
 Fase 1 – Instal·lació del sistema operatiu
 ### Pas 1 – Crear la màquina virtual amb VirtualBox
 
-Aquí inicio la creació de la nova màquina virtual a VirtualBox. Anomeno la màquina Windows 11 Pro, selecciono el tipus Microsoft Windows i la versió Windows 10 (64-bit).
+Aquí inicio la creació de la nova màquina virtual a VirtualBox. Anomeno la màquina Windos 10 Pro, selecciono el tipus Microsoft Windows i la versió Windows 10 (64-bit).
 
 <img width="864" height="474" alt="imatge" src="https://github.com/user-attachments/assets/e94011d3-674e-4210-be33-91875609fb67" />
 
 ### Pas 2 – Assignar recursos (RAM mínima 4 GB, disc mínim 40 GB)
 
 Aquí assigno els recursos de maquinari a la màquina virtual:
-        Memòria base: 4096 MB (4 GB) – el mínim recomanat per a Windows 11.
+        Memòria base: 4096 MB (4 GB) – el mínim recomanat per a Windos 10.
         Processadors: 4 CPUs – per garantir un rendiment fluid.
-        EFI habilitat – Windows 11 requereix arrencada EFI (UEFI).
+        EFI habilitat – Windos 10 requereix arrencada EFI (UEFI).
 
 <img width="859" height="475" alt="imatge" src="https://github.com/user-attachments/assets/618575d1-1afe-4843-85b7-4da382749ce9" />
 
-### Pas 3 – Carregar la ISO de Windows 11
+### Pas 3 – Carregar la ISO de Windos 10
 
-En aquest pas assigno 40 GB de disc virtual a la màquina i selecciono la ISO de Windows 11 25H2 (Spanish x64) com a unitat òptica. Queda tot llest per arrencar la instal·lació.
+En aquest pas assigno 40 GB de disc virtual a la màquina i selecciono la ISO de Windos 10 25H2 (Spanish x64) com a unitat òptica. Queda tot llest per arrencar la instal·lació.
 
-Pas 3 – Disc virtual de 40 GB i ISO de Windows 11 carregada
+Pas 3 – Disc virtual de 40 GB i ISO de Windos 10 carregada
 
 <img width="868" height="474" alt="imatge" src="https://github.com/user-attachments/assets/67e3e769-7be8-4c8a-aa36-3aaf1ff84a40" />
 
@@ -36,7 +36,7 @@ Pas 3 – Disc virtual de 40 GB i ISO de Windows 11 carregada
 
 ### Pas 4 – Instal·lar el sistema (idioma, usuari, contrasenya)
 
-Un cop arrencada la VM des de la ISO, apareix la pantalla de configuració d'idioma de Windows 11. Selecciono Español (España, internacional) com a idioma d'instal·lació i format d'hora.
+Un cop arrencada la VM des de la ISO, apareix la pantalla de configuració d'idioma de Windos 10. Selecciono Español (España, internacional) com a idioma d'instal·lació i format d'hora.
 
 <img width="617" height="458" alt="imatge" src="https://github.com/user-attachments/assets/39d7f790-e772-4ad5-b166-eb9128f4e947" />
 
@@ -137,7 +137,7 @@ Clico Crear... per crear un nou punt de restauració manualment.
 
 <img width="417" height="468" alt="imatge" src="https://github.com/user-attachments/assets/27b758f6-fb86-42b5-bf0a-94168a794ad5" />
 
-Pas 8a – Botó Crear un punt de restauració
+### Pas 8a – Botó Crear un punt de restauració
 
 Introdueixo la descripció "Naim - 14/04/2026: 15:41" per identificar el punt. Windows afegirà automàticament la data i hora exactes.
 
@@ -192,24 +192,44 @@ Obro el symbol del sistema i executo la comanda slmgr /xpr. Apareix una finestra
 
 Pas 14 – Tipus de llicenciament de Windows
 
-    Tipus de llicències de Windows més habituals:
-    Tipus 	Descripció
-    OEM 	Preinstal·lada per fabricants (Dell, HP...). Lligada al maquinari, no es pot transferir.
-    Retail 	Comprada per l'usuari directament. Es pot transferir entre equips.
-    Volume (MAK/KMS) 	Per empreses amb molts equips. S'activen contra un servidor intern o clau mestra.
-    Digital License 	S'associa al compte Microsoft. S'activa automàticament al connectar-se.
+- 1. Precios Oficiales y Soporte Extendido (ESU)
+Dado que estamos en **abril de 2026**, Microsoft ya no comercializa licencias exclusivas de Windows 10. La activación se realiza mediante claves de Windows 11 o suscripciones de seguridad.
+
+| Concepto | Versión | Precio Oficial | Estado de Soporte |
+| :--- | :--- | :--- | :--- |
+| **Licencia Base** | Home (via W11) | **145,00 €** | Requiere ESU para parches |
+| **Licencia Base** | Pro (via W11) | **259,00 €** | Requiere ESU para parches |
+| **Soporte ESU** | Particular | **$30.00 / año** | Actualizaciones de Seguridad |
+| **Soporte ESU** | Empresa | **$61.00 / año** | Actualizaciones de Seguridad |
+
+---
+
+- 2. Tipos de Licencias Habituales
+Existen diferentes canales de distribución según el origen y la finalidad del software:
+
+| Tipo | Descripción | Transferible |
+| :--- | :--- | :---: |
+| **OEM** | Preinstalada por fabricantes (Dell, HP...). Ligada al hardware original. | ❌ No |
+| **Retail** | Comprada por el usuario final. Se puede mover de un equipo a otro. | ✅ Sí |
+| **Volume (MAK/KMS)** | Para organizaciones con muchos equipos. Activación centralizada. | ❌ No |
+| **Digital License** | Vinculada a la cuenta de Microsoft. Activación automática online. | ✅ Sí |
+
+---
 
     En aquest cas el sistema es troba en mode de notificació (sense llicència vàlida), cosa habitual en entorns de laboratori i instal·lacions de prova.
 
-Pas 15 – Preu aproximat d'una llicència Windows
+### Pas 15 – Preu aproximat d'una llicència Windows
+- Windows 10 Licensing Table (Update: April 2026)
 
-    Preus oficials de Microsoft (abril 2026):
-    Edició 	Preu aprox. (web oficial)
-    Windows 11 Home 	~145 €
-    Windows 11 Pro 	~259 €
-    Windows 11 Pro for Workstations 	~439 €
+| Edition | Type | Official Price | Status |
+| :--- | :--- | :---: | :--- |
+| **Windows 10 Home** | License (via W11 Key) | 145,00 € | EOS (End of Support) |
+| **Windows 10 Pro** | License (via W11 Key) | 259,00 € | EOS (End of Support) |
+| **ESU Personal** | Security Subscription | $30.00 /yr | **Active** |
+| **ESU Business** | Security Subscription | $61.00 /yr | **Active** |
+| **ESU Education** | Security Subscription | $1.00 /yr | **Active** |
 
-    Es poden trobar llicències a preus inferiors a botigues de programari autoritzades com Amazon, El Corte Inglés Digital o el propi Microsoft Store. Les llicències OEM (per a PC nous) solen ser més barates perquè van lligades al maquinari.
+Es poden trobar llicències a preus inferiors a botigues de programari autoritzades com Amazon, El Corte Inglés Digital o el propi Microsoft Store. Les llicències OEM (per a PC nous) solen ser més barates perquè van lligades al maquinari.
 
 Fase 4 – Gestor d'arrencada
 Pas 16 – Obrir Command Prompt com a administrador
@@ -240,24 +260,24 @@ Bloc 2 – Cargador de arranque de Windows (Boot Loader):
 Identificador    {current}
 device           partition=C:
 path             \WINDOWS\system32\winload.efi
-description      Windows 11
+description      Windos 10
 
 Pas 19 – Interpretar dades concretes
 
     Del bloc Boot Manager:
     Camp 	Valor 	Significat
-    default 	{current} 	El sistema que arrenca per defecte és el Windows 11 actual
+    default 	{current} 	El sistema que arrenca per defecte és el Windos 10 actual
     timeout 	30 	Espera 30 segons al menú d'arrencada abans d'iniciar automàticament
 
     Del bloc Boot Loader:
     Camp 	Valor 	Significat
     device 	partition=C: 	Windows està instal·lat a la partició C:
     path 	\WINDOWS\system32\winload.efi 	Fitxer que carrega el sistema operatiu
-    description 	Windows 11 	Nom del sistema operatiu
+    description 	Windos 10 	Nom del sistema operatiu
 
 Pas 20 – Respostes a les preguntes curtes
 
-    Quin sistema s'està arrencant? → Windows 11 (identificador {current}).
+    Quin sistema s'està arrencant? → Windos 10 (identificador {current}).
 
     A quin disc o partició està instal·lat? → A la partició C: del primer disc dur.
 
@@ -357,7 +377,7 @@ Pas 30a – tasklist: llistat de processos actius
 
 Pas 30b – taskkill: tancament forçat del Notepad
 
-    systeminfo → Mostra informació detallada del sistema: nom de l'equip (ASTRO), sistema operatiu (Windows 11 Pro), fabricant (VirtualBox), memòria, processador, data d'instal·lació, etc.
+    systeminfo → Mostra informació detallada del sistema: nom de l'equip (ASTRO), sistema operatiu (Windos 10 Pro), fabricant (VirtualBox), memòria, processador, data d'instal·lació, etc.
 
 Pas 30c – systeminfo: informació completa del sistema
 
@@ -432,7 +452,7 @@ L'instal·lador finalitza correctament. Apareix la pantalla de "Completando la i
 
 Pas 36a – Instal·lació completada. Llest per obrir VS Code
 
-Visual Studio Code s'obre correctament i mostra la pantalla de benvinguda amb les opcions de Walkthrough: Setup VS Code. L'aplicació funciona perfectament a Windows 11.
+Visual Studio Code s'obre correctament i mostra la pantalla de benvinguda amb les opcions de Walkthrough: Setup VS Code. L'aplicació funciona perfectament a Windos 10.
 
 Pas 36b – VS Code obert i funcionant correctament
 Pas 37 – Instal·lar una aplicació des de Microsoft Store

@@ -206,7 +206,21 @@ Comprovem alguns processos clau usant findstr per filtrar del fitxer guardat:
 | `Teams.exe` | ~150-400 MB | Client de videoconferència no necessari per a tasques d'aula |
 | `SkypeApp.exe` | ~80-150 MB | Aplicació de comunicació no requerida en l'entorn de laboratori |
 
+### Pas 21 – Eliminar processos manualment
 
+Executem taskkill per finalitzar el procés d'OneDrive forçosament:
 
+<img width="483" height="102" alt="imatge" src="https://github.com/user-attachments/assets/39b09178-a3d3-4821-93b4-041fa49793f5" />
 
+### Pas 22 – Automatitzar-ho a l'inici de sessió
+
+Modifiquem l'script que haviem creat (jo l'he modificat una mica més per a quan l'executi manualment surti informació)
+
+<img width="518" height="245" alt="imatge" src="https://github.com/user-attachments/assets/8a21f4c8-eafe-4db1-a241-4ce51b555da7" />
+
+Per fer la comprovació, haurem d'iniciar sessió amb alumne2 i comprovar que OneDrive no s'executa.
+
+<img width="435" height="69" alt="imatge" src="https://github.com/user-attachments/assets/adb65180-503e-487f-9710-401db0cb32b4" />
+
+### Pas 23 – Documentació: tasklist, anàlisi de processos crítics i rendiment
 

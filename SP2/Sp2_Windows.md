@@ -163,5 +163,50 @@ A la finestra de propietats d'Iniciar sessió, fem clic a Agregar… i introduï
 
 <img width="377" height="193" alt="imatge" src="https://github.com/user-attachments/assets/abf12dfd-4a27-4da8-919b-2dfb9610e5a8" />
 
+# Fase 4 – Verificació i documentació
+
+### Pas 15 – Comprovació: l'script fa la còpia a Backups
+
+Iniciem sessió amb l'usuari alumne1. L'script s'executa automàticament a l'inici de sessió i copia el contingut de C:\Users\alumne1 a B:\CòpiesUsuaris\alumne1.
+
+<img width="719" height="484" alt="imatge" src="https://github.com/user-attachments/assets/1045a671-76bd-41a2-b10f-98153e50ff82" />
+
+# Fase 5 – Gestió de processos i serveis
+
+### Pas 19 – Llistar processos actius
+
+Iniciem sessió com a alumne1, obrim la consola (CMD) i executem tasklist per obtenir la llista de tots els processos actius, amb el seu PID, sessió i ús de memòria.
+
+<img width="660" height="308" alt="imatge" src="https://github.com/user-attachments/assets/14882bae-1d38-4f66-ae4c-bc680d6c5622" />
+
+Redirigim el tasklist cap a un fitxer de text per poder veure-la, veiem que s'ha redirigit be
+
+<img width="548" height="450" alt="imatge" src="https://github.com/user-attachments/assets/2078a43b-ac93-4c7f-8154-87078f0bb68f" />
+
+Comprovem alguns processos clau usant findstr per filtrar del fitxer guardat:
+
+<img width="663" height="216" alt="imatge" src="https://github.com/user-attachments/assets/ae061e6e-2860-4ec5-963c-34320a3bbeab" />
+
+### Pas 20 – Identificar processos prescindibles
+
+### Busca processos no essencials per a l’usuari, com: OneDrive.exe, Teams.exe, SkypeApp.exe
+**Fes una taula amb:**
+- Nom del procés
+- Memòria usada
+- Justificació per eliminar-lo
+
+<img width="635" height="72" alt="imatge" src="https://github.com/user-attachments/assets/56b83a2a-2586-4b39-b95a-ae29c03f164f" />
+
+
+**Taula de processos prescindibles identificats:**
+
+| Nom del procés | Memòria aprox. | Justificació per eliminar |
+|----------------|----------------|---------------------------|
+| `OneDrive.exe` | ~135 MB | Sincronització al núvol innecessària en un entorn de VM sense connexió a internet real |
+| `Teams.exe` | ~150-400 MB | Client de videoconferència no necessari per a tasques d'aula |
+| `SkypeApp.exe` | ~80-150 MB | Aplicació de comunicació no requerida en l'entorn de laboratori |
+
+
+
 
 

@@ -57,22 +57,96 @@ Finalitzem la configuració
 
 <img width="730" height="505" alt="imatge" src="https://github.com/user-attachments/assets/ffc247da-20c1-46a1-b839-360fcbbc48f6" />
 
+# Fase 2 – Quotes i usuaris
 
+### Pas 5 – Activar quotes de disc a la partició Dades (NTFS)
 
+Les quotes de disc a Windows permeten limitar l'espai que cada usuari pot usar dins d'una partició NTFS. Per activar-les, obrim l'Explorador de Windows, clic dret sobre la unitat Dades (E:) i seleccionem Propietats.
 
+<img width="1083" height="729" alt="imatge" src="https://github.com/user-attachments/assets/0a39bcd5-bc75-43b9-b777-ffc84f17562f" />
 
+A la finestra de propietats ens dirigim a la pestanya Cuota i fem clic a Mostrar configuració de cuota.
 
+<img width="361" height="208" alt="imatge" src="https://github.com/user-attachments/assets/01e421dc-0af3-4a94-b3c4-b4aa261f4ce9" />
 
+### Pas 6 – Establir límit de 300 MB per usuari, amb notificació d'advertència
 
+Dins del panell de configuració de quotes, activem les següents opcions.
 
+<img width="362" height="447" alt="imatge" src="https://github.com/user-attachments/assets/4ba24cd0-2a3f-462c-8d74-3adbd48ee1d3" />
 
+### Pas 7 – Crear dos usuaris locals: alumne1 i alumne2
 
+Executem lusrmgr.msc per a gestionar usuaris locals 
 
+<img width="396" height="207" alt="imatge" src="https://github.com/user-attachments/assets/4b082650-7812-455c-9ece-d2e4489b01b4" />
 
+Dins fem clic dret sobre **usuaris** i **Usuari nou** 
 
+<img width="349" height="224" alt="imatge" src="https://github.com/user-attachments/assets/d6982c1f-1afc-478a-935c-7cc2ca56a43a" />
 
+Creem l'usuari alumne1 amb la contrasenya corresponent. Activem l'opció La contrasenya mai expira per evitar problemes en les proves.
 
+<img width="419" height="384" alt="imatge" src="https://github.com/user-attachments/assets/a56b9852-cde5-4358-b663-e97b9141b6a4" />
 
+De la mateixa manera, creem l'usuari alumne2 amb la mateixa configuració.
 
+<img width="415" height="387" alt="imatge" src="https://github.com/user-attachments/assets/8e489803-ca49-45c0-b04d-94572cb3e141" />
 
+### Pas 8 – Afegir-los a un grup nou anomenat Limitats
 
+Dins de lusrmgr.msc, fem clic sobre la carpeta Grupos per veure tots els grups existents. Clic dret en un espai buit de la llista → "Grupo nuevo"
+
+<img width="300" height="237" alt="imatge" src="https://github.com/user-attachments/assets/48a3504c-965c-44f6-9b03-9b6923a2f47e" />
+
+Introduim el nom "Limitats" i afegim els usuaris creats i després només sera donar-li a crear i ja estarà.
+
+<img width="417" height="389" alt="imatge" src="https://github.com/user-attachments/assets/d0a0a740-a698-4940-846f-5198ca01bc42" />
+
+Veiem que estàn els dos usuaris creats al grup **Limitats**
+
+<img width="441" height="465" alt="imatge" src="https://github.com/user-attachments/assets/5d5e06fb-3319-4fe2-b51c-fbe27121f629" />
+
+### Pas 9 – Provar la còpia de fitxers a Dades per veure com actuen les quotes
+
+Iniciem sessió amb alumne1 i començarem amb les proves
+
+<img width="807" height="584" alt="imatge" src="https://github.com/user-attachments/assets/684ca971-1e60-4406-9966-664c140a6dc0" />
+
+Per comprovar que les quotes funcionen correctament, iniciem sessió com a alumne1 i intentem crear fitxers de diverses mides a la partició E:\ amb la comanda fsutil file createnew:
+
+<img width="740" height="482" alt="imatge" src="https://github.com/user-attachments/assets/20f86306-6646-46e8-bacc-25725494c672" />
+
+# Fase 3 – Script de còpia i automatització
+
+### Pas 10 – Afegir tercer disc virtual, formatar-lo en NTFS com a Backups
+
+Des de la configuració de VirtualBox, afegim un tercer disc de 5 GB connectat al port SATA 3. Servirà com a unitat de còpies de seguretat.
+
+<img width="875" height="538" alt="imatge" src="https://github.com/user-attachments/assets/4386ffad-bc2a-42d5-853f-d8b88a7395e8" />
+
+Un cop dins de Windows, obrim la Gestió de discs i localitzem el nou **Disc 2 no asignat**. Clic dret → Nou volum simple.
+
+<img width="830" height="640" alt="imatge" src="https://github.com/user-attachments/assets/c0ec5189-45ea-4510-ab3f-260137cf27c9" />
+
+Formatem tot el disc com a NTFS i li posem l'etiqueta Backups. Assignem la lletra B:.
+
+<img width="494" height="384" alt="imatge" src="https://github.com/user-attachments/assets/ccb862cb-d3c8-4220-9c42-56b8cac6987d" />
+
+### Pas 11 – Crear carpeta CòpiesUsuaris dins Backups
+
+Un cop creat i muntat el disc Backups (B:), creem manualment la carpeta CòpiesUsuaris dins de la unitat B:
+
+<img width="628" height="357" alt="imatge" src="https://github.com/user-attachments/assets/8ad65f01-2cc0-4c1b-8c5b-2c4db6ef4d6c" />
+
+### Pas 12 – Crear un script .bat que copiï C:\Users%USERNAME% a B:\CòpiesUsuaris%USERNAME%
+
+Dins la carpeta B:\CopiesUsrs creem un script.bat que contingui el seguent:
+
+<img width="697" height="275" alt="imatge" src="https://github.com/user-attachments/assets/4498968d-7caf-43cb-a87a-a9c5f0f56534" />
+
+### Pas 13 – Obrir gpedit.msc → Configuració d'usuari → Scripts → Inici de sessió
+
+Per assignar l'script per a que s'executi al iniciar sessió, hem d'obrir **gpedit.msc** amb Win+r.
+
+<img width="394" height="205" alt="imatge" src="https://github.com/user-attachments/assets/7e740911-f6cc-4521-af95-e7c7a8b1cc10" />

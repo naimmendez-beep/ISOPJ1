@@ -143,10 +143,25 @@ Un cop creat i muntat el disc Backups (B:), creem manualment la carpeta CòpiesU
 
 Dins la carpeta B:\CopiesUsrs creem un script.bat que contingui el seguent:
 
-<img width="697" height="275" alt="imatge" src="https://github.com/user-attachments/assets/4498968d-7caf-43cb-a87a-a9c5f0f56534" />
+<img width="654" height="265" alt="imatge" src="https://github.com/user-attachments/assets/555b5096-e144-4757-908e-cfdc4ec9b280" />
 
 ### Pas 13 – Obrir gpedit.msc → Configuració d'usuari → Scripts → Inici de sessió
 
 Per assignar l'script per a que s'executi al iniciar sessió, hem d'obrir **gpedit.msc** amb Win+r.
 
 <img width="394" height="205" alt="imatge" src="https://github.com/user-attachments/assets/7e740911-f6cc-4521-af95-e7c7a8b1cc10" />
+
+Dins de l'editor, naveguem per l'arbre de directives:
+
+Configuració d'usuari → Configuració de Windows → Scripts (inici de sessió o tancament de sessió)
+
+<img width="733" height="339" alt="imatge" src="https://github.com/user-attachments/assets/374d5f93-f418-4c1b-86c9-25ca2e4e06d9" />
+
+### Pas 14 – Assignar l'script perquè s'executi automàticament en iniciar sessió
+
+A la finestra de propietats d'Iniciar sessió, fem clic a Agregar… i introduïm la ruta completa al nostre script (B:\CopuiesUsrs\script.bat)
+
+<img width="377" height="193" alt="imatge" src="https://github.com/user-attachments/assets/abf12dfd-4a27-4da8-919b-2dfb9610e5a8" />
+
+
+

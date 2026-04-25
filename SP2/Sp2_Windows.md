@@ -263,4 +263,92 @@ La gestió estricta de processos té un impacte crític en entorns amb recursos 
 
 ---
 
+# Fase 6 – Gestió de permisos (ACLs)
 
+## Què són les ACLs i com funcionen a Windows?
+
+A Windows, cada fitxer i carpeta té una **Llista de Control d'Accés** (ACL, *Access Control List*). Aquesta llista és el mecanisme principal de seguretat que defineix qui pot fer què amb aquell recurs específic.
+
+
+
+Cada entrada individual dins d'una ACL s'anomena **ACE** (*Access Control Entry*). Una ACE sempre indica dos aspectes fonamentals:
+* **La identitat:** Quin usuari o grup específic està afectat per la regla.
+* **Els permisos:** Quin nivell d'accés o denegació té (lectura, escriptura, execució, control total, etc.).
+
+### Diferències amb els permisos de xarxa
+
+Els permisos ACL són molt més detallats i granulats que els permisos "normals" de compartició en xarxa (Share permissions), perquè ofereixen les següents característiques:
+
+- **Nivell de fitxer:** Permeten configurar permisos no només per a carpetes senceres, sinó per a fitxers específics dins d'aquestes.
+- **Flexibilitat d'assignació:** S'apliquen de manera independent tant a usuaris individuals com a grups sencers.
+- **Granularitat avançada:** Permeten combinacions molt precises, com per exemple "només lectura", "només esborrar", o "control total excepte canviar permisos".
+- **Gestió per Herència:** Els permisos poden ser heretats automàticament d’una carpeta superior (directori pare) o assignats manualment trencant aquesta herència.
+
+### Pas 24 – Crear la carpeta Projectes
+
+Iniciem sessió amb l'usuari administrador i al disc **E:** creem la carpeta 'Projectes'
+
+<img width="849" height="231" alt="imatge" src="https://github.com/user-attachments/assets/4c2ec73f-5323-48eb-a581-876f6494c768" />
+
+### Pas 25 – Assignar permisos normals al grup Limitats
+
+Fem clic dret sobre la carpeta, propietats i seguretat i veurem que els permisos actuals són els següents:
+
+<img width="361" height="481" alt="imatge" src="https://github.com/user-attachments/assets/aaf895c4-35ea-464e-ac32-07808ce8dd51" />
+
+Cliquem a opcions avançades i desactivem l'opció d'herencia per poder gestionar els permisos.
+
+<img width="765" height="519" alt="imatge" src="https://github.com/user-attachments/assets/b96e2148-c642-4607-82b9-bf138d862562" />
+
+Agreguem i afegim com a entitat de seguretat el grup **Limitats**. 
+
+<img width="917" height="593" alt="imatge" src="https://github.com/user-attachments/assets/3a8902b4-e944-41b0-a7c0-043132879bff" />
+
+Aqui veiem la configuració final de les opcions avançades 
+
+<img width="765" height="521" alt="imatge" src="https://github.com/user-attachments/assets/482d66cf-fc73-4169-bd1e-b970adef5d36" />
+
+### Pas 26 – Comprovar accés amb alumne1
+
+Iniciem sessio amb l'usuari **alumne1**
+
+<img width="274" height="269" alt="imatge" src="https://github.com/user-attachments/assets/9df4ef8a-457f-43fd-8609-e9aec6cad07f" />
+
+Comprovem que amb l'usuari **alumne1** (que pertany al grup **Limitats**) tenim permisos per crear arxius dins la carpeta.
+
+<img width="755" height="202" alt="imatge" src="https://github.com/user-attachments/assets/06817078-f4a8-481d-a65a-72aa7a129762" />
+
+I veiem que s'ha creat correctament
+
+<img width="334" height="163" alt="imatge" src="https://github.com/user-attachments/assets/513af891-c1fd-4cd9-954c-5a5a309a71d5" />
+
+### Pas 27 – Aplicar excepció per alumne2 (només lectura)
+
+Tornem a iniciar sessió com a administrador i executem la comanda icacls per aplicar una excepció específica per a alumne2, com per exemple **icacls "E:\Projectes" /grant:r alumne2:(R)**.
+Que el que fa aquesta comanda de Windows, serveix per donar permisos de lectura a un usuari específic sobre una carpeta, reemplaçant qualsevol altre permís explícit que tingués anteriorment.
+
+<img width="562" height="105" alt="imatge" src="https://github.com/user-attachments/assets/b7813507-8e0f-4843-8de7-34ba6afed741" />
+
+### Pas 28 – Comprovar l'excepció amb alumne2
+
+Si iniciem sessio amb **alumne2** i accedim a E:\Projectes. La carpeta que habiem creat estarà buida.
+
+<img width="272" height="264" alt="imatge" src="https://github.com/user-attachments/assets/9b18cef8-ccb4-486e-936d-7c23a2057402" />
+
+La carpeta
+
+<img width="579" height="308" alt="imatge" src="https://github.com/user-attachments/assets/9cffe4b2-0f07-4f54-9afe-dc3e56b3dd71" />
+
+Tornem a iniciar sessió amb alumne1 i comprovem que si pot veure l'arxiu creat.
+
+<img width="624" height="249" alt="imatge" src="https://github.com/user-attachments/assets/e19d57ea-d650-4feb-98e2-b472686ab105" />
+
+Però si l'alumne2 intenta crear una carpeta sortira una alerta de que no te permisos i el sistema denegarà l'operació.
+
+<img width="915" height="605" alt="imatge" src="https://github.com/user-attachments/assets/d68b7701-ebd5-41f1-a2a8-2ed6cfcdab51" />
+
+### Pas 29 – Consultar els permisos aplicats amb icacls
+
+Executem la comanda des de la consola com a administrador per veure l'estat final de tots els permisos de E:\Projectes
+
+<img width="576" height="199" alt="imatge" src="https://github.com/user-attachments/assets/4327d4ba-c4b6-42fd-82b8-18741dbd7ce1" />

@@ -224,3 +224,43 @@ Per fer la comprovació, haurem d'iniciar sessió amb alumne2 i comprovar que On
 
 ### Pas 23 – Documentació: tasklist, anàlisi de processos crítics i rendiment
 
+- Llistat de Processos (Tasklist)
+Per generar el fitxer base, s'ha utilitzat la comanda `tasklist > tasklist.txt` des de la terminal de Windows. Aquest fitxer s'ha adjuntat a la documentació tècnica.
+
+#### Taula Justificativa de Processos Clau
+A continuació, es justifiquen els processos més rellevants trobats en el sistema:
+
+| Procés | Descripció | Justificació | Recomanació (Recursos Baixos) |
+| :--- | :--- | :--- | :--- |
+| `System` | Nucli del Sistema Operatiu | Essencial per al funcionament de l'equip. | No tocar mai. |
+| `lsass.exe` | Local Security Authority | Gestiona la seguretat i l'inici de sessió. | Essencial. |
+| `svchost.exe` | Service Host | Contenidor per a múltiples serveis de Windows. | Mantenir (optimitzar serveis). |
+| `explorer.exe` | Explorador de Windows | Interfície gràfica (escriptori, barra de tasques). | Essencial per a l'usuari. |
+| `OneDrive.exe` | Sincronització de núvol | Sincronitza fitxers amb Microsoft Cloud. | **Aturar** per estalviar RAM/Xarxa. |
+| `msedge.exe` | Microsoft Edge | Navegador web de Windows. | **Tancar** si no s'està navegant. |
+| `ctfmon.exe` | Processador d'entrada | Gestiona el teclat, veu i entrades alternatives. | Mantenir si s'usa teclat normal. |
+
+- Prova de Control: Finalització de `explorer.exe`
+
+**Procediment:**
+S'ha executat la finalització del procés `explorer.exe` mitjançant el Gestor de Tasques o la comanda `taskkill /f /im explorer.exe`.
+
+**Resultat observat:**
+1.  **Desaparició de la interfície:** La barra de tasques, el menú d'inici i les icones de l'escriptori desapareixen immediatament.
+2.  **Pantalla:** Si no hi ha altres finestres obertes, la pantalla queda d'un color sòlid (generalment negre o el color de fons).
+3.  **Processos actius:** Altres aplicacions obertes (com un navegador o un terminal) continuen funcionant, ja que el nucli del sistema no ha caigut.
+
+**Com recuperar-lo:**
+Cal prémer `Ctrl + Alt + Supr`, obrir el *Gestor de Tasques*, anar a **Fitxer > Executar nova tasca** i escriure `explorer.exe`.
+
+- Impacte en el Rendiment (MV i Recursos Baixos)
+
+La gestió estricta de processos té un impacte crític en entorns amb recursos limitats (com Màquines Virtuals):
+
+* **Alliberament de Memòria RAM:** Molts processos de "bloatware" o de telemetria consumeixen entre 20MB i 100MB cadascun. En una MV amb 2GB de RAM, aturar 5 processos innecessaris pot recuperar un 15-20% de la memòria disponible.
+* **Reducció de l'ús de CPU:** Processos en segon pla (com actualitzadors automàtics) generen pics de CPU que provoquen "lag" en la màquina virtual.
+* **Millora de l'I/O de Disc:** Especialment en discs mecànics o discs virtuals, reduir processos minimitza les lectures/escriptures constants, fent que el sistema respongui molt més ràpidament.
+
+---
+
+

@@ -261,8 +261,6 @@ La gestió estricta de processos té un impacte crític en entorns amb recursos 
 * **Reducció de l'ús de CPU:** Processos en segon pla (com actualitzadors automàtics) generen pics de CPU que provoquen "lag" en la màquina virtual.
 * **Millora de l'I/O de Disc:** Especialment en discs mecànics o discs virtuals, reduir processos minimitza les lectures/escriptures constants, fent que el sistema respongui molt més ràpidament.
 
----
-
 # Fase 6 – Gestió de permisos (ACLs)
 
 ## Què són les ACLs i com funcionen a Windows?

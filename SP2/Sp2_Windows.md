@@ -325,6 +325,7 @@ I veiem que s'ha creat correctament
 ### Pas 27 – Aplicar excepció per alumne2 (només lectura)
 
 Tornem a iniciar sessió com a administrador i executem la comanda icacls per aplicar una excepció específica per a alumne2, com per exemple **icacls "E:\Projectes" /grant:r alumne2:(R)**.
+
 Que el que fa aquesta comanda de Windows, serveix per donar permisos de lectura a un usuari específic sobre una carpeta, reemplaçant qualsevol altre permís explícit que tingués anteriorment.
 
 <img width="562" height="105" alt="imatge" src="https://github.com/user-attachments/assets/b7813507-8e0f-4843-8de7-34ba6afed741" />

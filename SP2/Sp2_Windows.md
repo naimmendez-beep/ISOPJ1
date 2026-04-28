@@ -225,7 +225,7 @@ Per fer la comprovació, haurem d'iniciar sessió amb alumne2 i comprovar que On
 ### Pas 23 – Documentació: tasklist, anàlisi de processos crítics i rendiment
 
 - Llistat de Processos (Tasklist)
-Per generar el fitxer base, s'ha utilitzat la comanda `tasklist > tasklist.txt` des de la terminal de Windows. Aquest fitxer s'ha adjuntat a la documentació tècnica.
+Per generar el fitxer base, s'ha utilitzat la comanda `tasklist > tasklist.txt` des de la terminal de Windows.
 
 #### Taula Justificativa de Processos Clau
 A continuació, es justifiquen els processos més rellevants trobats en el sistema:

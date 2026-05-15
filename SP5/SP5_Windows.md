@@ -3,7 +3,7 @@ layout: custom
 title: "Sprint 5: Monitoratge, Auditories i Programari Client/Servidor"
 ---
 
-## Monitorización
+# Monitorización
 ### CPU
 
 - Qué muestra:
@@ -82,7 +82,7 @@ Memoria (RAM)
 
     Conexiones activas: útil para detectar conexiones sospechosas o no deseadas.
 
-### Practico
+# Practico
 
 Pulsamos Ctrl + Shift + Esc para abrir el Administrador de tareas
 

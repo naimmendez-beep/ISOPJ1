@@ -2,12 +2,6 @@
 layout: custom
 title: "Sprint 4: Configuració del Programari de Base i Sistemes d’Emmagatzematge en Windows"
 ---
-
----
-layout: default
-title: "Sprint 4: Configuració del Programari de Base i Sistemes d’Emmagatzematge en Windows"
----
-
 # Pas 1. Preparació de la màquina virtual
 
 ## 1. Afegir 3 discs addicionals mínim per fer el RAID 5 i iniciar la màquina virtual.

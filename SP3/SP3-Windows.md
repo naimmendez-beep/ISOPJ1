@@ -18,6 +18,8 @@ Contrasenya NaimMendez123%
 
 <img width="680" height="180" alt="imatge" src="https://github.com/user-attachments/assets/2fd3744d-c2fb-49c5-aa12-276d1bd459c9" />
 
+<img width="907" height="808" alt="imatge" src="https://github.com/user-attachments/assets/8a7b4da8-b213-4a5e-ba92-096fcc127721" />
 
+<img width="441" height="378" alt="imatge" src="https://github.com/user-attachments/assets/8a8103fa-4ebe-498e-bc48-423036e2829f" />
 
-
+Contra Usuari: %5k(3$UkM?}64~ie28F+9].qS9qp90

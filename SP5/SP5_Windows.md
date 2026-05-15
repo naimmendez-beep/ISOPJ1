@@ -3,112 +3,118 @@ layout: custom
 title: "Sprint 5: Monitoratge, Auditories i Programari Client/Servidor"
 ---
 
-# Monitorización
-### CPU
+# Monitorització del Sistema
+### CPU (Processador)
 
-- Qué muestra:
+- Què mostra:
 
-    Todos los procesos activos y el porcentaje de CPU que consumen.
+    Tots els processos actius i el percentatge de CPU que consumeixen.
 
-    Subprocesos y servicios asociados a cada proceso.
+    Subprocessos i serveis associats a cada procés.
 
-    Estadísticas como el tiempo de CPU, el número de hilos o el ID de proceso (PID).
+    Estadístiques com el temps de CPU, el nombre de fils o l'ID de procés (PID).
 
-- Explicación:
+- Explicació dels conceptes:
 
-    CPU (%): muestra qué proporción del procesador utiliza cada proceso. Si un proceso consume más del 80-90% durante mucho tiempo, puede indicar una sobrecarga o un error.
+    CPU (%): Indica quina proporció del processador utilitza cada procés. Si un procés consumeix més del 80-90% durant molt de temps, pot indicar una sobrecàrrega o un error de programari.
 
-    PID (Process ID): número único que permite identificar un proceso en otras herramientas como el Visor de eventos o PowerShell.
+    PID (Process ID): Un número únic que permet identificar un procés en altres eines com el Visor d'esdeveniments o PowerShell.
 
-    Nombre del proceso: útil para identificar aplicaciones conocidas (Chrome, Word) o sospechosas (ej: "svchost.exe" con comportamiento inusual).
+    Nom del procés: Útil per identificar aplicacions conegudes (Chrome, Word) o sospitoses (per exemple, un "svchost.exe" amb un comportament inusual).
 
-Memoria (RAM)
+### Memòria (RAM)
 
-- Qué muestra:
+- Què mostra:
 
-    Cantidad de memoria utilizada por cada proceso.
+    Quantitat de memòria utilitzada per cada procés.
 
-    Estado de la memoria física: libre, en uso, en espera, etc.
+    Estat de la memòria física: lliure, en ús, en espera, etc.
 
-    Tamaño del archivo de paginación (swap) y errores de acceso a memoria.
+    Mida del fitxer de paginació (swap) i errors d'accés a la memòria.
 
-- Explicación:
+- Explicació dels conceptes:
 
-    Memoria en uso: memoria que realmente está utilizando un proceso en ese momento.
+    Memòria en ús: La memòria que realment està utilitzant un procés en aquell moment.
 
-    Memoria en espera: datos que pueden ser reutilizados rápidamente por Windows si es necesario.
+    Memòria en espera: Dades que Windows manté preparades perquè puguin ser reutilitzades ràpidament si cal.
 
-    Memoria disponible: suma de memoria libre y en espera.
+    Memòria disponible: És la suma de la memòria lliure i la memòria en espera.
 
-    Memoria virtual: combina la RAM física con el archivo de paginación en disco. Si se usa mucho, puede indicar falta de RAM física.
+    Memòria virtual: Combina la RAM física amb el fitxer de paginació al disc. Si s'utilitza gairebé tota, sol indicar una falta de RAM física.
 
-### Disco
+### Disc
 
-- Qué muestra:
+- Què mostra:
 
-    Procesos que acceden al disco duro (lectura/escritura).
+    Processos que accedeixen a la unitat d'emmagatzematge (lectura/escriptura).
 
-    Bytes leídos/escritos por segundo.
+    Bytes llegits o escrits per segon.
 
-    Tiempo de respuesta y latencia de los discos.
+    Temps de resposta i latència dels discs.
 
-    Archivos concretos en uso.
+    Fitxers concrets que s'estan utilitzant.
 
-- Explicación:
+- Explicació dels conceptes:
 
-    Lectura/escritura (B/s): indica si hay procesos leyendo o escribiendo mucho en disco.
+    Lectura/escriptura (B/s): Indica si hi ha processos movent molta informació al disc.
 
-    Tiempo de respuesta (ms): tiempo que tarda el disco en responder a una petición. Más de 20-30 ms de manera constante puede indicar un problema de rendimiento.
+    Temps de resposta (ms): El temps que triga el disc a respondre a una petició. Si supera els 20-30 ms de manera constant, el rendiment del sistema es veurà afectat.
 
-    Cola de disco: si es muy alta, el disco no puede procesar todas las peticiones y el sistema se ralentiza.
+    Cua de disc: Si és molt alta, significa que el disc no pot processar totes les peticions a temps i el sistema s'alentirà.
 
-### Red
+### Xarxa
 
-- Qué muestra:
+- Què mostra:
 
-    Aplicaciones que están enviando o recibiendo datos por la red.
+    Aplicacions que estan enviant o rebent dades per internet o la xarxa local.
 
-    Puertos de comunicación e IPs remotas.
+    Ports de comunicació i adreces IP remotes.
 
-    Número de bytes por segundo (Tx y Rx).
+    Nombre de bytes per segon (Tx - transmissió i Rx - recepció).
 
-- Explicación:
+- Explicació dels conceptes:
 
-    Utilización de red (%): mide la carga de la conexión de red.
+    Utilització de xarxa (%): Mesura la càrrega de la teva connexió.
 
-    Puertos locales/remotos: puedes ver si una aplicación usa el puerto 80 (HTTP), 443 (HTTPS), 21 (FTP), etc.
+    Ports locals/remots: Permet veure si una aplicació fa servir el port 80 (HTTP), 443 (HTTPS), 21 (FTP), etc.
 
-    IP remota: permite ver con qué servidor o destino se comunica la aplicación.
+    IP remota: Permet identificar amb quin servidor o destinació s'està comunicant l'aplicació.
 
-    Conexiones activas: útil para detectar conexiones sospechosas o no deseadas.
+    Connexions actives: Molt útil per detectar connexions sospitoses o aplicacions que consumeixen amplada de banda en segon pla.
 
-# Practico
+# Part Pràctica
 
-Pulsamos Ctrl + Shift + Esc para abrir el Administrador de tareas
+**Per accedir a aquestes dades en un entorn Windows, tens dues eines principals:**
 
-<img width="667" height="588" alt="imatge" src="https://github.com/user-attachments/assets/bee1cc0d-ebfd-4c56-be4b-29c944973a26" />
+- Administrador de tasques:
 
-En el administrador de tareas tendremos el gasto de recursos de todos los servicios/aplicaciones del dispositivo, tambien podremos verlo dividido por usuario etc...
+        Prem la combinació Ctrl + Shift + Esc.
+<img width="661" height="590" alt="imatge" src="https://github.com/user-attachments/assets/75327b14-93df-4e38-a499-a288a2d96c73" />
 
-<img width="961" height="767" alt="imatge" src="https://github.com/user-attachments/assets/36b42de6-7175-4fca-afe8-473861e357b2" />
+        Aquí veuràs el consum de recursos de tots els serveis i aplicacions, fins i tot dividit per usuaris. És ideal per a una ullada ràpida o per "matar" processos que no responen.
 
-<img width="961" height="767" alt="imatge" src="https://github.com/user-attachments/assets/a8e0e87e-40a0-4c12-b66c-77795b164cab" />
+<img width="661" height="590" alt="imatge" src="https://github.com/user-attachments/assets/df1b18fd-1530-4fea-a0fa-9f6ac8a1a445" />
 
-<img width="961" height="767" alt="imatge" src="https://github.com/user-attachments/assets/19e32999-93ed-4040-8620-bd8f7648fb27" />
+<img width="661" height="590" alt="imatge" src="https://github.com/user-attachments/assets/65ef0bf0-8637-427b-ab3a-df8c98c5ed70" />
 
-<img width="961" height="767" alt="imatge" src="https://github.com/user-attachments/assets/c2ca6452-df9b-42bb-b3d3-cdc84bc46ab6" />
+<img width="943" height="314" alt="imatge" src="https://github.com/user-attachments/assets/7ac58205-7fa9-4261-b741-bc0ff5351c11" />
 
-Tambien tenemos otra herramienta de monitorización que es el "monitor de recursos" en el que podremos ver de manera mas detallada el estado de servicio/aplicacion.
+<img width="430" height="337" alt="imatge" src="https://github.com/user-attachments/assets/ab0f8d13-7c55-42d7-a678-8a8e25a6c29b" />
 
-<img width="961" height="714" alt="imatge" src="https://github.com/user-attachments/assets/5e3bc924-12a5-4021-b918-14e68d392e65" />
+- Monitor de recursos:
 
-<img width="1025" height="852" alt="imatge" src="https://github.com/user-attachments/assets/6dde6968-0d05-4898-a084-01246fa415c4" />
+       Pots obrir-lo des de la pestanya "Rendiment" de l'Administrador de tasques o cercant-lo directament al menú d'inici.
 
-<img width="1025" height="836" alt="imatge" src="https://github.com/user-attachments/assets/9a358163-44d6-4449-ae57-7134d9b23243" />
+        Aquesta eina és molt més detallada i permet analitzar a fons què està fent cada servei o aplicació amb el maquinari del teu dispositiu.
 
-<img width="1025" height="836" alt="imatge" src="https://github.com/user-attachments/assets/bdc8724e-73a9-455e-968d-768601284aee" />
+<img width="941" height="665" alt="imatge" src="https://github.com/user-attachments/assets/3c62ccd1-a85a-4a50-8831-cb54e8721d39" />
 
-<img width="1025" height="836" alt="imatge" src="https://github.com/user-attachments/assets/fc44e04a-b7c8-4530-8d22-233beb0a2fe0" />
+<img width="941" height="775" alt="imatge" src="https://github.com/user-attachments/assets/4b1c0e73-1a16-4665-bedd-e9018920780f" />
 
-<img width="1025" height="836" alt="imatge" src="https://github.com/user-attachments/assets/3a6db865-c9b9-45cb-9530-6a97436cd80a" />
+<img width="941" height="584" alt="imatge" src="https://github.com/user-attachments/assets/68ab45d9-8169-45a8-b0ae-b62b146416ff" />
 
+<img width="941" height="524" alt="imatge" src="https://github.com/user-attachments/assets/583123e1-f3fe-4d81-88c1-30a68e772e94" />
+
+<img width="941" height="663" alt="imatge" src="https://github.com/user-attachments/assets/d5141b1d-a6ea-42a1-964c-b8a56e18a2b8" />
+
+<img width="941" height="772" alt="imatge" src="https://github.com/user-attachments/assets/098526a0-d87a-4d36-b3c3-99b93c22a96b" />

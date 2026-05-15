@@ -105,7 +105,7 @@ title: "Sprint 5: Monitoratge, Auditories i Programari Client/Servidor"
 
        Pots obrir-lo des de la pestanya "Rendiment" de l'Administrador de tasques o cercant-lo directament al menú d'inici.
 
-        Aquesta eina és molt més detallada i permet analitzar a fons què està fent cada servei o aplicació amb el maquinari del teu dispositiu.
+       Aquesta eina és molt més detallada i permet analitzar a fons què està fent cada servei o aplicació amb el maquinari del teu dispositiu.
 
 <img width="941" height="665" alt="imatge" src="https://github.com/user-attachments/assets/3c62ccd1-a85a-4a50-8831-cb54e8721d39" />
 

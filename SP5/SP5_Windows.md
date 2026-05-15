@@ -2,11 +2,11 @@
 layout: custom
 title: "Sprint 5: Monitoratge, Auditories i Programari Client/Servidor"
 ---
-Sprint 5 Windows
-Monitorización
-CPU
+# Sprint 5 Windows
+## Monitorización
+### CPU
 
-Qué muestra:
+- Qué muestra:
 
     Todos los procesos activos y el porcentaje de CPU que consumen.
 
@@ -14,7 +14,7 @@ Qué muestra:
 
     Estadísticas como el tiempo de CPU, el número de hilos o el ID de proceso (PID).
 
-Explicación:
+- Explicación:
 
     CPU (%): muestra qué proporción del procesador utiliza cada proceso. Si un proceso consume más del 80-90% durante mucho tiempo, puede indicar una sobrecarga o un error.
 
@@ -24,7 +24,7 @@ Explicación:
 
 Memoria (RAM)
 
-Qué muestra:
+- Qué muestra:
 
     Cantidad de memoria utilizada por cada proceso.
 
@@ -32,7 +32,7 @@ Qué muestra:
 
     Tamaño del archivo de paginación (swap) y errores de acceso a memoria.
 
-Explicación:
+- Explicación:
 
     Memoria en uso: memoria que realmente está utilizando un proceso en ese momento.
 
@@ -42,9 +42,9 @@ Explicación:
 
     Memoria virtual: combina la RAM física con el archivo de paginación en disco. Si se usa mucho, puede indicar falta de RAM física.
 
-Disco
+### Disco
 
-Qué muestra:
+- Qué muestra:
 
     Procesos que acceden al disco duro (lectura/escritura).
 
@@ -54,7 +54,7 @@ Qué muestra:
 
     Archivos concretos en uso.
 
-Explicación:
+- Explicación:
 
     Lectura/escritura (B/s): indica si hay procesos leyendo o escribiendo mucho en disco.
 
@@ -62,9 +62,9 @@ Explicación:
 
     Cola de disco: si es muy alta, el disco no puede procesar todas las peticiones y el sistema se ralentiza.
 
-Red
+### Red
 
-Qué muestra:
+- Qué muestra:
 
     Aplicaciones que están enviando o recibiendo datos por la red.
 
@@ -72,7 +72,7 @@ Qué muestra:
 
     Número de bytes por segundo (Tx y Rx).
 
-Explicación:
+- Explicación:
 
     Utilización de red (%): mide la carga de la conexión de red.
 
@@ -82,14 +82,21 @@ Explicación:
 
     Conexiones activas: útil para detectar conexiones sospechosas o no deseadas.
 
-Practico
+### Practico
 
 Pulsamos Ctrl + Shift + Esc para abrir el Administrador de tareas
 
-
+<img width="667" height="588" alt="imatge" src="https://github.com/user-attachments/assets/bee1cc0d-ebfd-4c56-be4b-29c944973a26" />
 
 En el administrador de tareas tendremos el gasto de recursos de todos los servicios/aplicaciones del dispositivo, tambien podremos verlo dividido por usuario etc...
 
+<img width="961" height="767" alt="imatge" src="https://github.com/user-attachments/assets/36b42de6-7175-4fca-afe8-473861e357b2" />
+
+<img width="961" height="767" alt="imatge" src="https://github.com/user-attachments/assets/a8e0e87e-40a0-4c12-b66c-77795b164cab" />
+
+<img width="961" height="767" alt="imatge" src="https://github.com/user-attachments/assets/19e32999-93ed-4040-8620-bd8f7648fb27" />
+
+<img width="961" height="767" alt="imatge" src="https://github.com/user-attachments/assets/c2ca6452-df9b-42bb-b3d3-cdc84bc46ab6" />
 
 Tambien tenemos otra herramienta de monitorización que es el "monitor de recursos" en el que podremos ver de manera mas detallada el estado de servicio/aplicacion.
 

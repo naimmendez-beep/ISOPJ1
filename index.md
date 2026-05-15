@@ -23,7 +23,9 @@ El contenido está bajo licencia [Creative Commons BY-NC-SA 4.0 ES](https://crea
 - Windows
 ### [SP1. Sprint 1: Instal·lació, Configuració Inicial i Programari de Base ](SP1/SP1_Windows.md)
 ### [SP2. Sprint 2: Instal·lació, Configuració de Programari de Base i Gestió de Fitxers](SP2/Sp2_Windows.md)
-
+### [SP3. Sprint 3: Administració de Dominis i Seguretat](SP3/SP3_Windows.md)
+### [SP4. Sprint 4: Configuració del Programari de Base i Sistemes d’Emmagatzematge en Windows](SP4/SP4_Windows.md)
+### [SP5. Sprint 5: Monitoratge, Auditories i Programari Client/Servidor](SP5
 
 ### Ús
 Este repositorio se encuentra prepardo para ser publicado con GitHub Pages.

@@ -2,7 +2,7 @@
 layout: custom
 title: "Sprint 5: Monitoratge, Auditories i Programari Client/Servidor"
 ---
-# Sprint 5 Windows
+
 ## Monitorización
 ### CPU
 

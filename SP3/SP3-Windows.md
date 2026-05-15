@@ -23,3 +23,20 @@ Contrasenya NaimMendez123%
 <img width="441" height="378" alt="imatge" src="https://github.com/user-attachments/assets/8a8103fa-4ebe-498e-bc48-423036e2829f" />
 
 Contra Usuari: %5k(3$UkM?}64~ie28F+9].qS9qp90
+
+<img width="522" height="199" alt="imatge" src="https://github.com/user-attachments/assets/f1010172-6813-4bcb-9942-c772d22ea2b6" />
+
+Ens connectem al client i comprovem connectivitat
+
+<img width="557" height="250" alt="imatge" src="https://github.com/user-attachments/assets/f78a190e-f2a2-488c-980c-1d5575642727" />
+
+<img width="401" height="454" alt="imatge" src="https://github.com/user-attachments/assets/5eaf3669-de38-4f65-8b65-4313fdfb769f" />
+
+Ens connectem al domini
+
+<img width="414" height="480" alt="imatge" src="https://github.com/user-attachments/assets/f25eeabe-a391-4cc4-a734-3b855bb7a50e" />
+
+<img width="354" height="152" alt="imatge" src="https://github.com/user-attachments/assets/a20cf512-119a-4ebc-88a7-a7d48fbed4c8" />
+
+<img width="920" height="728" alt="imatge" src="https://github.com/user-attachments/assets/6763ce02-7ee2-4e32-b20d-e5691949b881" />
+

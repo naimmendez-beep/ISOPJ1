@@ -9,8 +9,14 @@ title: "Sprint 3: Administració de Dominis i Seguretat"
 
 <img width="787" height="569" alt="imatge" src="https://github.com/user-attachments/assets/eb401ef4-5eb9-4710-a198-c39553a793da" />
 
+<img width="763" height="562" alt="imatge" src="https://github.com/user-attachments/assets/e97ee5ac-c861-46c6-b860-3506d3923eb8" />
 
+Contrasenya NaimMendez123%
+<img width="760" height="561" alt="imatge" src="https://github.com/user-attachments/assets/6d8fbd68-b1e4-44d7-a513-8b131475d3c3" />
 
+<img width="761" height="555" alt="imatge" src="https://github.com/user-attachments/assets/57e34932-a1bb-4743-bc27-bc29e574ee9d" />
+
+<img width="680" height="180" alt="imatge" src="https://github.com/user-attachments/assets/2fd3744d-c2fb-49c5-aa12-276d1bd459c9" />
 
 
 

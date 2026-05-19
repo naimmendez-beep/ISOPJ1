@@ -118,3 +118,16 @@ title: "Sprint 5: Monitoratge, Auditories i Programari Client/Servidor"
 <img width="941" height="663" alt="imatge" src="https://github.com/user-attachments/assets/d5141b1d-a6ea-42a1-964c-b8a56e18a2b8" />
 
 <img width="941" height="772" alt="imatge" src="https://github.com/user-attachments/assets/098526a0-d87a-4d36-b3c3-99b93c22a96b" />
+
+# Auditories 
+
+### Auditories: què són i per a què serveixen
+- Les auditories són com un sistema de control que et permet saber què passa dins del teu Windows Server. Serveixen per registrar coses com qui ha intentat entrar al sistema, qui ha accedit a una carpeta, qui ha modicat un txer, etc. És molt útil si vols tenir un control de seguretat i saber si algú fa coses rares o no autoritzades.
+
+- Amb les auditories pots saber, per exemple, si algú ha intentat entrar amb un usuari que no li tocava, o si ha volgut esborrar un
+arxiu important. També t’ajuden a veure si tot funciona bé o si cal canviar alguna conguració.
+- Per activar les auditories a Windows, s’ha d’obrir secpol.msc i escollir què es vol controlar, com inici de sessió o accés a txers. Després, cal anar a les propietats del txer o carpeta, a “Seguretat” i afegir l’usuari que volem auditar i què volem registrar.
+Els resultats es poden veure al visor d’esdeveniments (eventvwr.msc), on apareixen amb codis com el 4624 (entrada correcta) o 4625 (fallida). És important no activar massa auditories perquè poden fer el sistema més lent.
+
+### Part pràctica
+

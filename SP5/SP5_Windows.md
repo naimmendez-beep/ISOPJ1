@@ -131,3 +131,27 @@ Els resultats es poden veure al visor d’esdeveniments (eventvwr.msc), on apare
 
 ### Part pràctica
 
+- El primer que hem de fer és buscar Directiva de seguretat
+
+<img width="796" height="327" alt="imatge" src="https://github.com/user-attachments/assets/480dd751-a34b-4800-9ec9-c75d8134e303" />
+
+- Fem click dret i premem "propiedades", marquem les dues caselles 'Correcto' 'Erróneo'.
+
+<img width="420" height="507" alt="imatge" src="https://github.com/user-attachments/assets/041bf87b-dab2-4511-ba00-2550b3729585" />
+
+- Un cop acceptat anem a 'visor de eventos' i apareixerà el **ID** **4624** que és d'inici de sessió
+
+<img width="1006" height="885" alt="imatge" src="https://github.com/user-attachments/assets/24a4b2e7-f0ca-4855-a2d2-d1dbcd55cd18" />
+
+- Després creem una carpeta per a configurar l'auditoria, entrem a les propietats de la carpeta, opcions avançades i agreguem l'entitat.
+
+<img width="916" height="592" alt="imatge" src="https://github.com/user-attachments/assets/ad3f5e3f-1d0d-4a64-a49d-b9a37058e689" />
+
+quedaria així
+
+<img width="721" height="234" alt="imatge" src="https://github.com/user-attachments/assets/391d6667-267a-4ff0-8d4a-64fd562afdad" />
+
+- També afegirem l'usuari Administrador i li donarem control total, per fer diferents proves
+
+<img width="920" height="592" alt="imatge" src="https://github.com/user-attachments/assets/06491873-2716-4a98-86fb-bff9076573bb" />
+

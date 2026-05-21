@@ -159,7 +159,7 @@ quedaria així
 
 <img width="920" height="592" alt="imatge" src="https://github.com/user-attachments/assets/06491873-2716-4a98-86fb-bff9076573bb" />
 
-- Si creem carpetes o arxius, dins del Visor d'esdeveniments sortirà l'ID de l'event 4663, que indica que s'han creat objectes
+- Si creem carpetes o arxius, dins del Visor d'esdeveniments sortirà l'ID de l'event 4663, que indica que s'han creat objectes.
 
 <img width="786" height="292" alt="imatge" src="https://github.com/user-attachments/assets/cd0256f4-1a0e-41c9-8eae-35cf1ae24db1" />
 

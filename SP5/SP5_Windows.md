@@ -186,3 +186,9 @@ quedaria així
 - Si deshabilitem l'usuari sortirà el codi 4725
 
 <img width="939" height="731" alt="imatge" src="https://github.com/user-attachments/assets/7e6a09f4-ce12-4398-8536-ce56afbcb9ed" />
+
+- Però si l'eliminem sortirà el 4726
+
+<img width="463" height="166" alt="imatge" src="https://github.com/user-attachments/assets/84e5c6ac-8856-4fc3-9e7d-ec27f48a5b9c" />
+
+<img width="914" height="720" alt="imatge" src="https://github.com/user-attachments/assets/cd0e371c-95ec-4788-9542-565a0da88193" />

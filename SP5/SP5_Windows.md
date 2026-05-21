@@ -151,7 +151,38 @@ quedaria així
 
 <img width="721" height="234" alt="imatge" src="https://github.com/user-attachments/assets/391d6667-267a-4ff0-8d4a-64fd562afdad" />
 
+- Compartim la carpeta amb l'usuari
+
+<img width="618" height="444" alt="imatge" src="https://github.com/user-attachments/assets/9a2887c6-e950-40a9-a6ce-3226d7159b4e" />
+
 - També afegirem l'usuari Administrador i li donarem control total, per fer diferents proves
 
 <img width="920" height="592" alt="imatge" src="https://github.com/user-attachments/assets/06491873-2716-4a98-86fb-bff9076573bb" />
 
+- Si creem carpetes o arxius, dins del Visor d'esdeveniments sortirà l'ID de l'event 5379, que indica que s'han creat objectes i algun usuari els ha llegit
+
+<img width="786" height="292" alt="imatge" src="https://github.com/user-attachments/assets/cd0256f4-1a0e-41c9-8eae-35cf1ae24db1" />
+
+<img width="947" height="699" alt="imatge" src="https://github.com/user-attachments/assets/617211a5-b522-49a8-8ac6-60d24c9d88e3" />
+
+- Activarem l'auditoria de seguiment de processos per comprovar que al obrir un programa generarà un event ID 4688, que indica que s'ha iniciat un procés.
+
+<img width="944" height="752" alt="imatge" src="https://github.com/user-attachments/assets/e8bb8b21-5d6f-4004-89af-890c9ee4d660" />
+
+- I el 4689 indica que el procés ha acabat
+
+<img width="913" height="690" alt="imatge" src="https://github.com/user-attachments/assets/c5533bb2-cea0-4f33-8d01-3f833fc38504" />
+
+- Activarem també l'auditoria per a l'administració de comptes, que generarà els codis 4720 que es de que un usuari s'ha creat i el 4722 que s'ha activat l'usuari
+
+<img width="772" height="340" alt="imatge" src="https://github.com/user-attachments/assets/238ea6d5-956e-467a-a8a3-67463157015a" />
+
+<img width="751" height="531" alt="imatge" src="https://github.com/user-attachments/assets/24f060e0-11f9-4829-b3e1-4b0687fd2cbf" />
+
+<img width="868" height="707" alt="imatge" src="https://github.com/user-attachments/assets/996598fb-0e4b-4ccc-ae25-6ba786f7e9fa" />
+
+<img width="939" height="750" alt="imatge" src="https://github.com/user-attachments/assets/868dea13-a65b-4d17-91ca-7bda9a55b560" />
+
+- Si deshabilitem l'usuari sortirà el codi 4725
+
+<img width="939" height="731" alt="imatge" src="https://github.com/user-attachments/assets/7e6a09f4-ce12-4398-8536-ce56afbcb9ed" />

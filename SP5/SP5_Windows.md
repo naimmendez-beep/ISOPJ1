@@ -159,11 +159,11 @@ quedaria així
 
 <img width="920" height="592" alt="imatge" src="https://github.com/user-attachments/assets/06491873-2716-4a98-86fb-bff9076573bb" />
 
-- Si creem carpetes o arxius, dins del Visor d'esdeveniments sortirà l'ID de l'event 5379, que indica que s'han creat objectes i algun usuari els ha llegit
+- Si creem carpetes o arxius, dins del Visor d'esdeveniments sortirà l'ID de l'event 4663, que indica que s'han creat objectes
 
 <img width="786" height="292" alt="imatge" src="https://github.com/user-attachments/assets/cd0256f4-1a0e-41c9-8eae-35cf1ae24db1" />
 
-<img width="947" height="699" alt="imatge" src="https://github.com/user-attachments/assets/617211a5-b522-49a8-8ac6-60d24c9d88e3" />
+<img width="743" height="542" alt="imatge" src="https://github.com/user-attachments/assets/4cb6563f-8c19-4ffc-9494-d8bf68d98ae3" />
 
 - Activarem l'auditoria de seguiment de processos per comprovar que al obrir un programa generarà un event ID 4688, que indica que s'ha iniciat un procés.
 
